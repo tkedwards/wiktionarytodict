@@ -1,0 +1,16 @@
+**Useful Links**
+http://www.loc.gov/standards/iso639-2/ascii_8bits.html
+
+**Dependencies**
+dictd dictfmt python-pycountry
+
+**Editing wiktionary**
+Example translations section:
+====Translations====
+{{trans-top|An entrance}}
+* German: {{t|de|Tor|n}}, {{t|de|Zugang|m}}, {{t|de|Einfahrt|f}}
+{{trans-bottom}}
+
+{{trans-top|A computer network access point}}
+* German: {{t|de|Gateway|n}}, {{t|de|Protokollumsetzer|m}},
+{{trans-bottom}}

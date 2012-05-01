@@ -1,0 +1,16 @@
+--Objectives--
+1. The program should read in the XML dumps produced by the English Wiktionary project (enwiktionary-latest-pages-articles.xml) and convert them to TEI format as used by the Freedict project (see http://sourceforge.net/apps/mediawiki/freedict/index.php?title=FreeDict_HOWTO_-_5 and other pages on that Wiki). 
+
+2. The TEI format files should be further processed and packaged so they are in a format suitable for easy installation to use with dictd.
+
+--Use Case (Developer, Advanced User)--
+* Download enwiktionary-latest-pages-articles.xml
+* Generate a TEI-format dictionary file (in this example English<->Spanish): wiktionarytotei.py --translang=es enwiktionary-latest-pages-articles.xml
+* Use tei2c5.xsl from freedict-tools with xsltproc to convert TEI format dictionary to c5 format (see man dictfmt)
+* Use dictfmt to create a dictd compatible dictionary: dictfmt -c5...
+* Either manually copy the resulting .dict and .index files to the correct location for dictd dictionaries on the system or build a package named wiktionary-dict-eng-spa to do it
+
+--Use Case (User)--
+* Install dictd and a client program (dict, GoldenDict etc.)
+* Install the wiktionary-dict-xxx-yyy package or manually copy .dict and .index files to the correct location
+* Look up words with dictd client, eg. dict -d wiktionary-dict-eng-spa dog

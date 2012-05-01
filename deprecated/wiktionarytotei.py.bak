@@ -1,0 +1,137 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from xml.sax import make_parser
+from xml.sax.handler import ContentHandler
+import sys, codecs, re
+
+class WiktionaryDumpHandler(ContentHandler):
+	def __init__ (self, language):
+		self.isTitleElement = 0
+		self.isTextElement = 0
+		self.word = u''
+		self.isEnglishWord = 0
+		self.translations = {}
+		# the language to create a dictionary to
+		self.language = language
+		self.textchardata = ''
+
+	def processTextElement(self, content):
+		# The content of each Wiktionary page is contained in the <text> elemnt.
+		# This script is only interested in the ====Translations==== section for words marked ==English==
+		#ucontent = unicode(content, "utf-8")
+		for aline in content.splitlines():
+			if '==English==' in aline:
+				self.isEnglishWord = 1
+				self.parseTranslations(content)
+
+	def parseTranslations(self, content):
+		inTransSection = 0
+		currentMeaning = ''
+		for aline in content.splitlines():
+			if inTransSection == 1:
+				transbegin = re.compile("\{\{trans-top")
+				transend = re.compile("\{\{trans-bottom")
+				if transbegin.match(aline) != None:
+					splitresult = aline.split('|')
+					if len(splitresult) < 2:
+						# handle the case where there's no refinement on the meaning (just a '{{trans-top}}')
+						currentMeaning = ''
+					else:
+						currentMeaning = splitresult[1].strip('{}')
+				elif transend.match(aline) != None:
+					currentMeaning = ''
+				else:
+					self.parseTranslationline(aline, currentMeaning)
+					
+			if '====Translations====' in aline:
+				inTransSection = 1
+
+	def parseTranslationline(self, aline, currentMeaning):
+		if self.language in aline:
+			wordwithmeaning = self.word + ' (%s)' % (currentMeaning) # word with meaning, e.g. "trade (practice)": Handwerk
+			print ("DEBUG about to process %s" % aline).encode("utf-8")
+			rawtranslation = aline.split(':')[1].lstrip()
+			if rawtranslation.startswith('{{'): # lines formatted like this: {{t+|de|frei}}
+				translationslist = rawtranslation.split('{{')
+				for atranslation in translationslist:
+					bits = atranslation.strip('} ,').split('|')
+					if len(bits) > 2:
+						translation = bits[2] # the actual word
+						if len(bits) > 3:
+							translation += ' (%s)' % bits [3] # noun gender if specified
+						self.addtoTranslationsMap(wordwithmeaning, translation)
+					else:
+						pass # TODO: log to stderr here printing the atranslation
+			elif rawtranslation.startswith('[['): # lines formatted like this: [[gratis#German|gratis]], [[kostenlos]], [[frei]], [[kostenfrei]]
+				translationslist = rawtranslation.split(',')
+				for atranslation in translationslist:
+					bits = atranslation.strip('][ ,').split('|')
+					if len(bits) > 1:
+						translation = bits[1] # e.g. from "[[gratis#German|gratis]]" pick out "gratis"
+					elif len(bits) == 1:
+						translation = bits[0]
+					else:
+						pass # TODO: log to stderr here printing the atranslation
+					self.addtoTranslationsMap(wordwithmeaning, translation)
+			else: # lines formatted like this: Der [[groß|Große]] [[Teich]]
+				wordlist = rawtranslation.split('[[')
+				translation = ''
+				for aword in wordlist:
+					bits = aword.split('|')
+					if len(bits) > 1:
+						translation += bits[1] # e.g. 'Große' from '[[groß|Große]'
+					else:
+						translation += bits[0]
+				self.addtoTranslationsMap(wordwithmeaning, translation)
+			output = "%s : %s" % (wordwithmeaning, self.translations[wordwithmeaning])
+			print output.encode('utf-8')
+	
+	def addtoTranslationsMap(self, wordwithmeaning, translation):
+		if self.translations.has_key(wordwithmeaning):
+			# add multiple translations together, eg: free (make free) : freisetzen, befreien
+			newtrans = self.translations[wordwithmeaning] + ', %s' % translation
+			self.translations[wordwithmeaning] = newtrans
+		else:
+			self.translations[wordwithmeaning] = translation
+	
+	def outputJargonFormat(self, aline, currentMeaning):
+		# output to Jargon File format (see the -j option in man dictfmt)
+		pass
+
+	def startElement(self, name, attrs):
+		if name=='title':
+			self.isTitleElement=1
+		if name=='text':
+                        self.isTextElement=1
+
+	def characters (self, content):
+		if self.isTitleElement==1:
+			# the page title should be the headword, but filter out Wiktionary crap
+			if 'Wiktionary:' not in content:
+				self.word = content
+		if self.isTextElement==1:
+			self.textchardata += content
+	
+	def ignorableWhitespace (self, whitespace):
+		self.word = u''
+
+	def endElement(self, name):
+		#if self.isEnglishWord==1:
+		#	print self.word.encode('utf-8')
+		if self.isTitleElement == 1:
+			self.isTitleElement = 0
+		if self.isTextElement == 1:
+			self.processTextElement(self.textchardata)
+			self.textchardata = ''
+			self.isTextElement = 0
+			self.isEnglishWord = 0
+			self.word = ''
+
+if (len(sys.argv) > 2):
+	parser = make_parser()
+	curHandler = WiktionaryDumpHandler(sys.argv[2])
+	parser.setContentHandler(curHandler)
+	parser.parse(open(sys.argv[1], 'r'))
+else:
+	print "usage: %s FILE LANGUAGE" % sys.argv[0]

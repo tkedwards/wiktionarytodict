@@ -1,0 +1,1319 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.5/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.5/ http://www.mediawiki.org/xml/export-0.5.xsd" version="0.5" xml:lang="en">
+  <siteinfo>
+    <sitename>Wiktionary</sitename>
+    <base>http://en.wiktionary.org/wiki/Wiktionary:Main_Page</base>
+    <generator>MediaWiki 1.18wmf1</generator>
+    <case>case-sensitive</case>
+    <namespaces>
+      <namespace key="-2" case="case-sensitive">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="case-sensitive" />
+      <namespace key="1" case="case-sensitive">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="case-sensitive">Wiktionary</namespace>
+      <namespace key="5" case="case-sensitive">Wiktionary talk</namespace>
+      <namespace key="6" case="case-sensitive">File</namespace>
+      <namespace key="7" case="case-sensitive">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="case-sensitive">Template</namespace>
+      <namespace key="11" case="case-sensitive">Template talk</namespace>
+      <namespace key="12" case="case-sensitive">Help</namespace>
+      <namespace key="13" case="case-sensitive">Help talk</namespace>
+      <namespace key="14" case="case-sensitive">Category</namespace>
+      <namespace key="15" case="case-sensitive">Category talk</namespace>
+      <namespace key="90" case="case-sensitive">Thread</namespace>
+      <namespace key="91" case="case-sensitive">Thread talk</namespace>
+      <namespace key="92" case="case-sensitive">Summary</namespace>
+      <namespace key="93" case="case-sensitive">Summary talk</namespace>
+      <namespace key="100" case="case-sensitive">Appendix</namespace>
+      <namespace key="101" case="case-sensitive">Appendix talk</namespace>
+      <namespace key="102" case="case-sensitive">Concordance</namespace>
+      <namespace key="103" case="case-sensitive">Concordance talk</namespace>
+      <namespace key="104" case="case-sensitive">Index</namespace>
+      <namespace key="105" case="case-sensitive">Index talk</namespace>
+      <namespace key="106" case="case-sensitive">Rhymes</namespace>
+      <namespace key="107" case="case-sensitive">Rhymes talk</namespace>
+      <namespace key="108" case="case-sensitive">Transwiki</namespace>
+      <namespace key="109" case="case-sensitive">Transwiki talk</namespace>
+      <namespace key="110" case="case-sensitive">Wikisaurus</namespace>
+      <namespace key="111" case="case-sensitive">Wikisaurus talk</namespace>
+      <namespace key="114" case="case-sensitive">Citations</namespace>
+      <namespace key="115" case="case-sensitive">Citations talk</namespace>
+      <namespace key="116" case="case-sensitive">Sign gloss</namespace>
+      <namespace key="117" case="case-sensitive">Sign gloss talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Wiktionary:Welcome, newcomers</title>
+    <id>6</id>
+    <restrictions>edit=autoconfirmed:move=sysop</restrictions>
+    <revision>
+      <id>13432553</id>
+      <timestamp>2011-07-01T17:14:20Z</timestamp>
+      <contributor>
+        <username>Electric goat</username>
+        <id>1827</id>
+      </contributor>
+      <comment>+ja</comment>
+      <text xml:space="preserve">Hello, and welcome! Wiktionary is a [[multilingual]] [[free]] [[dictionary]], being written [[collaborative]]ly on this website by people from around the world. [[entry|Entries]] may be [[Help:How to edit a page|edit]]ed by anyone!
+
+Designed as the lexical companion to [[:w:Main Page|Wikipedia]], the encyclopaedia project, Wiktionary has grown beyond a standard dictionary and now includes a [[Wiktionary:Wikisaurus|thesaurus]], a rhyme guide, phrase books, language statistics and extensive appendices.  We aim to include not only the definition of a word, but also enough information to really understand it. Thus [[etymology|etymologies]], pronunciations, sample quotations, synonyms, antonyms and translations are included.
+
+Wiktionary is a [[wiki]], which means that you can edit it, and all the content is dual-licensed under both the [[Wiktionary:Text of Creative Commons Attribution-ShareAlike 3.0 Unported License|Creative Commons Attribution-ShareAlike 3.0 Unported License]] as well as the [[Wiktionary:GNU Free Documentation License|GNU Free Documentation License]]. Before you contribute, you may wish to read through some of our [[Wiktionary:Help|Help]] pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict [[Wiktionary:Entry layout explained|layout conventions]] and [[Wiktionary:Criteria for inclusion|inclusion criteria]]. Learn how to [[Help:Starting a new page|start a page]], how to [[Help:How to edit a page|edit entries]], experiment in the [[Wiktionary:Sandbox|sandbox]] and visit our [[Wiktionary:Community Portal|Community Portal]] to see how you can participate in the development of Wiktionary.
+
+We have created '''{{NUMBEROFARTICLES}}''' articles since starting in [[December]], 2002, and we’re growing rapidly.
+
+
+
+==Editing Wiktionary==
+People like yourself are very active in building this [[project]]. While you are reading this, it is likely someone is editing one of our entries. Many [[knowledgeable]] people are already at work, but everybody is [[welcome]]!
+
+Contributing does not require [{{fullurl:Special:Userlogin|type=signup}} logging in], but we would [[prefer]] that you do, as it [[facilitate]]s the [[administration]] of this site. (Note that logging in also prevents the [[IP]] address of your computer from being displayed in the [{{fullurl:Wiktionary:Welcome, newcomers|action=history}} page history].)
+
+You can [[dive in]] right now and add or alter a definition, add example sentences, or help us to properly format or categorize entries. You can even [[Help:Starting a new page|create a page]] for a term we’re missing. Please feel free to [[Wiktionary:Be bold in updating pages|be bold]] in editing pages!
+
+How could allowing everyone to edit produce a high‐quality product instead of total disorder?  Because most people want to help, and keeping it open to everyone creates the potential for making many good and ever-improving entries. Records are kept of all changes, so even unhelpful edits can easily be [[revert]]ed by other users. To use a now‐famous [[w:Linus' Law|catchphrase]], in essence: “Given enough eyeballs, all errors are shallow.”
+
+To start out, users might want to utilise the ‘[[Special:Recentchanges|Recent changes]]’ or ‘[[Special:Random|Random page]]’ link (found in the navigation box elsewhere on this page), to get an idea of the kinds of pages you can find here. (It might be surprising how many non-English words are entered here!)
+
+==Norms and etiquette==
+{{xsee|[[Help:Interacting with humans]]}}
+One important thing you should know is that we have borrowed from our sister project [[Wikipedia:|Wikipedia]] some [[Wikipedia:Norm (sociology)|cultural norms]] you should respect:
+# We try not to argue pointlessly. This isn’t a debate forum. After [[civilized]] and reasonable discussion, we try to reach broad [[consensus]] in order to present an accurate, neutral summary of all relevant facts for future readers.
+# We try to make the entries as unbiased as we can, meaning that definitions or descriptions — even of controversial topics — are not meant to be platforms for preaching of any kind.
+# Bear in mind this is a ''dictionary'', which means there are many [[Wiktionary:What Wiktionary is not|things it is not]].
+# At any point, if you are uncomfortable changing someone else’s work, and you want to add a thought (or question or comment) about an entry or other page, the place is its [[Wiktionary:Talk page|talk page]] (click on the &quot;discussion&quot; tab at the top or the &quot;Discuss this page&quot; link in the sidebar or elsewhere, depending on your preference skin). Note, though, that we try to keep discussion focused on improving this dictionary.
+
+==For more information==
+More introductory information and descriptions of community norms are on the following pages:
+*[[Help:Starting a new page|How to start a page]] 
+*[[Help:How to edit a page|How to edit a page]] 
+*[[Wiktionary:Staying cool when the editing gets hot|Staying cool when editing gets hot]]
+*[[Help:FAQ|Wiktionary FAQ]]
+
+For more policy and style guidelines or guidance, see our [[Wiktionary:Community Portal|Community Portal]] or [[Help:Contents]].
+
+[[fa:ویکی‌واژه:تازه‌واردان، خوش آمدید]]
+[[it:Aiuto:Benvenuto]]
+[[ro:Wik%C5%A3ionar:Bun_venit]]
+[[cy:Wiciadur:Croeso, newydd-ddyfodiaid]]
+[[de:Wiktionary:Willkommen]]
+[[eo:Vikivortaro:Enkonduko]]
+[[es:Wikcionario:Bienvenido]]
+[[hr:Wječnik:Dobrodošli]]
+[[id:Wiktionary:Perihal]]
+[[km:Wiktionary:Welcome, newcomers]]
+[[lb:Wiktionary:Wëllkomm]]
+[[ms:Wiktionary:Selamat datang pengguna baru]]
+[[nl:Wiktionary:Welkom]]
+[[ja:Wiktionary:ウィクショナリーへようこそ]]
+[[no:Wiktionary:Velkommen]]
+[[pt:Wikcionário:Bem-vindo]]
+[[ro:Wikţionar:Despre]]
+[[vi:Wiktionary:Chào mừng người mới đến]]
+[[zh:Wiktionary:%E6%AC%A2%E8%BF%8E%EF%BC%8C%E6%96%B0%E6%9D%A5%E8%80%85]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:GNU Free Documentation License</title>
+    <id>7</id>
+    <revision>
+      <id>5308421</id>
+      <timestamp>2008-10-10T20:16:23Z</timestamp>
+      <contributor>
+        <username>EncycloPetey</username>
+        <id>7752</id>
+      </contributor>
+      <minor />
+      <comment>Reverted edits by [[Special:Contributions/Willeyes|Willeyes]] ([[User_talk:Willeyes|Talk]]); changed back to last version by [[User:Stephen G. Brown|Stephen G. Brown]]</comment>
+      <text xml:space="preserve">The '''GNU Free Documentation License''' (GFDL) is a [[w:copyleft|copyleft]] license for free documentation, designed by the [[w:Free Software Foundation|Free Software Foundation]] (FSF) for the [[w:GNU|GNU]] project.  The official text of version 1.1 of the license text can be found at: http://www.gnu.org/copyleft/fdl.html
+
+The license is designed for software documentation and other reference and instructional materials. It stipulates that any copy of the material, even if modified, carry the same license. Those copies may be sold but, if produced in quantity, have to be made available in a format which facilitates further editing. 
+
+== Secondary Sections ==
+
+The license explicitly separates the &quot;[[w:GNU_Free_Documentation_License/Document|Document]]&quot; from &quot;[[w:GNU_Free_Documentation_License/Secondary Sections|Secondary Sections]]&quot;, which may not be integrated with the Document, but exist as front-matter materials or appendices. Secondary sections can contain information regarding the author's or publisher's relationship to the subject matter, but not any subject matter itself. While the Document itself is wholly editable, and is essentially covered by a license equivalent to the [[w:GNU General Public License|GNU General Public License]], some of the secondary sections have various restrictions designed primarily to deal with proper attribution to previous authors.
+
+Specifically, the authors of prior versions have to be acknowledged and certain &quot;invariant sections&quot; specified by the original author and dealing with his or her relationship to the subject matter may not be changed.  If the material is modified, its title has to be changed (unless the prior authors give permission to retain the title). The license also has provisions for the handling of [[w:GNU_Free_Documentation_License/Cover_Texts|front-cover and back-cover texts]] of books, as well as for &quot;History&quot;, &quot;Acknowledgements&quot;, &quot;Dedications&quot; and &quot;Endorsements&quot; sections.
+
+== Using the GFDL ==
+
+For a document to be covered by the GFDL, one must include a [[w:GNU_Free_Documentation_License/Copyright and license notice|specific copyright and license notice]].
+
+== Wiktionary and GFDL ==
+
+All Wiktionary articles are licensed to the public under the GNU Free Documentation License. See [[Wiktionary:Copyrights]] for the details. The local copy of the license, as required by the terms of the GFDL, is at [[Wiktionary:Text of the GNU Free Documentation License]].
+
+See also:
+* [[w:GNU|GNU]]
+* [[w:GNU General Public License|GNU General Public License]]: a similar license for software
+* [[w:Copyleft|Copyleft]]
+
+[[ca:gNU Free Documentation License]]
+[[da:Wiktionary:GNU Free Documentation License]]
+[[eo:GFDL]]
+[[it:GNU Free Documentation License]]
+[[csb:Wikisłowôrz:GNU Free Documentation License]]
+[[pt:Wikcionário:GNU Free Documentation License]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:Text of the GNU Free Documentation License</title>
+    <id>8</id>
+    <restrictions>sysop</restrictions>
+    <revision>
+      <id>11480759</id>
+      <timestamp>2011-01-26T23:50:34Z</timestamp>
+      <contributor>
+        <username>Mglovesfun</username>
+        <id>27458</id>
+      </contributor>
+      <minor />
+      <comment>sigh</comment>
+      <text xml:space="preserve">GNU Free Documentation License
+
+Version 1.1, March 2000
+
+&lt;pre&gt;
+Copyright (C) 2000  Free Software Foundation, Inc.
+59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+&lt;/pre&gt;
+
+== 0. PREAMBLE ==
+
+The purpose of this License is to make a manual, textbook, or other written document &quot;free&quot; in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others.
+
+This License is a kind of &quot;copyleft&quot;, which means that derivative works of the document must themselves be free in the same sense. It complements the GNU General Public License, which is a copyleft license designed for free software.
+
+We have designed this License in order to use it for manuals for free software, because free software needs free documentation: a free program should come with manuals providing the same freedoms that the software does. But this License is not limited to software manuals; it can be used for any textual work, regardless of subject matter or whether it is published as a printed book. We recommend this License principally for works whose purpose is instruction or reference.
+
+==  1. APPLICABILITY AND DEFINITIONS ==
+
+This License applies to any manual or other work that contains a notice placed by the copyright holder saying it can be distributed under the terms of this License. The &quot;Document&quot;, below, refers to any such manual or work. Any member of the public is a licensee, and is addressed as &quot;you&quot;.
+
+A &quot;Modified Version&quot; of the Document means any work containing the Document or a portion of it, either copied verbatim, or with modifications and/or translated into another language.
+
+A &quot;Secondary Section&quot; is a named appendix or a front-matter section of the Document that deals exclusively with the relationship of the publishers or authors of the Document to the Document's overall subject (or to related matters) and contains nothing that could fall directly within that overall subject. (For example, if the Document is in part a textbook of mathematics, a Secondary Section may not explain any mathematics.) The relationship could be a matter of historical connection with the subject or with related matters, or of legal, commercial, philosophical, ethical or political position regarding them.
+
+The &quot;Invariant Sections&quot; are certain Secondary Sections whose titles are designated, as being those of Invariant Sections, in the notice that says that the Document is released under this License.
+
+The &quot;Cover Texts&quot; are certain short passages of text that are listed, as Front-Cover Texts or Back-Cover Texts, in the notice that says that the Document is released under this License.
+
+A &quot;Transparent&quot; copy of the Document means a machine-readable copy, represented in a format whose specification is available to the general public, whose contents can be viewed and edited directly and straightforwardly with generic text editors or (for images composed of pixels) generic paint programs or (for drawings) some widely available drawing editor, and that is suitable for input to text formatters or for automatic translation to a variety of formats suitable for input to text formatters. A copy made in an otherwise Transparent file format whose markup has been designed to thwart or discourage subsequent modification by readers is not Transparent. A copy that is not &quot;Transparent&quot; is called &quot;Opaque&quot;.
+
+Examples of suitable formats for Transparent copies include plain ASCII without markup, Texinfo input format, LaTeX input format, SGML or XML using a publicly available DTD, and standard-conforming simple HTML designed for human modification. Opaque formats include PostScript, PDF, proprietary formats that can be read and edited only by proprietary word processors, SGML or XML for which the DTD and/or processing tools are not generally available, and the machine-generated HTML produced by some word processors for output purposes only.
+
+The &quot;Title Page&quot; means, for a printed book, the title page itself, plus such following pages as are needed to hold, legibly, the material this License requires to appear in the title page. For works in formats which do not have any title page as such, &quot;Title Page&quot; means the text near the most prominent appearance of the work's title, preceding the beginning of the body of the text.
+
+== 2. VERBATIM COPYING ==
+
+You may copy and distribute the Document in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License. You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute. However, you may accept compensation in exchange for copies. If you distribute a large enough number of copies you must also follow the conditions in section 3.
+
+You may also lend copies, under the same conditions stated above, and you may publicly display copies.
+
+== 3. COPYING IN QUANTITY ==
+
+If you publish printed copies of the Document numbering more than 100, and the Document's license notice requires Cover Texts, you must enclose the copies in covers that carry, clearly and legibly, all these Cover Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on the back cover. Both covers must also clearly and legibly identify you as the publisher of these copies. The front cover must present the full title with all words of the title equally prominent and visible. You may add other material on the covers in addition. Copying with changes limited to the covers, as long as they preserve the title of the Document and satisfy these conditions, can be treated as verbatim copying in other respects.
+
+If the required texts for either cover are too voluminous to fit legibly, you should put the first ones listed (as many as fit reasonably) on the actual cover, and continue the rest onto adjacent pages.
+
+If you publish or distribute Opaque copies of the Document numbering more than 100, you must either include a machine-readable Transparent copy along with each Opaque copy, or state in or with each Opaque copy a publicly-accessible computer-network location containing a complete Transparent copy of the Document, free of added material, which the general network-using public has access to download anonymously at no charge using public-standard network protocols. If you use the latter option, you must take reasonably prudent steps, when you begin distribution of Opaque copies in quantity, to ensure that this Transparent copy will remain thus accessible at the stated location until at least one year after the last time you distribute an Opaque copy (directly or through your agents or retailers) of that edition to the public.
+
+It is requested, but not required, that you contact the authors of the Document well before redistributing any large number of copies, to give them a chance to provide you with an updated version of the Document.
+
+== 4. MODIFICATIONS ==
+
+You may copy and distribute a Modified Version of the Document under the conditions of sections 2 and 3 above, provided that you release the Modified Version under precisely this License, with the Modified Version filling the role of the Document, thus licensing distribution and modification of the Modified Version to whoever possesses a copy of it. In addition, you must do these things in the Modified Version:
+
+* A. Use in the Title Page (and on the covers, if any) a title distinct from that of the Document, and from those of previous versions (which should, if there were any, be listed in the History section of the Document). You may use the same title as a previous version if the original publisher of that version gives permission.
+* B. List on the Title Page, as authors, one or more persons or entities responsible for authorship of the modifications in the Modified Version, together with at least five of the principal authors of the Document (all of its principal authors, if it has less than five).
+* C. State on the Title page the name of the publisher of the Modified Version, as the publisher.
+* D. Preserve all the copyright notices of the Document.
+* E. Add an appropriate copyright notice for your modifications adjacent to the other copyright notices.
+* F. Include, immediately after the copyright notices, a license notice giving the public permission to use the Modified Version under the terms of this License, in the form shown in the Addendum below.
+* G. Preserve in that license notice the full lists of Invariant Sections and required Cover Texts given in the Document's license notice.
+* H. Include an unaltered copy of this License.
+* I. Preserve the section entitled &quot;History&quot;, and its title, and add to it an item stating at least the title, year, new authors, and publisher of the Modified Version as given on the Title Page. If there is no section entitled &quot;History&quot; in the Document, create one stating the title, year, authors, and publisher of the Document as given on its Title Page, then add an item describing the Modified Version as stated in the previous sentence.
+* J. Preserve the network location, if any, given in the Document for public access to a Transparent copy of the Document, and likewise the network locations given in the Document for previous versions it was based on. These may be placed in the &quot;History&quot; section. You may omit a network location for a work that was published at least four years before the Document itself, or if the original publisher of the version it refers to gives permission.
+* K. In any section entitled &quot;Acknowledgements&quot; or &quot;Dedications&quot;, preserve the section's title, and preserve in the section all the substance and tone of each of the contributor acknowledgements and/or dedications given therein.
+* L. Preserve all the Invariant Sections of the Document, unaltered in their text and in their titles. Section numbers or the equivalent are not considered part of the section titles.
+* M. Delete any section entitled &quot;Endorsements&quot;. Such a section may not be included in the Modified Version.
+* N. Do not retitle any existing section as &quot;Endorsements&quot; or to conflict in title with any Invariant Section.
+
+If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of Invariant Sections in the Modified Version's license notice. These titles must be distinct from any other section titles.
+
+You may add a section entitled &quot;Endorsements&quot;, provided it contains nothing but endorsements of your Modified Version by various parties--for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
+
+You may add a passage of up to five words as a Front-Cover Text, and a passage of up to 25 words as a Back-Cover Text, to the end of the list of Cover Texts in the Modified Version. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the Document already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one.
+
+The author(s) and publisher(s) of the Document do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any Modified Version.
+
+== 5. COMBINING DOCUMENTS ==
+
+You may combine the Document with other documents released under this License, under the terms defined in section 4 above for modified versions, provided that you include in the combination all of the Invariant Sections of all of the original documents, unmodified, and list them all as Invariant Sections of your combined work in its license notice.
+
+The combined work need only contain one copy of this License, and multiple identical Invariant Sections may be replaced with a single copy. If there are multiple Invariant Sections with the same name but different contents, make the title of each such section unique by adding at the end of it, in parentheses, the name of the original author or publisher of that section if known, or else a unique number. Make the same adjustment to the section titles in the list of Invariant Sections in the license notice of the combined work.
+
+In the combination, you must combine any sections entitled &quot;History&quot; in the various original documents, forming one section entitled &quot;History&quot;; likewise combine any sections entitled &quot;Acknowledgements&quot;, and any sections entitled &quot;Dedications&quot;. You must delete all sections entitled &quot;Endorsements.&quot;
+
+== 6. COLLECTIONS OF DOCUMENTS ==
+
+You may make a collection consisting of the Document and other documents released under this License, and replace the individual copies of this License in the various documents with a single copy that is included in the collection, provided that you follow the rules of this License for verbatim copying of each of the documents in all other respects.
+
+You may extract a single document from such a collection, and distribute it individually under this License, provided you insert a copy of this License into the extracted document, and follow this License in all other respects regarding verbatim copying of that document.
+
+== 7. AGGREGATION WITH INDEPENDENT WORKS ==
+
+A compilation of the Document or its derivatives with other separate and independent documents or works, in or on a volume of a storage or distribution medium, does not as a whole count as a Modified Version of the Document, provided no compilation copyright is claimed for the compilation. Such a compilation is called an &quot;aggregate&quot;, and this License does not apply to the other self-contained works thus compiled with the Document, on account of their being thus compiled, if they are not themselves derivative works of the Document.
+
+If the Cover Text requirement of section 3 is applicable to these copies of the Document, then if the Document is less than one quarter of the entire aggregate, the Document's Cover Texts may be placed on covers that surround only the Document within the aggregate. Otherwise they must appear on covers around the whole aggregate.
+
+== 8. TRANSLATION ==
+
+Translation is considered a kind of modification, so you may distribute translations of the Document under the terms of section 4. Replacing Invariant Sections with translations requires special permission from their copyright holders, but you may include translations of some or all Invariant Sections in addition to the original versions of these Invariant Sections. You may include a translation of this License provided that you also include the original English version of this License. In case of a disagreement between the translation and the original English version of this License, the original English version will prevail.
+
+== 9. TERMINATION ==
+
+You may not copy, modify, sublicense, or distribute the Document except as expressly provided for under this License. Any other attempt to copy, modify, sublicense or distribute the Document is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance.
+
+== 10. FUTURE REVISIONS OF THIS LICENSE ==
+
+The Free Software Foundation may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See http://www.gnu.org/copyleft/.
+
+Each version of the License is given a distinguishing version number. If the Document specifies that a particular numbered version of this License &quot;or any later version&quot; applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation.
+
+[[Category:Wiktionary|Text of the GNU Free Documentation License]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Wiktionary:What Wiktionary is not</title>
+    <id>12</id>
+    <revision>
+      <id>16033388</id>
+      <timestamp>2012-01-16T16:41:20Z</timestamp>
+      <contributor>
+        <username>CodeCat</username>
+        <id>21371</id>
+      </contributor>
+      <minor />
+      <comment>/* Wiktionary is not Wikipedia */</comment>
+      <text xml:space="preserve">{{shortcut|WT:WWIN|WT:WIN|WT:NOT}}
+Wiktionary is an online [[dictionary]] and, as a means to that end, also an [[w:online community|online community]]. Therefore, there are certain things that Wiktionary is ''not''.
+
+== What Wiktionary is not ==
+
+# Wiktionary is '''not an [[encyclopedia]], a genealogy database, or an atlas'''; that is, it is not an in-depth collection of factual information, or of data about places and people. Encyclopedic information should be placed in our sister project, [[w:Main page|Wikipedia]]. Wiktionary entries are about words. A Wiktionary entry should focus on matters of language and wordsmithing: spelling, pronunciation, etymology, translation, concept, usage, quotations{{,}} and links to related words. 
+# Wiktionary is '''not an [[arbiter]] of what is good English'''; correct English, acceptable English, suitable English, or even grammatical. Wiktionary [[describes]] usage, it does not [[prescribe]] nor [[proscribe]] it, and adheres only to its [[WT:CFI|criteria for inclusion]], which state that any term or meaning that can be shown to be in sufficiently widespread use may be included. By including or not including a certain term, it by no means accepts or attempts to promote a certain point of view, but is simply documenting, explaining what '''is in use''' in English or any other language.
+# Wiktionary is '''not a [[crystal ball]]'''. Wiktionary does not try to predict which new words will actually achieve use. It usually depends on verifiable proof usage over a year.
+# Wiktionary is '''[[m:Wiki is not paper|not paper]]'''. Thus, Wiktionary effectively has no size limits, can include links, can be more timely, etc. It also means that the style and length of writing appropriate for paper may not be appropriate here. There is less need to exclude arguable entries. If enough people support a well formed entry, then there should be no need to call or VOTE for its deletion.
+# Wiktionary is '''not a soapbox, chatroom{{,}} or discussion forum'''. However, there are [[Wiktionary:Discussion rooms|discussion rooms]] to discuss Wiktionary-related topics. 
+# Wiktionary is '''neither a [[w:Mirror (computing)|mirror]] nor a repository of links, images{{,}} or media files'''. Any content added to Wiktionary may be subject to merciless editing or deletion. 
+# Wiktionary is '''not a free wiki host or webspace provider'''. You may not host your own website at Wiktionary. If you are interested in using the [[w:wiki|wiki]] technology for a collaborative effort on anything other than writing a dictionary of all words in all languages, even if it is just a single page, there are many sites that provide wiki hosting. You can even install wiki software on your server.
+# Wiktionary is '''not a battlefield'''. Every user is expected to interact with others [[Wiktionary:Civility|civilly]], calmly and in a spirit of cooperation. Do not [[Wiktionary:No personal attacks|insult]], harass or intimidate those with whom you have a disagreement. Rather, approach the matter in an intelligent manner, and engage in polite discussion. Do not create or edit entries just to prove a point. Do not make legal or other threats against Wiktionary, Wiktionarians{{,}} or the Wikimedia Foundation. Threats are not tolerated and may result in a [[WT:BLOCK|ban]].
+# Wiktionary is '''not [[w:Censorship|censored]] for the ‘protection of minors’''' (nor is it [[w:MPAA film rating system|content-rated]]). Anyone can edit an entry and the results are displayed instantaneously; thus, we cannot guarantee that a child will not see or read something objectionable.  In addition, Wiktionary has no organized system for the removal of material that might be thought likely to harm minors. However, entries can be, and are, censored by consensus.
+# Wiktionary is '''not [[monolingual]]'''. Wiktionary is a dictionary  written in one language and covering all words in all languages, just as Wikipedia is an encyclopedia written in one language of all topics from all language-areas. Each Wiktionary seeks to define all words from all languages in its own language, so that readers will be able to find definitions of all words in all languages in their own language. This Wiktionary is written in English, so it is in a way an English dictionary, an English-to-anything and an anything-to-English dictionary all in one. Although one could look up {{term|être|lang=fr}} at fr.wiktionary ([[:fr:être]]), its definition will be in French. So if that person doesn’t speak any French, they still wouldn’t know what ''être'' meant, and it wouldn’t be of any help to them.
+
+== Wiktionary is not Wikipedia ==
+{{shortcut|WT:WINW}}
+
+Although Wiktionary and Wikipedia are sister projects, '''Wiktionary is not Wikipedia'''. Some of our policies are similar to some of Wikipedia's policies; others are quite different. The way we do things here is similar in some respects to the way things are done at Wikipedia; in other respects, it's very different.
+
+; Differences in content
+:* Unlike Wikipedia, Wiktionary does not have a &quot;notability&quot; criterion; rather, we have an &quot;attestation&quot; criterion, and (for multi-word terms) an &quot;idiomaticity&quot; requirement. There are some similarities here — [[Wikipedia:Wikipedia is not for things made up one day|neither Wiktionary nor Wikipedia is for &quot;things made up one day&quot;]] — but also some differences. Our &quot;attestation&quot; requirement is much less subjective than Wikipedia's &quot;notability&quot; requirement; and we include all terms in all languages, including very obscure or rare terms, provided they meet [[Wiktionary:Criteria for inclusion|our criteria for inclusion (CFI)]].
+:* Wiktionary is a ''secondary source'' for its subject matter (words and phrases) whereas Wikipedia is a ''tertiary source'' for its subject matter (topics). This means that while Wikipedia documents what other people say about topics, Wiktionary documents words and phrases itself without relying on the statements of other people. As a consequence, the requirements of verifiability are very different. Verification on Wikipedia asks &quot;can we find a credible source that says it is the case?&quot; while on Wiktionary we ask &quot;can we find real-life examples where it is the case?&quot;. This also means that whereas Wikipedia discourages original research and relies on the research of others, Wiktionary users themselves actively research terms and their meanings.
+
+; Differences in community
+:* Wiktionary has a different [[WT:BLOCK|blocking policy]] than Wikipedia, and administrators don't usually issue warnings unless edits are clearly made in good faith.
+:* Talk pages of individual pages are not often used. Instead, discussion is usually centralised in [[WT:BP|Beer Parlour]], [[WT:TR|Tea room]] and other discussion rooms.
+:* Unlike Wikipedia, which encourages users to be creative with user boxes on their personal pages, Wiktionary allows only userboxes that are relevant to your work on Wiktionary itself. This includes most importantly [[WT:Babel|language userboxes]], which display the languages that you know.
+
+; Differences in organization
+:* Unlike Wikipedia, Wiktionary's page names are case sensitive. [[Hand]] and [[hand]] are different pages. When several pages exist that differ only in their capitalisation, the template {{temp|also}} is placed at the very beginning of the page to redirect between them.
+:* There are no disambiguation pages on Wiktionary, and we do not create redirects for alternative forms, spellings or inflected forms of words. Instead, a small stub entry is created with a template that links back to the main form. Many such stub entries are created automatically using various [[WT:BOT|bots]].
+
+; Differences in page format and wikitext
+:* Wiktionary has a very rigid page format, detailed at [[WT:ELE|Entry Layout Explained]].
+:* Wiktionary makes heavy use of templates for all kinds of things, and each language often has its own set of templates. Learning to use the templates of the language you are working on is very important, and can be found at [[:Category:Templates by language]]. Categories, formatting and linking also often use templates for consistent formatting.
+:* Wiktionary uses [[WT:LANGCODE|language codes]] extensively for any language-specific purposes involving templates. For example, many templates use &lt;tt&gt;en&lt;/tt&gt; to refer to the English language, or &lt;tt&gt;cmn&lt;/tt&gt; to refer to Mandarin Chinese. Knowing the code of the language you are working on is very important, and necessary for almost any kind of editing on Wiktionary.
+:* On Wiktionary, categories are often added to pages by the templates used on that page, so there is no need to put them directly on the page. In particular, [[Wiktionary:Headword-line templates|headword-line templates]] and context templates are most commonly used to add entries to the appropriate categories.
+
+==See also==
+* {{projectlink|pedia|Wikipedia:Wikipedia is not a dictionary}}
+
+[[cs:Wikislovník:Co Wikislovník není]]
+[[de:Hilfe:Was das Wikiwörterbuch nicht ist]]
+[[es:Wikcionario:Lo que Wikcionario no es]]
+&lt;!--[[en:Wiktionary:What Wiktionary is not]]--&gt;
+[[ja:Wiktionary:ウィクショナリーは何でないか]]
+[[no:Wiktionary:Hva Wiktionary ikke er]]
+[[pt:Wikcionário:O que o wikcionário não é]]
+[[tr:Vikisözlük:Vikisözlük ne değildir?]]
+[[vi:Wiktionary:Những gì không phải là Wiktionary]]
+[[fa:ویکی‌واژه:ویکی‌واژه چه چیزی نیست]]
+
+[[Category:Wiktionary|What Wiktionary is not]]
+[[Category:Wiktionary:Help|What Wiktionary is not]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>dictionary</title>
+    <id>16</id>
+    <revision>
+      <id>16149517</id>
+      <timestamp>2012-01-22T16:20:00Z</timestamp>
+      <contributor>
+        <username>Mglovesfun</username>
+        <id>27458</id>
+      </contributor>
+      <minor />
+      <comment>/* Translations */</comment>
+      <text xml:space="preserve">==English==
+
+{{wikipedia|dab=Dictionary (disambiguation)|Dictionary}}
+[[Image:Latin dictionary.jpg|thumb|250px|A multi-volume Latin dictionary in the [[w:University Library of Graz|University Library of Graz]].]]
+
+===Etymology===
+{{etyl|ML.|en}} {{term|dictionarium|lang=la}} from {{etyl|la|en}} {{term|dictionarius|lang=la}} from {{term|dictio||speaking|lang=la}} from {{term|dictus|lang=la}}, perfect past participle of {{term|dico|dīcō|speak|lang=la}} + {{term|-arium||room, place|lang=la}}.
+
+===Pronunciation===
+* {{a|UK}} {{IPA|/ˈdɪkʃən(ə)ɹi/}}, {{SAMPA|/&quot;dIkS@n(@)ri/}}
+* {{a|North America}} {{enPR|dĭk'shə-nĕr-ē}}, {{IPA|/ˈdɪkʃənɛɹi/}}, {{SAMPA|/&quot;dIkS@nEri/}}
+* {{audio|en-us-dictionary.ogg|Audio (US)}}
+* {{audio|en-uk-dictionary.ogg|Audio (UK)}}
+
+===Noun===
+{{en-noun|dictionaries}}
+
+# A [[reference work]] with a list of [[word]]s from one or more languages, normally ordered [[alphabetical]]ly and explaining each word's meaning and sometimes containing information on its etymology, usage, translations{{,}} and other data.
+# {{computing}} An [[associative array]], a data structure where each value is referenced by a particular key, analogous to words and definitions in a physical dictionary.
+
+* {{seeCites}}
+
+====Synonyms====
+* {{l|en|wordbook}}
+
+====Derived terms====
+* [[encyclopedic dictionary]]
+* [[explanatory dictionary]]
+* [[fictionary]]
+* [[pedagogical dictionary]]
+* [[Pictionary]]
+* [[subdictionary]]
+* [[translating dictionary]]
+* [[translationary]]
+
+====See also====
+* [[lexicon]]
+* [[encyclopedia]]
+* [[vocabulary]]
+
+====Translations====
+{{trans-top|publication that explains the meanings of an ordered list of words}}
+* [[Adyghe]]: {{tø|ady|гущыӀалъ|tr=gwš'yʕaɬ|sc=Cyrl}}
+* [[Afrikaans]]: {{t+|af|woordeboek|xs=Afrikaans}}
+* Albanian: {{t+|sq|fjalor|xs=Albanian}}
+* [[American Sign Language]]: [[D@NearPalm-PalmDown-OpenB@CenterChesthigh-PalmUp CirclesMidlineContact]]
+* [[Amharic]]: {{tø|am|መዝገበ ቃላት|tr=mäzgäbä qalat|sc=Ethi}}
+* [[Amuzgo]]: [[tzoⁿ 'tzítyui' jñ'o]]
+* Arabic: {{t+|ar|قاموس|m|tr=qamuus}}, {{t+|ar|معجم|m|tr=mú3jam}}
+*: [[Egyptian Arabic]]: {{tø|arz|قاموس|m|tr= qamwus|sc=Arab}}
+* Armenian: {{t+|hy|բառարան|tr=baṙaran}}
+*: Old Armenian: {{tø|xcl|բառգիրք|tr=baṙgirkʿ|sc=Armn|xs=Old Armenian}}
+* [[Asturian]]: {{t-|ast|diccionariu|xs=Asturian}}
+* [[Aymara]]: {{t-|ay|aru pirwa|xs=Aymara}}
+* [[Azeri]]: {{t+|az|lüğət|xs=Azeri}}
+* [[Bashkir]]: {{tø|ba|ҙүҙлек|tr=dhüdhlek|sc=Cyrl|xs=Bashkir}}
+* [[Basque]]: {{t-|eu|hiztegi|xs=Basque}}
+* Belarusian: {{t-|be|слоўнік|m|tr=slóŭnik|sc=Cyrl}} (łacinka: {{t|be|słoŭnik|m|sc=Latn}})
+* Bengali: {{t+|bn|অভিধান|tr=ôbhidhan|sc=Beng|xs=Bengali}}, {{t-|bn|ডিকশনারী|tr=ḍikshônari|sc=Beng|xs=Bengali}}, {{t-|bn|ডিকশনারি|tr=ḍikshônari|sc=Beng|xs=Bengali}}
+* [[Binisayâ]]: [[pagpurulungan]]
+* Bosnian: {{t-|bs|rječnik|m}}
+* [[Breton]]: {{t+|br|geriadur|m|xs=Breton}}
+* Bulgarian: {{t+|bg|речник|m|tr=réčnik}}
+* Burmese: {{t-|my|အဘိဓာန်|tr=ăbeitdan|sc=Mymr|xs=Burmese}}
+* [[Catalan]]: {{t+|ca|diccionari|m}}
+* Chinese:
+*: [[Dungan]]: {{tø|dng|хуадян|tr=huadyan|sc=Cyrl}}
+*: Mandarin: {{t-|cmn|字典|tr=zìdiǎn|sc=Hani}} {{qualifier|character dictionary}}; {{t-|cmn|詞典|sc=Hani}}, {{t-|cmn|词典|tr=cídiǎn|sc=Hani}}
+*: Wu (Suzhou dialect): [[zïtip]]
+* [[Chuvash]]: {{tø|cv|словарь|sc=Cyrl}},  {{tø|cv|сăмахсен кĕнеки|tr=sămaxsan kĕneki|sc=Cyrl}}
+* [[Cornish]]: {{t|kw|gerlyver|m}}
+* [[Crimean Tatar]]: {{tø|crh|luğat}}
+* Croatian: {{t+|hr|rječnik|m|alt=rjȇčnīk}}
+* Czech: {{t+|cs|slovník|m}}
+* Danish: {{t+|da|ordbog|c}}, {{t|da|ordbøger|p}}
+* Dutch: {{t+|nl|woordenboek|n}}
+* [[Erzya]]: [[валкс]]
+* Esperanto: {{t+|eo|vortaro|xs=Esperanto}}
+* Estonian: {{t+|et|sõnaraamat}}, {{t-|et|sõnastik}}
+* Faroese: {{t+|fo|orðabók|f|xs=Faroese}}
+* Finnish: {{t+|fi|sanakirja}}
+* French: {{t+|fr|dictionnaire|m}}
+* [[Fula]]: [[saggitorde]]
+* [[Galician]]: {{t+|gl|dicionario|m|xs=Galician}}
+* Georgian: {{t-|ka|ლექსიკონი|tr=lek’sikoni|sc=Geor|xs=Georgian}}
+* German: {{t+|de|Wörterbuch|n}}
+* Greek: {{t+|el|λεξικό|n|tr=lexikó}}
+* [[Haitian Creole]]: {{tø|ht|diksyonè}}
+* [[Hausa]]: {{t|ha|ƙamus|m}}
+* Hawaiian: [[puke wehewehe ‘ōlelo]]
+* Hebrew: {{t+|he|מילון|m|tr=milón}}
+* [[Hiligaynon]]: {{tø|hil|diksonaryo|xs=Hiligaynon}}, {{tø|hil|kapulungan|xs=Hiligaynon}}
+* Hindi: {{t+|hi|शब्दकोश|m|tr=śabdkoś|xs=Hindi}}, {{t-|hi|कोश|m|tr=koś|xs=Hindi}}, {{t-|hi|डिक्शनरी|tr=ḍikśanrī|xs=Hindi}}
+* [[Hopi]]: [[lavaytutuveni]]
+* Hungarian: {{t+|hu|szótár}}
+* Icelandic: {{t+|is|orðabók|f}}
+* [[Ido]]: {{t+|io|vortaro|xs=Ido}}
+* [[Igbo]]: [[nkowaokwu]]
+* Indonesian: {{t+|id|kamus|xs=Indonesian}}
+* [[Interlingua]]: [[dictionario]]
+* [[Inuktitut]]: {{t-|iu|ᕿᒥᕐᕈᐊᑦ ᐅᓐᓂᖅᑐᖅ ᒥᑦᓯ ᑐᑭᐊ|tr=qimirruat unniqtuq mitsi tukia|sc=Cans|xs=Inuktitut}}
+* Irish: {{t+|ga|foclóir|m|xs=Irish}}
+* Italian: {{t+|it|dizionario|m}}
+* Japanese: {{t+|ja|辞書|tr=[[じしょ]], jisho}}, {{t-|ja|字書|tr=[[じしょ]], jisho}}, {{t+|ja|辞典|tr=[[じてん]], jiten}}, {{t-|ja|字典|tr=[[じてん]], jiten}}, {{t-|ja|字引|tr=[[じびき]], jibiki}}
+* [[Javanese]]: {{t+|jv|bausastra|xs=Javanese}}
+* [[Kannada]]: {{t|kn|ನಿಘಂಟು|tr=nighangṭu|sc=Knda}}, {{t|kn|ಅರ್ಥಕೋಶ|tr=arthakōsh|sc=Knda}}
+* [[Kapampangan]]: [[talabaldugan]]
+* [[Karachay-Balkar]]: {{tø|krc|сёзлюк}}
+* [[Kashubian]]: {{t-|csb|słowôrz|xs=Kashubian}}
+* Kazakh: {{t+|kk|сөздік|tr=sözdik|sc=Cyrl|xs=Kazakh}}
+* [[Khmer]]: {{t+|km|វចនានុក្រម|tr=wachanānūgrom|sc=Khmr}}
+* [[Kikuyu]]: {{tø|ki|kamusi}}
+* Korean: {{t+|ko|사전|tr=sajeon|sc=Hang}} ({{t+|ko|辭典|sc=Hani}}), {{t-|ko|자서|tr=jaseo|sc=Hang}} ({{t-|ko|字書|sc=Hani}})
+* Kurdish: {{t+|ku|ferheng|f}}, {{t+|ku|peyvname|f}}, {{t+|ku|bêjename|f}}, {{t+|ku|qamûs|f}}, {{t+|ku|فه‌رهه‌نگ|sc=ku-Arab}}
+* [[Kyrgyz]]: {{t|ky|сөздүк|tr=sözdük|sc=Cyrl}}
+* [[Lao]]: {{t|lo|ວັດຈະນານຸກົມ|tr=vatchanānukom|sc=Laoo}} &lt;!--  {{t|lo|ປະທານຸກົມ|tr=pá tʰáː nū kom|sc=Laoo}}) --&gt;
+* Latin: {{t-|la|dictionarium|n}}, {{t|la|glossarium|n}}, {{t|la|index verborum}}
+* Latvian: {{t+|lv|vārdnīca|f|xs=Latvian}}
+* [[Ligurian]]: {{tø|lij|dizionario}}
+{{trans-mid}}
+* [[Limburgish]]: {{t-|li|diksjenaer|xs=Limburgish}}, {{t-|li|waordebook|xs=Limburgish}}
+* Lithuanian: {{t+|lt|žodynas|m|xs=Lithuanian}}
+* [[Low Saxon]]: {{t|nds|Wöörbook|n}}
+* [[Luhya]]: {{tø|luy|ekamusi}}
+* [[Luxembourgish]]: {{t|lb|Dictionnaire|m}}, {{t|lb|Wierderbuch|n}}
+* [[Macedonian]]: {{t-|mk|речник|m|tr=réčnik}}
+* [[Malagasy]]: {{t-|mg|rakibolana|xs=Malagasy}}
+* Malay: {{t+|ms|kamus|xs=Malay}}
+* [[Malayalam]]: {{t|ml|നിഘണ്ടു|tr=nighaṇṭu|sc=Mlym}}
+* Maltese: {{t|mt|dizzjunarju|m}}
+* [[Manchu]]: (buleku bithe)
+* [[Manx]]: {{t|gv|fockleyr|m}}
+* Maori: [[pukapuka taki kupu]]
+* [[Marathi]]: {{t|mr|शब्दकोष|m|tr=śabdkoś|sc=Deva}}, {{t|mr|विश्वकोष|m|tr=viśvakoṣ|sc=Deva}}
+* [[Meru]]: {{tø|mer|kamusi}}
+* Mongolian: {{t-|mn|толь бичиг|tr=tol’ bičig|sc=Cyrl|xs=Mongolian}}
+* [[Nahuatl]]: {{t-|nah|tlahtōltecpantiliztli|xs=Nahuatl}}
+* [[Narom]]: {{tø|nrm|dictionnaithe}}
+* [[Neapolitan]]: {{tø|nap|dezziunario}}
+* Nepali: {{t|ne|शब्दकोश|tr=śabdkoś|sc=Deva}}
+* [[Northern Sami]]: [[sátnegirji]]
+* Norwegian:
+*: Bokmål: {{t+|no|ordbok|m|f}}
+*: Nynorsk: {{t-|nn|ordbok|f|xs=Norwegian Nynorsk}}
+* [[Novial]]: [[lexike]]
+* [[Occitan]]: {{t+|oc|diccionari|xs=Occitan}}
+* [[Ossetian]]:
+*: Digor: {{tø|os|дзурдуат|tr=dzurduat|sc=Cyrl|xs=Ossetian}}
+*: Iron: {{tø|os|дзырдуат|tr=dzyrduat|sc=Cyrl|xs=Ossetian}}
+* [[Papiamentu]]: {{tø|pap|dictionario|xs=Papiamentu}}
+* Persian: {{t-|fa|لغت‌نامه|tr=loğat-nâme}}, {{t+|fa|فرهنگ|tr=farhang}}, {{t-|fa|لغت|tr=loğat}}
+* [[Plautdietsch]]: {{tø|pdt|Weadbüak}}
+* Polish: {{t+|pl|słownik|m}}
+* Portuguese: {{t+|pt|dicionário|m}}
+* [[Punjabi]]: {{t|pa|ਸ਼ਬਦਕੋਸ਼|tr=śabdkoś|sc=Guru}}, {{t|pa|ਡਿਕਸ਼ਨਰੀ|tr=ḍikśanrī|sc=Guru}}
+* [[Quechua]]: {{t-|qu|simi qullqa|xs=Quechua}}
+* Romanian: {{t+|ro|dicționar|n}}
+* [[Romansch]]: {{t-|rm|pledari|m|xs=Romansch}}, {{tø|rm|dicziunari|m}}, {{tø|rm|vocabulari|m}}, {{tø|rm|glossari|m}}
+* Russian: {{t+|ru|словарь|m|tr=slovár’}}
+* Sanskrit: {{t-|sa|शब्दकोश|m|tr=śábda-kośa|xs=Sanskrit}}, {{t-|sa|निघण्टु|m|tr=nighaṇṭu|xs=Sanskrit}}, {{t-|sa|अभिधान|n|tr=abhi-dhāna|xs=Sanskrit}}
+* [[Sardinian]]: [[dizionariu]] {{m}}
+* [[Scots]]: {{tø|sco|dictionar}}
+* [[Scottish Gaelic]]: {{t|gd|faclair|m}}
+* Serbo-Croatian:
+*: Cyrillic: {{t-|sh|речник|m|sc=Cyrl}}
+*: Roman: {{t-|sh|rečnik|m}}
+* [[Sicilian]]: {{t+|scn|dizziunariu|m|xs=Sicilian}}, {{t+|scn|vocabbulariu|m|xs=Sicilian}}
+* [[Sinhalese]]: {{t-|si|ශබ්ද කෝෂය|tr=shabda koshaya|sc=Sinh|xs=Sinhalese}}, {{t|si|ශබ්දකෝෂය|tr=shabdakoshaya|sc=Sinh}}
+* Slovak: {{t-|sk|slovník|m}}
+* Slovene: {{t+|sl|slovar|m}}
+* Somali: [[qaamuus]], [[abwan-ka]]
+* [[Sotho]]: {{t+|st|bukantswe|xs=Sotho}}
+* Spanish: {{t+|es|diccionario|m}}
+* Swahili: {{t+|sw|kamusi|xs=Swahili}} (''noun 5'')
+* Swedish: {{t+|sv|ordbok|c}}, {{t+|sv|lexikon|n}}
+* [[Tagalog]]: {{t+|tl|diksyunaryo|xs=Tagalog}}, {{t+|tl|talahuluganan|xs=Tagalog}}, {{t+|tl|talasalitaan|xs=Tagalog}}, {{t|tl|talatinigan}}
+* [[Tajik]]: {{t-|tg|луғат|tr=luġat|sc=Cyrl|xs=Tajik}},  {{t+|tg|фарҳанг|tr=farhang|sc=Cyrl|xs=Tajik}},  {{t-|tg|қомус|tr=qomus|sc=Cyrl|xs=Tajik}}
+* [[Tamil]]: {{t+|ta|அகரமுதலி|tr=akaramutali|xs=Tamil}}
+* [[Tatar]]: {{t-|tt|süzlek|xs=Tatar}},  {{t+|tt|сүзлек|tr=süzlek|sc=Cyrl|xs=Tatar}}
+* [[Telugu]]: {{t+|te|నిఘంటువు|tr=nighamtuvu}}, {{t+|te|పద కోశము|tr=pada kosamu}}
+* Thai: {{t+|th|พจนานุกรม|tr=pótjànaanúgrom}}
+* Tibetan: [[ཚིག་མཛོད་]] (tshig mdzod)
+* Turkish: {{t+|tr|sözlük}}, {{t|tr|lügat}} {{qualifier|obsolete}}
+* Ukrainian: {{t+|uk|словник|m|tr=slovnýk|xs=Ukrainian}}
+* [[Upper Sorbian]]: {{tø|hsb|słownik|m|xs=Upper Sorbian}}
+* Urdu: {{t+|ur|لغت|f|tr=luġat|xs=Urdu}}, {{t-|ur|ڈکشنری|tr=ḍikśanrī|xs=Urdu}}, {{t-|ur|فرہنگ|tr=farhang|xs=Urdu}}, {{t-|ur|شبدکوش|m|tr=śabdkoś|sc=ur-Arab}}
+* [[Uyghur]]: {{t+|ug|لۇغەت|tr=lughet|sc=ug-Arab|xs=Uyghur}}
+* Uzbek: {{t-|uz|луғат|tr=lughat|sc=Cyrl|xs=Uzbek}}, {{t-|uz|lug'at|xs=Uzbek}}
+* [[Venda]]: {{tø|ve|ṱhalusamaipfi|xs=Venda}}
+* Vietnamese: {{t+|vi|tự điển|xs=Vietnamese}} ({{t+|vi|字典|sc=Hani|xs=Vietnamese}})
+* [[Volapük]]: {{t+|vo|vödabuk}}, {{qualifier|older term, cf. de: Wörterbuch}} {{t-|vo|vödasbuk}}
+* [[Võro]]: {{tø|vro|sõnaraamat}}
+* [[Walloon]]: {{t-|wa|motî|xs=Walloon}}
+* Welsh: {{t+|cy|geiriadur|m|xs=Welsh}}
+* [[West Frisian]]: {{t+|fy|wurdboek|n|xs=West Frisian}}
+* [[Xhosa]]: [[idikshinari]] ''noun 5''
+* Yiddish: {{t+|yi|ווערטערבוך|tr=verterbukh|xs=Yiddish|n|m}}, {{t-|yi|ווערטעביכער|p|tr=verterbikher, werterbicher|xs=Yiddish}}
+* [[Zazaki]]: {{tø|zza|vatebend|m}}
+* [[Zulu]]: [[isichazimazwi]] ''noun 4''
+{{trans-bottom}}
+
+{{trans-top|an associative array}}
+* French: {{t-|fr|tableau associatif|m}},  {{t+|fr|dictionnaire|m}},  {{t-|fr|table d'association|f}}
+* German: {{t|de|assoziatives Datenfeld|n}}
+* Japanese: {{t+|ja|辞書|tr=[[じしょ]], jisho}}
+* Latin: {{t|la|glossarium|n}}, {{t|la|index verborum}}
+{{trans-mid}}
+* Polish: {{t+|pl|słownik|m}}
+* Portuguese: {{t+|pt|dicionário|m}},  {{t-|pt|array associativo|m}}
+* Swahili: {{t+|sw|kamusi|xs=Swahili}}
+{{trans-bottom}}
+
+===Anagrams===
+* [[indicatory#English|indicatory]]
+
+[[Category:Pronunciations wildly different across the pond]]
+[[Category:en:Reference works]]
+
+[[ar:dictionary]]
+[[az:dictionary]]
+[[zh-min-nan:dictionary]]
+[[bg:dictionary]]
+[[bs:dictionary]]
+[[br:dictionary]]
+[[ca:dictionary]]
+[[cs:dictionary]]
+[[cy:dictionary]]
+[[da:dictionary]]
+[[de:dictionary]]
+[[et:dictionary]]
+[[el:dictionary]]
+[[es:dictionary]]
+[[eo:dictionary]]
+[[fa:dictionary]]
+[[fr:dictionary]]
+[[fy:dictionary]]
+[[gl:dictionary]]
+[[ko:dictionary]]
+[[hy:dictionary]]
+[[hi:dictionary]]
+[[io:dictionary]]
+[[id:dictionary]]
+[[is:dictionary]]
+[[it:dictionary]]
+[[kn:dictionary]]
+[[ka:dictionary]]
+[[kk:dictionary]]
+[[sw:dictionary]]
+[[ku:dictionary]]
+[[lo:dictionary]]
+[[lv:dictionary]]
+[[lt:dictionary]]
+[[li:dictionary]]
+[[hu:dictionary]]
+[[mg:dictionary]]
+[[ml:dictionary]]
+[[my:dictionary]]
+[[nl:dictionary]]
+[[ja:dictionary]]
+[[no:dictionary]]
+[[oc:dictionary]]
+[[km:dictionary]]
+[[tpi:dictionary]]
+[[pl:dictionary]]
+[[pt:dictionary]]
+[[ro:dictionary]]
+[[ru:dictionary]]
+[[sq:dictionary]]
+[[simple:dictionary]]
+[[sl:dictionary]]
+[[sr:dictionary]]
+[[su:dictionary]]
+[[fi:dictionary]]
+[[sv:dictionary]]
+[[tl:dictionary]]
+[[ta:dictionary]]
+[[te:dictionary]]
+[[tg:dictionary]]
+[[tr:dictionary]]
+[[uk:dictionary]]
+[[ur:dictionary]]
+[[vi:dictionary]]
+[[zh:dictionary]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>free</title>
+    <id>19</id>
+    <revision>
+      <id>16141346</id>
+      <timestamp>2012-01-22T13:01:19Z</timestamp>
+      <contributor>
+        <username>KassadBot</username>
+        <id>230894</id>
+      </contributor>
+      <minor />
+      <comment>trans unlink Afrikaans, trans unlink Amharic, trans unlink Azeri, trans unlink Bambara, trans unlink Catalan, trans unlink Ghotuo, trans unlink Gothic, trans unlink Haitian Creole, trans unlink Ido, trans unlink Interlingua, trans unlink Limburgis...</comment>
+      <text xml:space="preserve">{{also|-free}}
+==English==
+{{wikipedia|dab=free}}
+
+===Etymology===
+{{etyl|enm}} {{term|fre||lang=enm}}, from {{etyl|ang}} {{term|freo|frēo|lang=ang}}.
+
+===Pronunciation===
+* {{IPA|/fɹiː/}}, {{SAMPA|/fri:/}}
+* {{audio|en-us-free.ogg|Audio (US)}}
+* {{audio|En-uk-free.ogg|Audio (UK)}}
+* {{rhymes|iː}}
+
+[[File:Free Beer.jpg|thumb|A sign advertising '''free''' beer (obtainable without payment).]]
+[[File:Buy one, get one free ^ - geograph.org.uk - 153952.jpg|thumb|A &quot;buy one get one '''free'''&quot; sign at a flower stand (obtainable without additional payment).]]
+[[File:Berkeley Farms Fat-Free Half &amp; Half.jpg|thumb|This food product is labelled &quot;fat '''free'''&quot;, meaning it contains no fat.]]
+
+===Adjective===
+{{en-adj|freer|freest}}
+
+# Not [[imprisoned]] or [[enslaved]].
+#: ''a '''free''' man''
+# Obtainable without any [[payment]].
+#: ''The government provides '''free''' health care.''
+# {{by extension|chiefly|advertising slang}} Obtainable without additional payment, as a bonus given when paying for something else.
+#: ''Buy a TV to get a '''free''' DVD player!''
+# [[unconstrained|Unconstrained]].
+#: ''He was given '''free''' rein to do whatever he wanted'' &lt;!--&quot;rein&quot;, not &quot;reign&quot;--&gt;
+# {{mathematics}} Unconstrained by [[relator]]s.
+#: ''The '''free''' group on three generators''
+# {{mathematics|logic}} Unconstrained by [[quantifier]]s.
+#: z'' is the '''free''' variable in &quot;&lt;math&gt;\forall x\exists y:xy=z&lt;/math&gt;&quot;.''
+# Unobstructed, without [[blockage]]s.
+#: ''The drain was '''free'''.''
+# Not in use
+#: ''Go sit on this chair, it's '''free'''.''
+# Without [[obligation]]s.
+#: '''''free''' time''
+# {{software}} With very few [[limitations]] on distribution or improvement.
+#: ''OpenOffice is [[free software|'''free''' software]].''
+# Without; not containing (what is specified).
+#: ''We had a wholesome, filling meal, '''free''' of meat''
+# {{programming}} Of [[identifier]]s, not [[bound]].
+# {{botany|mycology}} Not [[attached]]; [[loose]].
+#: ''In this group of mushrooms, the gills are '''free'''.''
+#* {{RQ:Schuster Hepaticae V|7}}
+#*: Furthermore, the '''free''' anterior margin of the lobule is arched toward the lobe and is often involute{{...}}
+# {{of a|morpheme}} That can be used by itself, [[unattached]] to another [[morpheme]].
+
+====Synonyms====
+* {{sense|obtainable without payment}} [[free of charge]], [[gratis]]
+* {{sense|unconstrained}} [[unconstrained]], [[unfettered]], [[unhindered]]
+* {{sense|unobstructed}} [[clear]], [[unobstructed]]
+* {{sense|software: with very few limitations on distribution or improvement}} [[libre]]
+* {{sense|without}} [[without]]
+* {{sense|programming: not bound}} [[unbound]]
+
+====Antonyms====
+* {{sense|not imprisoned or enslaved}} [[bound]], [[enslaved]], [[imprisoned]]
+* {{sense|unconstrained}} [[constrained]], [[restricted]]
+* {{sense|logic: unconstrained by quantifiers}} [[bound]]
+* {{sense|unobstructed}} [[blocked]], [[obstructed]]
+* {{sense|of identifiers, not bound}} [[bound]]
+* {{sense|software: with very few limitations on distribution or improvement}} [[proprietary|proprietary software]]
+
+====Derived terms====
+{{rel-top3|Terms derived from ''free''}}
+* [[-free]]
+* [[free Abelian group]]&lt;!--UK spelling--&gt;, [[free abelian group]]&lt;!--US spelling--&gt;
+* [[free algebra]]
+* [[free as a bird]]
+* [[freeball]]
+* [[freebooter]]
+* [[free fall]]
+* [[free group]]
+* [[freelance]]
+{{rel-mid3}}
+* [[freeloader]]
+* [[Freemason]]
+* [[free module]]
+* [[free object]]
+* [[free of charge]]
+* [[free rein]]&lt;!--Note: this is the only correct spelling of this expression--&gt;
+* [[free ride]]
+* [[free rider]]
+* [[free semigroup]]
+{{rel-mid3}}
+* [[free spirit]]
+* [[free-thinker]]
+* [[free time]]
+* [[free variable]]
+* [[free vote]]
+* [[freeware]]
+* [[freewheel]]
+* [[free will]]
+* [[unfree]]
+{{rel-bottom}}
+
+====Related terms====
+* [[freedom]]&lt;!--from Old English--&gt;
+* [[friend]]
+
+====Translations====
+{{trans-top|not imprisoned}}
+* Afrikaans: {{t|af|vrye}}
+* Albanian: {{t|sq|lirë}} (i/e)
+* Amharic: [[ነፃ]]
+* Arabic: {{t+|ar|حر|m|tr=Hurr}}
+* Armenian: {{t-|hy|ազատ|tr=azat}}
+* Azeri: {{t|az|azad}}
+* Bambara: [[hɔrɔn]]
+* Bulgarian: {{t|bg|свободен|m|sc=Cyrl}}
+* Catalan: {{t|ca|lliure}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[自由]]的|[[自由]]的}} (zìyóu de)
+* Croatian: {{t-|hr|slobodan}}
+* Czech: {{t-|cs|svobodný|m}}, {{t+|cs|volný|m}}
+* Danish: {{t-|da|fri}}
+* Dutch: {{t+|nl|vrij}}, {{t+|nl|los}} &lt;!-- move inflection to &quot;[[vrij]]&quot;: [[losse]] --&gt;
+* Esperanto: {{t+|eo|libera|xs=Esperanto}}
+* Estonian: {{t|et|vaba}}, {{t|et|prii}}
+* Finnish: {{t+|fi|vapaa}}
+* French: {{t+|fr|libre|m|f}}
+* German: {{t+|de|frei}}, {{t-|de|ungebunden}}
+* Gothic: [[𐍆𐍂𐌴𐌹𐍃]] (freis)
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}
+* Haitian Creole: {{tø|ht|lib}}
+* Hebrew: {{t-|he|חופשי|tr=khofshí}}
+* Hindi: {{t-|hi|आज़ाद|tr=āzād|xs=Hindi}}
+* Hungarian: {{t+|hu|szabad}}
+* Icelandic: {{t|is|frjáls}}
+* Ido: {{t|io|libera}}
+* Indonesian: {{t-|id|bebas|xs=Indonesian}}
+* Interlingua: [[libere]]
+* Irish: {{t-|ga|saor|xs=Irish}}
+* Italian: {{t+|it|libero|m}}
+* Japanese: {{t-|ja|自由|tr=[[じゆう]], jiyū}}
+{{trans-mid}}
+* Korean: {{t+|ko|자유|tr=jayu|sc=Hang}}
+* Kurdish:
+*: Kurmanji: [[azad]], [[serbest]], [[rizgar]]
+*: Sorani: {{t|ku|ئازاد|tr=AzAd|sc=ku-Arab}}, {{t|ku|ڕزگار|tr=RizgAr|sc=ku-Arab}}
+* Latin: {{t+|la|liber|m|alt=līber}}
+* Latvian: {{t|lv|brīvs|m}}
+* Limburgish: [[vrie]]
+* Lithuanian: [[laisvas]] {{m}}, {{t|lt|laisva|f|xs=Lithuanian}}
+* Luxembourgish: {{t|lb|fräi}}
+* Malayalam: [[സ്വതന്ത്രം]] (svathanthram)
+* Norwegian: {{t+|no|fri}}
+* Novial: [[liberi]]
+* Occitan: {{t|oc|liure}}
+* Old English: {{t|ang|freo|alt=frēo}}, {{t|ang|freolic|alt=frēolic}}
+* Persian: {{t+|fa|آزاد|tr=āzād|xs=Persian}}, {{t|fa|رها|tr=rahā|xs=Persian}}
+* Polish: {{t+|pl|wolny}}
+* Portuguese: {{t+|pt|livre|m|f}}
+* Romanian: {{t-|ro|liber|m}}, {{t|ro|slobod}}
+* Russian: {{t+|ru|свободный|tr=svobódnyj}}, {{t+|ru|вольный|tr=vól’nyj}}
+* Scottish Gaelic: {{t-|gd|saor|xs=Scottish Gaelic}}
+* Serbian: {{t-|sr|slobodan|m}}
+* Sindhi: {{t|sd|آزاد|tr=āzād}}
+* Slovak: {{t-|sk|slobodný}}
+* Slovene: {{t+|sl|svoboden|m}}
+* Spanish: {{t+|es|libre}}
+* Swahili: {{t-|sw|huru|xs=Swahili}}
+* Swedish: {{t+|sv|fri}}
+* Telugu: {{t|te|విడుదల|tr=vidudala|sc=Telu}}
+* Turkish: {{t+|tr|özgür}}
+* Ukrainian: {{t+|uk|вільний|m|xs=Ukrainian}}
+* Urdu: {{t+|ur|آزاد|tr=āzād|xs=Urdu}}
+* West Frisian: {{t+|fy|frijlitten|xs=West Frisian}}, {{t-|fy|frij|xs=West Frisian}}
+{{trans-bottom}}
+
+{{trans-top|obtainable without payment}}
+* Afrikaans: {{t|af|verniet|xs=Afrikaans}}, {{t-|af|gratis|xs=Afrikaans}}
+* Albanian: {{t-|sq|falas|xs=Albanian}}
+* Amharic: [[ነፃ]]
+* Armenian: {{t|hy|անվճար|tr=anvtshar}}
+* Azeri: {{t|az|ödənişsiz}}, {{t|az|pulsuz}}
+* Bambara: [[gansan]]
+* Burmese: {{t|my|အခမဲ့|tr=əkʰa̰ mḛ|sc=Mymr}}
+* Catalan: {{t|ca|de franc}}, {{t|ca|gratuït}}, {{t-|ca|gratis}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[免]][[費]]的|[[免]][[费]]的}} (miǎnfèi de)
+* Croatian: {{t+|hr|besplatan}}
+* Czech: {{t-|cs|bezplatný|m}}, {{t+|cs|volný|m}}
+* Danish: {{t-|da|gratis}}, {{t-|da|fri}}
+* Dutch: {{t+|nl|gratis}}, {{t-|nl|kosteloos}}, {{t-|nl|kosteloze}}, {{t|nl|verniet}} (Flanders)
+* Esperanto: {{t-|eo|senkosta|xs=Esperanto}}, {{t-|eo|senpaga|xs=Esperanto}}
+* Estonian: {{t|et|tasuta}}
+* Finnish: {{t+|fi|ilmainen}}, {{t+|fi|maksuton}}
+* French: {{t+|fr|gratuit}}, {{t+|fr|gratis}}
+* German: {{t+|de|umsonst}}, {{t+|de|gratis}}, {{t+|de|kostenlos}}
+* Greek: {{t+|el|δωρεάν|tr=doreán}} &lt;!--is this ancient Greek? Yes but it's a perfectly good MGr word too.--&gt;
+* Hebrew: {{t-|he|חינם|tr=khinám}}, {{t-|he|חופשי|tr=khofshí}}
+* Hungarian: {{t+|hu|ingyenes}}
+* Ido: {{t|io|gratuita}}
+* Indonesian: {{t+|id|gratis|xs=Indonesian}}, [[bebas biaya]]
+* Interlingua: {{t|ia|gratis}}, {{t|ia|gratuite}}
+* Irish: {{t-|ga|saor|xs=Irish}}, {{t|ga|saor in aisce|xs=Irish}}
+* Italian: {{t+|it|gratuito}}, {{t+|it|gratis}}
+{{trans-mid}}
+* Japanese: {{t|ja|無料|tr=[[むりょう]], muryō}}
+* Korean: {{t|ko|무료||alt=무료의|tr=muryo-ui|sc=Hang}}&lt;!-- show &quot;無料&quot; in &quot;무료&quot;--&gt;, {{t+|ko|공짜|alt=공짜(의)|tr=gongjja(ui)|sc=Hang}}
+* Kurdish:
+*: Kurmanji: [[belaş]], [[bêpare]], [[bedewa]], [[herwe]]
+*: Sorani: {{t|ku|به‌لاش|tr=balAsh|sc=ku-Arab}}
+* Latvian: {{t|lv|bezmaksas}}
+* Lithuanian: {{t+|lt|nemokamas|m|xs=Lithuanian}}
+* Malay: {{t-|ms|gratis|xs=Malay}}, {{t+|ms|percuma|xs=Malay}}
+* Malayalam: [[സൌജന്യം]] (soujanyam)
+* Norwegian: {{t+|no|gratis}}
+* Persian: {{t|fa|رایگان|tr=râygân|xs=Persian}}, {{t|fa|مفت|tr=moft|xs=Persian}}, {{t|fa|مجانی|tr=majjâni|xs=Persian}}
+* Polish: {{t|pl|darmowy}}, {{t|pl|bezpłatny}}
+* Portuguese: {{t+|pt|grátis}}, {{t+|pt|gratuito}}, {{t|pt|de graça}}
+* Romanian: {{t-|ro|gratis}}, {{t-|ro|gratuit}}
+* Russian: {{t+|ru|бесплатный|tr=besplátnyj}}
+* Scottish Gaelic: {{t-|gd|saor|xs=Scottish Gaelic}}
+* Serbian: {{t-|sr|besplatno}}, {{t-|sr|džaba}}
+* Sindhi: {{t|sd|مفت}}
+* Slovene: [[zastonj]]
+* Spanish: {{t-|es|gratis}}
+* Swahili: {{t+|sw|bure|xs=Swahili}}
+* Swedish: {{t+|sv|gratis}}, {{t+|sv|fri}}, {{t-|sv|kostnadsfri}}
+* Telugu: {{t|te|ఉచితము|tr=ucitamu|sc=Telu}}
+* Turkish: {{t+|tr|bedava}}, {{t|tr|ücretsiz}}
+* Ukrainian: {{t+|uk|безкоштовний|m|xs=Ukrainian}}
+* West Frisian: {{t+|fy|fergees|xs=West Frisian}}, {{t-|fy|frij|xs=West Frisian}}
+{{trans-bottom}}
+
+{{trans-top|unconstrained}}
+* Albanian: {{t|sq|pafre}}
+* Amharic: [[ነፃ]]
+* Arabic: {{t+|ar|حر|m|tr=Hurr}}
+* Armenian: {{t|hy|առանց|tr=arranc‛}}
+* Azeri: {{t|az|sərbəst}}
+* Bambara: [[hɔrɔn]]
+* Catalan: {{t|ca|lliure}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[自由]]的|[[自由]]的}} (zìyóu de)
+* Croatian: {{t-|hr|neograničen}}, {{t-|hr|slobodan}}
+* Czech: {{t+|cs|volný|m}}
+* Danish: {{t-|da|fri}}
+* Dutch: {{t+|nl|vrij}}, {{t+|nl|los}}, {{t|nl|loslopend}}
+* Esperanto: {{t+|eo|libera|xs=Esperanto}}
+* Estonian: {{t-|et|vaba}}, {{t|et|prii}}
+* Finnish: {{t+|fi|vapaa}}, {{t-|fi|rajoittamaton}}
+* French: {{t+|fr|libre}}
+* German: {{t+|de|frei}}
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}, {{t|el|ανεμπόδιστος|m|tr=anembódistos}}
+* Hebrew: {{t-|he|פנוי|tr=panúy}}
+* Ido: {{t|io|libera}}
+* Interlingua: {{t|ia|libere}}, {{t|ia|franc}}
+* Irish: {{t-|ga|saor|xs=Irish}}
+{{trans-mid}}
+* Italian: {{t+|it|libero|m}}
+* Japanese: {{t-|ja|自由|tr=[[じゆう]], jiyū}}
+* Korean: {{t-|ko|자유적|tr=jayujeok|sc=Hang}} &lt;!-- 自由的 --&gt;
+* Kurdish:
+*: Kurmanji: [[berdayî]]
+*: Sorani: {{t|ku|سه‌ربه‌ست|tr=sarbast|sc=ku-Arab}}
+* Latin: {{t|la|līber|m}}
+* Limburgish: [[vrie]]
+* Norwegian: {{t+|no|fri}}, {{t-|no|løs}}
+* Novial: [[liberi]]
+* Old English: {{t-|ang|freo|alt=frēo|xs=Old English}}
+* Persian: {{t+|fa|آزاد|tr=âzâd|xs=Persian}}
+* Polish: {{t+|pl|wolny}}, {{t|pl|swobodny|m}}
+* Portuguese: {{t|pt|livre}}
+* Romanian: {{t-|ro|liber|m}}, {{t|ro|neîmpiedicat}}
+* Russian: {{t+|ru|свободный|tr=svobódnyj}}
+* Scottish Gaelic: {{t-|gd|saor|xs=Scottish Gaelic}}
+* Serbian: [[povoljno]], [[voljno]]
+* Sindhi: {{t|sd|چٽل|m}}; {{t|sd|چٽل|f}}
+* Spanish: {{t+|es|libre}}
+* Swedish: {{t+|sv|fri}}
+* Turkish: {{t+|tr|serbest}}
+{{trans-bottom}}
+
+{{trans-top|mathematics: unconstrained}}
+* Czech: {{t+|cs|volný|m}}
+* Finnish: {{t+|fi|vapaa}}
+{{trans-mid}}
+* Norwegian: {{t+|no|fri}}
+* Portuguese: {{t+|pt|livre}}
+{{trans-bottom}}
+
+{{trans-top|unobstructed}}
+* Albanian: {{t|sq|lirë}} (i/e)
+* Azeri: {{t|az|maneə törədilməmiş}}
+* Catalan: {{t|ca|lliure}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[通暢]]的|[[通畅]]的}} (tōngchàng de), {{zh-ts|[[順暢]]的|[[順畅]]的}} (shùnchàng de)
+* Croatian: {{t-|hr|slobodan}}, {{t-|hr|otvoren}}
+* Czech: {{t+|cs|volný|m}}
+* Dutch: {{t+|nl|vrij}}, {{t+|nl|vrije}}, {{t+|nl|open}}
+* Esperanto: {{t+|eo|libera|xs=Esperanto}}
+* Estonian: {{t|et|piiramatu}}, {{t|et|takistamatu}}
+* Finnish: {{t|fi|auki}} {{qualifier|adverb}}, {{t|fi|aukinainen}}, {{t|fi|avoin}}, {{t|fi|esteetön}}, {{t|fi|selvä}}
+* French: {{t+|fr|libre}}
+* German: {{t+|de|frei}}
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}, {{t|el|ανεμπόδιστος|m|tr=anembódistos}}
+* Hebrew: {{t-|he|פנוי|tr=panúy}}
+* Ido: {{t|io|libera}}
+* Interlingua: {{t|ia|libere}}, {{t|ia|franc}}
+* Italian: {{t+|it|libero|m}}
+{{trans-mid}}
+* Japanese: {{t|ja|そのままの|tr=sonomamano}}
+* Korean: {{t-|ko|막힘|alt=막힘없는|tr=makhimeopneun|sc=Hang}}
+* Kurdish:
+*: Kurmanji: [[vekirî]], [[vebûyî]]
+* Limburgish: {{t|li|vrie|xs=Limburgish}}
+* Norwegian: {{t+|no|åpen}}, {{t+|no|fri}}
+* Novial: [[liberi]]
+* Polish: {{t+|pl|wolny}}, {{t|pl|swobodny|m}}
+* Portuguese: {{t+|pt|livre}}
+* Romanian: {{t-|ro|liber|m}}, {{t|ro|neîmpiedicat}}
+* Russian: {{t|ru|беспрепятственный|tr=besprepjátstvennyj}}, {{t+|ru|свободный|tr=svobódnyj}}
+* Scottish Gaelic: {{t-|gd|saor|xs=Scottish Gaelic}}
+* Sindhi: {{t|sd|خلاصو|m}}; {{t|sd|خلاصي|f}}
+* Slovene: {{t+|sl|prost|m}}
+* Spanish: {{t+|es|libre}}
+* Telugu: {{t|te|అడ్డగించని|tr=addagincani|sc=Telu}}
+* Turkish: {{t+|tr|engellenmemiş}}
+{{trans-bottom}}
+
+{{trans-top|not in use}}
+* Arabic: {{t|ar|شاغر|tr=shaghir|sc=Arab}}
+* Azeri: {{t|az|boş}}
+* Czech: {{t+|cs|volný|m}}
+* Finnish: {{t+|fi|vapaa}}
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}
+{{trans-mid}}
+* Norwegian: {{t-|no|ledig}}
+* Persian: {{t+|fa|آزاد|tr=āzād|xs=Persian}}, {{t|fa|بی کار|tr=bikār|xs=Persian}}
+* Swedish: {{t|sv|ledig}}
+* Telugu: {{t|te|ఉపయోగించని|tr=upayogincani|sc=Telu}}
+* Turkish: {{t+|tr|boş}}
+{{trans-bottom}}
+
+{{trans-top|without obligations}}
+* Albanian: {{t|sq|pazënë}} (i/e)
+* Azeri: {{t|az|çətininsiz}}
+* Bambara: [[hɔrɔn]]
+* Catalan: {{t|ca|lliure}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[自由]]的|[[自由]]的}} (zìyóu de)
+* Croatian: {{t-|hr|slobodan}}
+* Czech: {{t+|cs|volný|m}}
+* Danish: {{t-|da|fri}}
+* Dutch: {{t+|nl|vrij}}, {{t-|nl|ongedwongen}}
+* Esperanto: {{t+|eo|libera|xs=Esperanto}}
+* Estonian: {{t-|et|vaba}}
+* Finnish: {{t+|fi|vapaa}}
+* French: {{t+|fr|libre}}
+* German: {{t+|de|frei}}
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}
+* Hebrew: {{t-|he|פנוי|tr=panúy}}, {{t-|he|חופשי|tr=khofshí}}
+* Hungarian: {{t+|hu|szabad}}
+* Ido: {{t|io|libera}}
+* Interlingua: {{t|ia|libere}}
+* Irish: {{t-|ga|saor|xs=Irish}}
+{{trans-mid}}
+* Italian: {{t+|it|libero}}
+* Japanese:
+* Korean: {{t+|ko|자의|tr=ja-ui|sc=Hang}} &lt;!-- 自意 --&gt;
+* Kurdish:
+*: Kurmanji: [[azad]], [[serbest]]
+* Limburgish: [[vrie]]
+* Norwegian: {{t+|no|fri}}, {{t-|no|ledig}}
+* Novial: [[liberi]]
+* Old English: {{t-|ang|freo|alt=frēo|xs=Old English}}
+* Polish: {{t+|pl|wolny}}
+* Portuguese: {{t+|pt|livre}}
+* Romanian: {{t-|ro|liber|m}}
+* Russian: {{t+|ru|свободный|tr=svobódnyj}}
+* Scottish Gaelic: {{t-|gd|saor|xs=Scottish Gaelic}}
+* Serbian: [[bezobavezno]]
+* Sindhi: {{t|sd|فارِغ}}; {{t|sd|واندو|m}}
+* Slovene: {{t+|sl|prost|m}}
+* Spanish: {{t+|es|libre}}
+* Swedish: {{t+|sv|fri}}
+* Telugu: {{t|te|నిబంధన లేని|tr=nibandhana leni|sc=Telu}}
+* Turkish: {{t+|tr|serbest}}, {{t|tr|zorunsuz}}
+{{trans-bottom}}
+
+{{trans-top|software: with very few limitations on distribution or improvement}}
+* Albanian: {{t|sq|lejuar}} (i/e)
+* Azeri: {{t|az|azad}}
+* Bambara: [[hɔrɔn]]
+* Catalan: {{t|ca|lliure}}
+* Chinese:
+*: Mandarin: {{zh-ts|[[自由]]的|[[自由]]的}} (zìyóu de)
+* Croatian: {{t-|hr|slobodan}}
+* Czech: {{t-|cs|svobodný|m}}
+* Danish: {{t-|da|fri}}
+* Dutch: {{t+|nl|vrij}}, {{t+|nl|vrije}}
+* Esperanto: {{t+|eo|libera|xs=Esperanto}}
+* Estonian: {{t-|et|vaba}}
+* Finnish: {{t+|fi|avoin}}, {{t+|fi|vapaa}}
+* French: {{t+|fr|libre}}
+* German: {{t+|de|frei}}
+* Greek: {{t+|el|ελεύθερος|m|tr=eléftheros}}
+* Hebrew: {{t-|he|חופשי|tr=khofshí}}
+* Ido: {{t|io|libera}}
+* Interlingua: {{t|ia|libere}}
+{{trans-mid}}
+* Irish: {{t-|ga|saor|xs=Irish}}
+* Italian: {{t|it|libero}}, {{t|it|free}}, {{t|it|libre}} {{gloss|software}}
+* Japanese: {{t|ja|フリー|tr=furī}}
+* Korean: {{t+|ko|자유|tr=jayu|sc=Hang}}
+* Kurdish:
+*: Kurmanji: [[azad]], [[vekirî]], [[serbest]]
+* Limburgish: [[vrie]]
+* Lithuanian: {{t+|lt|nemokama|xs=Lithuanian}}
+* Norwegian: {{t+|no|fri}}
+* Novial: [[liberi]]
+* Polish: {{t+|pl|wolny}}
+* Portuguese: {{t+|pt|livre}}
+* Romanian: {{t-|ro|gratuit}}, {{t-|ro|liber}}
+* Russian: {{t+|ru|бесплатный|tr=besplátnyj}}
+* Sindhi: {{t|sd|کليل|m}}
+* Spanish: {{t+|es|libre}}
+* Swedish: {{t+|sv|fri}}
+* Telugu: {{t|te|ఉచిత దిగుమతి|tr=ucita digumati|sc=Telu}}
+* Turkish: {{t+|tr|özgür}}
+{{trans-bottom}}
+
+{{trans-top|without}}
+* Czech: {{t-|cs|prostý}}
+* Dutch: {{t|nl|zonder}}
+* Finnish: {{t+|fi|-ton}}, {{t|fi|ilman}} ([[jotakin]]), {{t+|fi|vapaa|alt=-vapaa}}
+* French: {{t|fr|sans}}
+{{trans-mid}}
+* Irish: {{t|ga|gan}}
+* Persian: {{t|fa|بدون|sc=fa-Arab}}
+* Telugu: {{t|te|లేకుండా|tr=lekumda|sc=Telu}}
+{{trans-bottom}}
+
+{{trans-top|programming: not bound}}
+* Czech: {{t+|cs|volný}}
+* Finnish: {{t-|fi|riippumaton}}
+{{trans-mid}}
+* Telugu: {{t|te|పరిమితి లేని|tr=parimiti leni|sc=Telu}}
+{{trans-bottom}}
+
+{{trans-top|mycology: not attached to the stipe}}
+* Azeri: {{t|az|zəif}}
+* Finnish: {{t-|fi|irtonainen}}
+{{trans-mid}}
+* Turkish: {{t|tr|gevşek}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* {{ttbc|sq}}: [[lirë]] (i/e), {{t-|sq|pa|xs=Albanian}}
+* {{ttbc|sh}}: {{t-|hr|oslobođen}}, {{t-|hr|pušten}}
+* {{ttbc|de}}: {{t+|de|entlassen}}, {{t+|de|befreit}}, [[frei von]]
+* {{ttbc|id}}: [[bebas]] / [[merdeka]] (1), [[gratis]] / [[cuma-cuma]] (2), [[bebas]] / [[merdeka]], [[gratis]] (5), [[cuma-cuma]], [[tanpa]], [[kosong]]
+* {{ttbc|ia}}: [[libere]]
+* {{ttbc|it}}: {{t+|it|senza}}
+* {{ttbc|lt}}: [[be]] (3); [[neribotas]] (4);
+* {{ttbc|nds}}: [[fri]], [[leddig]], [[lerrig]], [[ledig]]
+{{trans-mid}}
+* {{ttbc|oc}}: [[liure]] (1,3), [[dobèrt]] (2), [[gratis]] (5), [[gratuït]] (5),
+* {{ttbc|sh}}: [[slobodan]] (1), [[besplatan]] (5)
+* {{ttbc|sk}}: [[slobodný]], [[bezplatný]], [[slobodný]] (1), [[voľný]] (1, 2, 4), [[bezplatný]] (5)
+* {{ttbc|sv}}: {{t+|sv|fri}}, {{t+|sv|lös}}, {{t+|sv|släppt}}
+* {{ttbc|ta}}: [[இலவசம்]] (ilvacam)
+* {{ttbc|vo}}: [[libik]], [[livik]]
+* {{ttbc|fy}}: {{t+|fy|frijlitten|xs=West Frisian}}, {{t+|fy|befrijt|xs=West Frisian}}
+{{trans-bottom}}
+
+===Adverb===
+{{en-adv}}
+
+# Without needing to pay.
+#: ''I got this bike '''free'''.''
+
+====Synonyms====
+* {{sense|informal, without needing to pay}} [[for free]], [[for nothing]]
+
+====Translations====
+{{trans-top|without needing to pay}}
+* Albanian: {{t-|sq|falas|xs=Albanian}}
+* Czech: {{t-|cs|zadarmo}}
+* Finnish: {{t-|fi|ilmaiseksi}}
+* French: {{t+|fr|gratuitement}}, {{qualifier|informal}} {{t+|fr|gratis}}, {{qualifier|informal}} {{t+|fr|gratos}}
+* Irish: {{t|ga|saor}}
+* Italian: {{t|it|gratuitamente}}
+* Latvian: {{t|lv|bezmaksas}}
+* Norwegian: {{t+|no|gratis}}
+{{trans-mid}}
+* Polish: {{t|pl|za darmo}}, {{t|pl|bezpłatnie}}
+* Portuguese: {{t|pt|grátis}}, {{t|pt|de graça}}
+* Russian: {{t+|ru|бесплатно|tr=b'esplátno}}, {{t+|ru|даром|tr=dárom}}
+* Scottish Gaelic: {{t-|gd|an asgaidh|xs=Scottish Gaelic}}
+* Spanish: {{t-|es|gratis}}
+* Swedish: {{t+|sv|gratis}}
+* Telugu: {{t|te|చెల్లించనవసరం లేని|tr=cellincanavasaram leni|sc=Telu}}
+{{trans-bottom}}
+
+[[File:Peter Paul Rubens - Perseus Freeing Andromeda - WGA20306.jpg|thumb|A painting depicting mythical Greek hero Perseus '''freeing''' Andromeda, who was imprisoned by a sea monster.]]
+
+===Verb===
+{{en-verb|free|d}}
+
+# {{transitive}} To make free; set at [[liberty]]; [[release]]; rid of that which confines, limits, embarrasses, or oppresses.
+
+====Translations====
+{{trans-top|make free}}
+* Afrikaans: {{t|af|bevry}}, {{t|af|loslaat}}, {{t|af|laat gaan}}
+* Albanian: {{t-|sq|liroj|xs=Albanian}}
+* Arabic: {{t|ar|حرر|tr=Harrara|sc=Arab}}
+* Chinese:
+*: Mandarin: {{t|zh|解放|tr=jiěfàng|sc=Hani}}
+* Czech: {{t-|cs|osvobodit}} {{pf.}}
+* Danish: {{t|da|befri}}, {{t|da|fritage}}, {{t|da|løslade}}
+* Dutch: {{t+|nl|bevrijden}}, {{t-|nl|loslaten}}, {{t+|nl|laten gaan}}
+* Esperanto: {{t-|eo|liberi|xs=Esperanto}}, {{t-|eo|liberigi|xs=Esperanto}}
+* Estonian: {{t|et|vabastama}}, {{t|et|vabaks laskma}}
+* Finnish: {{t+|fi|vapauttaa}}, {{t|fi|päästää}} [[vapaa|vapaaksi]]
+* French: {{t|fr|libérer}}, {{t|fr|dégager}}, {{t|fr|affranchir}}
+* German: {{t+|de|befreien}} {{t|de|freisetzen}} {{qualifier|free someone from prison}}
+* Greek: {{t+|el|ελευθερώνω|tr=eleftheróno|sc=Grek}}
+* Hebrew: {{t+|he|שחרר|tr=shikhrér}}
+* Interlingua: {{t|ia|liberar}}
+* Irish: {{t|ga|saoraigh}}
+* Italian: {{t+|it|liberare}}
+* Japanese: {{t|ja|解放|tr=かいほうする, kaihō-suru|alt=解放する|sc=Jpan}}
+* Korean: {{t|ko|해방|tr=haebang-hada|alt=해방하다|sc=Kore}} ({{t|ko|解放|sc=Kore}} + {{t|ko|하다|sc=Kore}})
+{{trans-mid}}
+* Kurdish: {{t|ku|ڕزگار کردن|sc=Arab}}
+* Latin: {{t-|la|liberare}}
+* Lithuanian: {{t|lt|išlaisvinti}}
+* Norwegian: {{t-|no|frigjøre}}, {{t-|no|frigi}}, {{t-|no|befri}}, {{t-|no|løslate}}
+* Occitan: {{t|oc|desliurar}}
+* Old English: {{t-|ang|freogan|alt=frēoġan|xs=Old English}}
+* Persian: {{t|fa|آزاد ساختن|tr=âzâd sâxtan|xs=Persian}}, {{t-|fa|آزاد کردن|tr=âzâd kardan|sc=fa-Arab}}
+* Polish: {{t|pl|uwalniać}} {{impf}}, {{t|pl|uwolnić}} {{pf.}}
+* Portuguese: {{t+|pt|libertar}}, {{t+|pt|livrar}}, {{t+|pt|soltar}}
+* Romanian: {{t|ro|elibera}}
+* Russian: {{t|ru|освобождать|tr=osvoboždát'}} {{impf}}, {{t+|ru|освободить|tr=osvobodít'}} {{pf.}}
+* Serbian: {{t-|sr|osloboditi}} {{pf.}}
+* Slovak: {{t+|sk|oslobodiť}} {{pf.}}
+* Slovene: {{t|sl|osvoboditi}} {{pf.}}
+* Spanish: {{t-|es|librar}}
+* Swedish: {{t|sv|frigöra}}, {{t+|sv|befria}}, {{t+|sv|frita}}(ga) &lt;!--{{t+|sv|fria}}: Someone please give an example of this?---&gt;
+* Telugu: {{t|te|విడుదల చేయు|tr=vidudala ceyu|sc=Telu}}
+* Turkish: {{t+|tr|serbest bırakmak}}
+* Vietnamese: {{t|vi|giải phóng}} ({{t|vi|解放}})
+{{trans-bottom}}
+
+===Noun===
+{{en-noun}}
+
+# {{Australian rules football|Gaelic football}} Abbreviation of [[free kick]].
+#* '''2006''', [http://footballlegends.org/daryn_cresswell.htm]:
+#*: Whether deserved or not, the '''free''' gave Cresswell the chance to cover himself in glory with a shot on goal after the siren. &lt;!-- a typical, but not especially notable usage here, feel '''free''' (pun intended) to replace with a better one --&gt;
+# [[free transfer]]
+#* {{quote-news
+|year=2011
+|date=September 21
+|author=Sam Lyon
+|title=Man City 2 - 0 Birmingham
+|work=BBC Sport
+|url=http://news.bbc.co.uk/sport2/hi/football/14910208.stm
+|page=
+|passage=Hargreaves, who left Manchester United on a '''free''' during the summer, drilled a 22-yard beauty to open the scoring.}}
+# {{hurling}} The usual means of restarting play after a foul is committed, where the non-offending team restarts from where the foul was committed.
+
+====Translations====
+&lt;!-- Only abbreviated forms here (if they exist), please --&gt;
+{{trans-top|abbreviation of free kick}}
+* Finnish: {{t-|fi|vapari}}
+* German: {{t+|de|Freistoss}}
+{{trans-mid}}
+* Ghotuo: {{tø|aaa|koola}}
+{{trans-bottom}}
+
+{{trans-top|hurling}}
+* Irish: {{qualifier|hurling}} {{t|ga|poc saor|m}}
+{{trans-mid}}
+{{trans-bottom}}
+
+====Usage notes====
+* {{rank/test|351|en-gut}}
+
+===Anagrams===
+* [[fere]]
+* [[reef]]
+
+[[Category:1000 English basic words]]
+[[Category:Entries which need Hebrew vowels]]
+[[Category:en:Money]]
+
+[[af:free]]
+[[ar:free]]
+[[cs:free]]
+[[cy:free]]
+[[da:free]]
+[[de:free]]
+[[et:free]]
+[[el:free]]
+[[es:free]]
+[[eo:free]]
+[[fa:free]]
+[[fr:free]]
+[[fy:free]]
+[[ko:free]]
+[[hy:free]]
+[[hi:free]]
+[[io:free]]
+[[id:free]]
+[[it:free]]
+[[kn:free]]
+[[ka:free]]
+[[kk:free]]
+[[sw:free]]
+[[ku:free]]
+[[lo:free]]
+[[la:free]]
+[[lt:free]]
+[[li:free]]
+[[hu:free]]
+[[mg:free]]
+[[ml:free]]
+[[my:free]]
+[[nl:free]]
+[[ja:free]]
+[[no:free]]
+[[pl:free]]
+[[pt:free]]
+[[ru:free]]
+[[simple:free]]
+[[sd:free]]
+[[sk:free]]
+[[fi:free]]
+[[sv:free]]
+[[tl:free]]
+[[ta:free]]
+[[te:free]]
+[[th:free]]
+[[tr:free]]
+[[uk:free]]
+[[vi:free]]
+[[wa:free]]
+[[zh:free]]</text>
+    </revision>
+  </page>
+</mediawiki>
