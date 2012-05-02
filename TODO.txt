@@ -1,4 +1,8 @@
 **Possible improvements**
+- create Debian packages
+
+- look at using the python processing module to take advantage of machines with multiple cores
+
 - deal with {{qualifier|someword}} properly
 
 - deal with sub-languages properly, e.g. by going of the ISO 3-letter language code (e.g nob is Bokmål Norwegian) or have the user input it, eg. Norwegian-Bokmål.
