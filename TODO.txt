@@ -9,7 +9,13 @@
 sub-languages lines begin with '*: ' (no quotes). Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing systems of Norwegian, Egyptian Arabic as a sub-lang of Arabic, Old Armenian as a sub-language of Armenian, Chinese sub-languages such as Dungan, Mandarin and Wu, Cyrillic and Roman spelling systems in Serbian.
 
 - better formatting:
-	* when going from a language that has noun genders such as Spanish back to English it should show the noun gender on its own line
+	* when going from a language that has noun genders such as Spanish back to English it should show the noun gender on its own line, e.g:
+	Haus
+        (n) house (abode), house (dynasty, familiar descendance)
+	would be better as:
+	Haus
+	{n}
+	house (abode)...
 	* descriptions should be on their own line when going from English, eg: (eng-spa)
 		park
 		(a place for recreation)

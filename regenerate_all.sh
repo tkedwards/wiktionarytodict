@@ -36,12 +36,16 @@ else
 	createdict $1 Spanish spa
 	createdict $1 Dutch nld
 	createdict $1 Norwegian nob
-
-	echo "Copying dictionaries to setup/"
-	cp /usr/share/dictd/wikt* /home/tim/setup/linux_common/auto/software/dictd_dictionaries/
 	
-	#echo "Processing complete, you can now manually delete the downloaded wiktionary dump files from $1"
-	echo "Processing complete, do you want to delete the downloaded wiktionary dump files from $1?"
+	echo "Dictionaries created, replace the current ones in setup? (y/n)"
+	read
+        YESORNO=$REPLY
+        if [ "$YESORNO" = "y" ]; then
+		echo "Copying dictionaries to setup/"
+		cp /usr/share/dictd/wikt* /home/tim/setup/ubuntu_current/dictd_dictionaries/
+	fi
+	
+	echo "Processing complete, do you want to delete the downloaded wiktionary dump files from $1? (y/n)"
 	read
 	YESORNO=$REPLY
 	if [ "$YESORNO" = "y" ]; then
