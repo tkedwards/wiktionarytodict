@@ -35,6 +35,14 @@ sub-languages lines begin with '*: ' (no quotes). Examples of sub-languages are 
   	welcome
   	(greeting given upon someone's arrival) welkom]]!
 
+- Fix:
+	From Wiktionary English to German [wikt-eng-deu]:
+
+  array
+  (large collection) Fülle]] {{f}}; [[Reihe]] {{f}}; [[Feld]] {{n}};
+  [[Zahl]] {{f}}; [[Anzahl]] {{f}}
+
+
 - Fix not handling where wiktionary has both Bokmål and Nynorsk spellings for Norwegian. This could apply to other languages which have this weird split of multiple spelling systems. Example:
 {{trans-top|the viewing area of a movie}}
 * Arabic: {{t|ar|شاشة|f|tr=shaasha}}
