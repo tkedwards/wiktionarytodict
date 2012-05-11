@@ -28,9 +28,12 @@ if [ -z "$1" ]; then
        echo -e "usage: `basename $0` TEMPLOCATION
 where TEMPLOCATION is the path to a directory with a few gigbytes free space"
 else
-	# Download and extract file (comment out if the dump file is already there)
-	#cd "$1" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 enwiktionary-latest-pages-articles.xml.bz2
-
+	echo "Download wiktionary dump file and extract it (answer no if file is already in "$1"? (y/n)"
+        read
+        YESORNO=$REPLY
+        if [ "$YESORNO" = "y" ]; then
+		cd "$1" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 enwiktionary-latest-pages-articles.xml.bz2
+	fi
 	# Create dictionaries
 	createdict $1 German deu
 	createdict $1 Spanish spa
