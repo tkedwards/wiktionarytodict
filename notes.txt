@@ -4,6 +4,12 @@ http://www.loc.gov/standards/iso639-2/ascii_8bits.html
 **Dependencies**
 dictd dictfmt python-pycountry
 
+**Packaging**
+To create Debian packages for a newly added language, e.g. French (ISO code fra):
+- Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
+- Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
+- Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
+
 **Editing wiktionary**
 Example translations section:
 ====Translations====

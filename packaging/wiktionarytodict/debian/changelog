@@ -1,0 +1,11 @@
+wiktionarytodict (20120606) quantal; urgency=low
+
+  * Rebuild, no changes 
+
+ -- Tim Edwards <tkedwards@fastmail.com.au>  Fri, 06 Jul 2012 12:29:55 +0200
+
+wiktionarytodict (20120606) UNRELEASED; urgency=low
+
+  * Release with data from 6 June 2012 Wiktionary dump file
+
+ -- Tim Edwards <tkedwards@fastmail.com.au>  Fri, 06 Jul 2012 12:29:10 +0200

@@ -1,0 +1,67 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 06 Jul 2012 12:29:55 +0200
+Source: wiktionarytodict
+Binary: wikt-eng-nob wikt-nob-eng wikt-spa-eng wikt-eng-spa wikt-nld-eng wikt-eng-nld wikt-deu-eng wikt-eng-deu
+Architecture: source all
+Version: 20120606
+Distribution: quantal
+Urgency: low
+Maintainer: Tim Edwards <liststuff@fastmail.com.au>
+Changed-By: Tim Edwards <tkedwards@fastmail.com.au>
+Description: 
+ wikt-deu-eng - A German-English translation dictionary automatically generated f
+ wikt-eng-deu - An English-German translation dictionary automatically generated
+ wikt-eng-nld - An English-Dutch translation dictionary automatically generated f
+ wikt-eng-nob - An English-Norwegian translation dictionary automatically generat
+ wikt-eng-spa - An English-Spanish translation dictionary automatically generated
+ wikt-nld-eng - A Dutch-English translation dictionary automatically generated fr
+ wikt-nob-eng - A Norwegian-English translation dictionary automatically generate
+ wikt-spa-eng - A Spanish-English translation dictionary automatically generated
+Changes: 
+ wiktionarytodict (20120606) quantal; urgency=low
+ .
+   * Rebuild, no changes
+Checksums-Sha1: 
+ 560a4d7e7ba7a6161a6bf12c7702356447f52d8c 1177 wiktionarytodict_20120606.dsc
+ 8d819f3dc7913d6dca46917ea7c952254b433142 9155649 wiktionarytodict_20120606.tar.gz
+ 2555a42707a2edcd42a7e9308fb0b97b251e8790 421752 wikt-eng-nob_20120606_all.deb
+ dc1e36ebd1e82541de5d21825deae079b8ad2ad7 479300 wikt-nob-eng_20120606_all.deb
+ d6b42ca25e2937fccf4e10d6b5012f38283ef67a 1443580 wikt-spa-eng_20120606_all.deb
+ 3caeb9487aaa929187c9b841be481758e032c328 1274428 wikt-eng-spa_20120606_all.deb
+ 347e56c5d93b807037f8e23d077d38dd61c32d41 1228490 wikt-nld-eng_20120606_all.deb
+ c8fa59bbea1148d6f019b7a24109b6b3e79d338e 1060674 wikt-eng-nld_20120606_all.deb
+ a809e2fbd877406e1a0e6417050ad896e407af3b 1744216 wikt-deu-eng_20120606_all.deb
+ e738d91d95fc9694459646eadcbc1866dcbc1b0a 1504946 wikt-eng-deu_20120606_all.deb
+Checksums-Sha256: 
+ cbe32ee37dd398b51f272e6a3564b6897dfc70a121ad3a0a38ff141c1f2170aa 1177 wiktionarytodict_20120606.dsc
+ 5d94923cc8385fb0c94ee8cf023377c54e23a8e3ae511638edb90821f9964a7a 9155649 wiktionarytodict_20120606.tar.gz
+ dd36a66e22bdfc75025f3bf3b9cb6b3d257657a20766b30d4df6ab1a09779330 421752 wikt-eng-nob_20120606_all.deb
+ d2efd39228f85ca666ae4d2473a2ad736ff129164d4f39c0ecacf23ccec96723 479300 wikt-nob-eng_20120606_all.deb
+ d29830bc67bbfe9efa887205de15c8d0a37e9b8141a295a4aa9e4454aa00abc2 1443580 wikt-spa-eng_20120606_all.deb
+ 86e980964ab90cea5ef6b5cc5da6523fac7b316d82f8e56ba3ce238bb2f82ebe 1274428 wikt-eng-spa_20120606_all.deb
+ 599177d4d5435baaaa0e878eb64f65e9ddc490a40b90ee35ca9a05846ae22184 1228490 wikt-nld-eng_20120606_all.deb
+ db9190a7546f1ab2a34745439be4de9e38309936108121c8eb80ac79e2afde84 1060674 wikt-eng-nld_20120606_all.deb
+ 09b9af67fec86ac4386e4dee7b4b6ed8e89d513ab4755732606835d82c8d25a2 1744216 wikt-deu-eng_20120606_all.deb
+ ebeb4ec6b5eea13932f87f53701d5ab9dbaefada5ebffcbfeea8033b0bfd64cb 1504946 wikt-eng-deu_20120606_all.deb
+Files: 
+ 35773a7f03e09494a59cfaca99db00c7 1177 text optional wiktionarytodict_20120606.dsc
+ bd3e18e8f40a4f1b634b3222da4277c6 9155649 text optional wiktionarytodict_20120606.tar.gz
+ 65fe5887fc217f5dbef489b77fc3f9a2 421752 text optional wikt-eng-nob_20120606_all.deb
+ aa048ba57119ecfe9888bb71fd4e1fe4 479300 text optional wikt-nob-eng_20120606_all.deb
+ cca1c7a2df7d6ff90ee43ead828bd7f4 1443580 text optional wikt-spa-eng_20120606_all.deb
+ 35cd305bdacf2c76cb0ea749870f6345 1274428 text optional wikt-eng-spa_20120606_all.deb
+ f398a2e463d1c01c61d6c669c66ca4ec 1228490 text optional wikt-nld-eng_20120606_all.deb
+ 6a7e375e65aa857efaa29f9aa68c8dea 1060674 text optional wikt-eng-nld_20120606_all.deb
+ e8eff84312a9124643ac32df934f0562 1744216 text optional wikt-deu-eng_20120606_all.deb
+ b3c02d5ee1802096294de764e64a4a8c 1504946 text optional wikt-eng-deu_20120606_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAk/2vkIACgkQL6tzUptN5LtDCwCeK04I83T9Ieva/oR6p5tNgeyL
+bgwAnjarNi2FdasXuzxF4IFO8JjzkdFf
+=e1JC
+-----END PGP SIGNATURE-----

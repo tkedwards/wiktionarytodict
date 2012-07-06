@@ -1,0 +1,13 @@
+Package: wikt-nob-eng
+Source: wiktionarytodict
+Version: 20120606
+Architecture: all
+Maintainer: Tim Edwards <liststuff@fastmail.com.au>
+Installed-Size: 587
+Depends: dictd
+Suggests: dict | opendict | kdict
+Provides: dictd-dictionary
+Section: text
+Priority: optional
+Homepage: http://tkedwards.github.com/wiktionarytodict/
+Description: A Norwegian-English translation dictionary automatically generated from translations on the English Wiktionary (http://en.wiktionary.org)
