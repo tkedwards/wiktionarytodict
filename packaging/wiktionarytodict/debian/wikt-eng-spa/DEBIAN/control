@@ -1,9 +1,9 @@
 Package: wikt-eng-spa
 Source: wiktionarytodict
-Version: 20120606
+Version: 20121009
 Architecture: all
 Maintainer: Tim Edwards <liststuff@fastmail.com.au>
-Installed-Size: 1557
+Installed-Size: 1623
 Depends: dictd
 Suggests: dict | opendict | kdict
 Provides: dictd-dictionary

@@ -1,9 +1,9 @@
 Package: wikt-nob-eng
 Source: wiktionarytodict
-Version: 20120606
+Version: 20121009
 Architecture: all
 Maintainer: Tim Edwards <liststuff@fastmail.com.au>
-Installed-Size: 587
+Installed-Size: 604
 Depends: dictd
 Suggests: dict | opendict | kdict
 Provides: dictd-dictionary

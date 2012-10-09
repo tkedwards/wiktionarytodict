@@ -1,3 +1,9 @@
+wiktionarytodict (20121009) precise; urgency=low
+
+  * Rebuild with data from 9 October 2012 Wiktionary dump file
+
+ -- Tim Edwards <tkedwards@fastmail.com.au>  Mon, 08 Oct 2012 17:15:16 +0200
+
 wiktionarytodict (20120606) quantal; urgency=low
 
   * Rebuild, no changes 

@@ -61,3 +61,17 @@ Depends: dictd
 Suggests: dict | opendict | kdict
 Provides: dictd-dictionary
 Description: An English-German translation dictionary automatically generated from translations on the English Wiktionary (http://en.wiktionary.org)
+
+Package: wikt-fra-eng
+Architecture: all
+Depends: dictd
+Suggests: dict | opendict | kdict
+Provides: dictd-dictionary
+Description: A French-English translation dictionary automatically generated from translations on the English Wiktionary (http://en.wiktionary.org)
+
+Package: wikt-eng-fra
+Architecture: all
+Depends: dictd
+Suggests: dict | opendict | kdict
+Provides: dictd-dictionary
+Description: An English-French translation dictionary automatically generated from translations on the English Wiktionary (http://en.wiktionary.org)

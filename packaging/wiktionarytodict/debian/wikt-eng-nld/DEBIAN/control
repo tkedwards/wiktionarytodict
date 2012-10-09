@@ -1,9 +1,9 @@
 Package: wikt-eng-nld
 Source: wiktionarytodict
-Version: 20120606
+Version: 20121009
 Architecture: all
 Maintainer: Tim Edwards <liststuff@fastmail.com.au>
-Installed-Size: 1296
+Installed-Size: 1336
 Depends: dictd
 Suggests: dict | opendict | kdict
 Provides: dictd-dictionary

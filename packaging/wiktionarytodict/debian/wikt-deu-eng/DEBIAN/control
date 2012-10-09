@@ -1,9 +1,9 @@
 Package: wikt-deu-eng
 Source: wiktionarytodict
-Version: 20120606
+Version: 20121009
 Architecture: all
 Maintainer: Tim Edwards <liststuff@fastmail.com.au>
-Installed-Size: 2104
+Installed-Size: 2263
 Depends: dictd
 Suggests: dict | opendict | kdict
 Provides: dictd-dictionary
