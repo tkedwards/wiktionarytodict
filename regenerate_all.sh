@@ -52,8 +52,8 @@ else
 		read
         	YESORNO=$REPLY
         	if [ "$YESORNO" = "y" ]; then
-			echo "Copying dictionaries to setup/"
-			cp /usr/share/dictd/wikt* "$SCRIPTDIR"/packaging/
+			echo "Copying dictionaries to $SCRIPTDIR/packaging/"
+			cp /usr/share/dictd/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
 		fi
 	fi
 
