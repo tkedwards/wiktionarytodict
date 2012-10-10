@@ -20,10 +20,10 @@
 # Creates dictd format dictionaries from dump files from the English Wiktionary (http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2)
 
 function usage {
-	echo -e "usage: `basename $0` WIKTDUMPFILE LANGNAME LANGCODE install/dontinstall
+	echo -e "usage: `basename $0` WIKTDUMPFILE LANGNAME LANGCODE install/dontinstall [DICTFILESLOCATION]
 LANGNAME is the language name as appears in the Wiktionary dumps eg. 'German'.
 LANGCODE is the 3-letter ISO-639-3 code for the language. The output files will be named after this 3-letter codes. Run wiktionarytodict.py --showlangcodes to get a list of languages and the ISO-639-3 codes
-install/dontinstall controls whether to install the dictionaries to the local dictd server or just create them
+install/dontinstall controls whether to install the dictionaries to the local dictd server or just create them in the path specified by DICTFILESLOCATION
 
 Example: ./wiktionarytodict.sh ~/Downloads/enwiktionary-latest-pages-articles.xml Dutch nld install"
 }
@@ -31,6 +31,13 @@ Example: ./wiktionarytodict.sh ~/Downloads/enwiktionary-latest-pages-articles.xm
 if [ -z "$1" -o -z "$2" -o -z "$3" -o -z "$4" ]; then
 	usage
 else
+	if [ "$4" == "dontinstall" -a -d "$5" ]; then
+		# DICTFILESLOCATION is a valid directory
+		DICTFILESLOCATION="$5"
+	elif [ "$4" == "dontinstall" -a ! -d "$5" ]; then
+		echo "ERROR: $5 is not a valid directory"
+		exit 2
+	fi
 	ATEMPDIR=`mktemp -d`
 	SCRIPTDIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 	"$SCRIPTDIR"/wiktionarytodict.py $1 $2 $3 "$ATEMPDIR"
@@ -42,7 +49,9 @@ else
 		sudo cp "$ATEMPDIR"/wikt-* /usr/share/dictd/
 		sudo /usr/sbin/dictdconfig --write
 		sudo service dictd restart
-		rm -rf "$ATEMPDIR"
+	else
+		sudo cp -f "$ATEMPDIR"/wikt-* "$DICTFILESLOCATION"
 	fi
+	rm -rf "$ATEMPDIR"
 fi
 

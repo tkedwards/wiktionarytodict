@@ -23,7 +23,7 @@ SCRIPTDIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Regenerates all dictionaries for specified languages
 function createdict {
 	echo "Creating dictionaries for $2"
-	"$SCRIPTDIR"/wiktionarytodict.sh "$1"/enwiktionary-latest-pages-articles.xml $2 $3 install
+	"$SCRIPTDIR"/wiktionarytodict.sh "$1"/enwiktionary-latest-pages-articles.xml $2 $3 dontinstall "$1"
 }
 
 if [ -z "$1" ]; then
@@ -53,7 +53,7 @@ else
         	YESORNO=$REPLY
         	if [ "$YESORNO" = "y" ]; then
 			echo "Copying dictionaries to $SCRIPTDIR/packaging/"
-			cp /usr/share/dictd/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
+			cp "$1"/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
 		fi
 	fi
 
