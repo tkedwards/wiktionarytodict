@@ -44,8 +44,8 @@ else
 	echo "Creating dictd format dictionaries in $ATEMPDIR"
 	dictfmt --utf8 --allchars -s "Wiktionary English to $2" -j "$ATEMPDIR"/wikt-eng-$3 < "$ATEMPDIR"/eng-$3.txt
 	dictfmt --utf8 --allchars -s "Wiktionary $2 to English" -j "$ATEMPDIR"/wikt-$3-eng < "$ATEMPDIR"/$3-eng.txt
+	dictzip "$ATEMPDIR"/*.dict # compress the plain-text dictionaries into 'dictzip' format
 	if [ "$4" == "install" ]; then
-		dictzip "$ATEMPDIR"/*.dict
 		sudo cp "$ATEMPDIR"/wikt-* /usr/share/dictd/
 		sudo /usr/sbin/dictdconfig --write
 		sudo service dictd restart

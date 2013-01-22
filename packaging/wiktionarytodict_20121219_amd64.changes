@@ -1,0 +1,75 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 19 Dec 2012 21:37:22 +0000
+Source: wiktionarytodict
+Binary: wikt-eng-nob wikt-nob-eng wikt-spa-eng wikt-eng-spa wikt-nld-eng wikt-eng-nld wikt-deu-eng wikt-eng-deu wikt-fra-eng wikt-eng-fra
+Architecture: source all
+Version: 20121219
+Distribution: precise
+Urgency: low
+Maintainer: Tim Edwards <liststuff@fastmail.com.au>
+Changed-By: Tim Edwards <tkedwards@fastmail.com.au>
+Description: 
+ wikt-deu-eng - A German-English translation dictionary automatically generated f
+ wikt-eng-deu - An English-German translation dictionary automatically generated
+ wikt-eng-fra - An English-French translation dictionary automatically generated
+ wikt-eng-nld - An English-Dutch translation dictionary automatically generated f
+ wikt-eng-nob - An English-Norwegian translation dictionary automatically generat
+ wikt-eng-spa - An English-Spanish translation dictionary automatically generated
+ wikt-fra-eng - A French-English translation dictionary automatically generated f
+ wikt-nld-eng - A Dutch-English translation dictionary automatically generated fr
+ wikt-nob-eng - A Norwegian-English translation dictionary automatically generate
+ wikt-spa-eng - A Spanish-English translation dictionary automatically generated
+Changes: 
+ wiktionarytodict (20121219) precise; urgency=low
+ .
+   * Rebuild with data from 19 December 2012 Wiktionary Dump File
+Checksums-Sha1: 
+ d1ac9c2f3fbfa49711325cc900407d4db3018ea3 1272 wiktionarytodict_20121219.dsc
+ 7b6ec76a81e9b803b7c3b605eca663f25f5e527f 13220118 wiktionarytodict_20121219.tar.gz
+ 2785efe997a9180ed8d1eb646d9df86da0408ebf 446362 wikt-eng-nob_20121219_all.deb
+ 4e4776c20c0d49dcaa783b3f2868b9f5cdb39474 515730 wikt-nob-eng_20121219_all.deb
+ 76a273a2090d617dff97fa89c179ce577930a11a 1542514 wikt-spa-eng_20121219_all.deb
+ 9d3d7a8a6c8c82fd046a4684d2dd49f9dd791f7c 1361208 wikt-eng-spa_20121219_all.deb
+ 64c20026f0d2336829b99cb401d66b5a108d08c7 1284518 wikt-nld-eng_20121219_all.deb
+ f00ab7069e1c63df971c7c9329f0fcf296926ba5 1105772 wikt-eng-nld_20121219_all.deb
+ 62c18c5c06943c00e4f54c14a2ad30effa1e201a 1961076 wikt-deu-eng_20121219_all.deb
+ 96c8f90cec14e004e15e371d9acb442e0743e45c 1668294 wikt-eng-deu_20121219_all.deb
+ 72e3ebcbaec6285b6197fe669c336384a39d36ee 1743092 wikt-fra-eng_20121219_all.deb
+ 3989689005e71f71b86b1e55ebe662666edbf5d4 1594940 wikt-eng-fra_20121219_all.deb
+Checksums-Sha256: 
+ 691b01f8174efe76f40fad8129a9d2b8d8c55a438e9fee8a6f01749c76f2f5e6 1272 wiktionarytodict_20121219.dsc
+ ba752b052963a0124c5d73360596af1494ff8d007cc725cb35c7f129d2ef827f 13220118 wiktionarytodict_20121219.tar.gz
+ 4ac8fd5bf857d8496994aca48e68d42e79027244d9a49e6c37178582a42b5d3f 446362 wikt-eng-nob_20121219_all.deb
+ c5bf83189e7ed26a6793e27791297713d87acd52178e82f16153b1d81771c879 515730 wikt-nob-eng_20121219_all.deb
+ cc9a8fbc0e61947c8c84dad5de43b8cca7b9c740dc3a7b9d240758f225dabbb9 1542514 wikt-spa-eng_20121219_all.deb
+ c9093efc89413f9c90250814e6543e6bb5e1701dcda1b99e5221a9b050fa5f05 1361208 wikt-eng-spa_20121219_all.deb
+ 93551f03ceeb46f2c07f464db2387133ebe3e814a927eb4d7ed091b08e750ea6 1284518 wikt-nld-eng_20121219_all.deb
+ 6f46f0dfe7616eaef8470c2bd86d556f00000928eacb7f4d8eba82ec935c88aa 1105772 wikt-eng-nld_20121219_all.deb
+ 89e38d2a1d79750499bbe9918bb430ef8df4b6d20070a16dd1a3f2029549be5e 1961076 wikt-deu-eng_20121219_all.deb
+ 8704840792fb888a7e601251cba7cc519c1c38a3902366ebd4663dd1a454050c 1668294 wikt-eng-deu_20121219_all.deb
+ 5c67a70788ba746b0b8215cbb974d4fb20cf6454e6cfccdac5bdbaad50b898a6 1743092 wikt-fra-eng_20121219_all.deb
+ a0deed064097561778a5331d8600f81133808c5eccfb032c484a20954976980c 1594940 wikt-eng-fra_20121219_all.deb
+Files: 
+ 5c2a1dad2ff6755425c6fa62f854eb30 1272 text optional wiktionarytodict_20121219.dsc
+ c22963194ced29a84200731007cab181 13220118 text optional wiktionarytodict_20121219.tar.gz
+ 95650f020fd3bc5f01158fbcf0b83183 446362 text optional wikt-eng-nob_20121219_all.deb
+ fc5fb2cb4575be1a32ac9a4738fdfa28 515730 text optional wikt-nob-eng_20121219_all.deb
+ 36c7ec1fcd758569db3f9a89e2083e14 1542514 text optional wikt-spa-eng_20121219_all.deb
+ a855c317e0de2f1e56e583c327a316b3 1361208 text optional wikt-eng-spa_20121219_all.deb
+ 8aa2741088721eae420f2ec7c7c0aba2 1284518 text optional wikt-nld-eng_20121219_all.deb
+ 7c7b0300187f6eb3b71384b1157b6028 1105772 text optional wikt-eng-nld_20121219_all.deb
+ d6c438783a26eb54582dad76056c3cfc 1961076 text optional wikt-deu-eng_20121219_all.deb
+ ccefcd0c778736232a8c85e8a09a83fa 1668294 text optional wikt-eng-deu_20121219_all.deb
+ 51386f6237199e3388f3a89ff0eeab00 1743092 text optional wikt-fra-eng_20121219_all.deb
+ b702ea1b398755c57f67f5c244600732 1594940 text optional wikt-eng-fra_20121219_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAlDSNt4ACgkQL6tzUptN5LuuWgCfbAs5Tq/Z8XF/q9OfS0fNrXAk
+Oa4An2PCUkLN0/Jen/YNNbDBvY29LEwO
+=5xmJ
+-----END PGP SIGNATURE-----

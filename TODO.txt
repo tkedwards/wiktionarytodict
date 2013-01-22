@@ -8,6 +8,8 @@
 - deal with sub-languages properly, e.g. by going of the ISO 3-letter language code (e.g nob is Bokmål Norwegian) or have the user input it, eg. Norwegian-Bokmål.
 sub-languages lines begin with '*: ' (no quotes). Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing systems of Norwegian, Egyptian Arabic as a sub-lang of Arabic, Old Armenian as a sub-language of Armenian, Chinese sub-languages such as Dungan, Mandarin and Wu, Cyrillic and Roman spelling systems in Serbian.
 
+- have wiktionarytodict create StartDict format files http://www.stardict.org/HowToCreateDictionary
+
 - better formatting:
 	* when going from a language that has noun genders such as Spanish back to English it should show the noun gender on its own line. Look at the dictionary format from trans-de-en e.g:
 	Haus

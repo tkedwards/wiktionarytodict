@@ -1,6 +1,8 @@
 **Useful Links**
 http://www.loc.gov/standards/iso639-2/ascii_8bits.html
 
+http://tkedwards.github.com/wiktionarytodict/
+
 **Dependencies**
 dictd dictfmt python-pycountry
 
@@ -10,9 +12,10 @@ To create Debian packages for a newly added language, e.g. French (ISO code fra)
 - Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
 - Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
 
-
-Deleting leftover files after packaging finished:
-After packages have finished building you can delete the wikt-* files in packaging/wiktionarytodict/ as these are just the dictionary files which are now contained in the packages or wiktionarytodict_VERSION.tar.gz. Also the .tar.gz, .dsc etc. files from old runs can be deleted from packaging/
+Leftover files after packaging that can be deleted:
+- packaging/wiktionarytodict/wikt-*. These are the actual files that went into the package(s), they have been bundled up in packaging/wiktionarytodict_VERSION.tar.gz
+- packaging/wiktionarytodict/debian/wikt-*/. The folders named after the packages ('wikt-deu-eng/' etc.) can be deleted as they are just build directories
+- packaging/wiktionarytodict_OLDVERSION.tar.gz, .changes, .dsc. The files from the old package version can be deleted. 
 
 **Editing wiktionary**
 Example translations section:

@@ -37,7 +37,7 @@ else
 		cd "$1" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 -f enwiktionary-latest-pages-articles.xml.bz2
 	fi
 	
-	echo "Regenerate dictionary files using wiktionary dump file in $1? (This can take a long time) (y/n)"
+	echo "Regenerate dictionary files using wiktionary dump file in $1? (This can take a long time) DO NOT PRESS ENTER DURING DICTIONARY CREATION (y/n)"
 	read
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
