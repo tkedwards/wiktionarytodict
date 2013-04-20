@@ -1,3 +1,9 @@
+wiktionarytodict (20130420) precise; urgency=low
+
+  * Rebuild with data from 20 April 2013 Wiktionary Dump file
+
+ -- Tim Edwards <tkedwards@fastmail.com.au>  Sat, 20 Apr 2013 17:18:52 +0100
+
 wiktionarytodict (20121219) precise; urgency=low
 
   * Rebuild with data from 19 December 2012 Wiktionary Dump File 

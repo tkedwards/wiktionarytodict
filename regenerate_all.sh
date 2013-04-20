@@ -75,5 +75,6 @@ else
 		dch --newversion "$NEWVER"
 		dpkg-buildpackage -rfakeroot
 		echo -e "\n\nPackage creation complete. You should now move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository."
+		echo -e "(see notes.txt for how to clean up unnecessary build files from packaging/)"
 	fi
 fi
