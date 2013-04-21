@@ -42,16 +42,18 @@ else
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
 		# Create dictionaries
-		createdict $1 German deu
-		createdict $1 Spanish spa
-		createdict $1 Dutch nld
-		createdict $1 Norwegian nob
-		createdict $1 French fra
+		#createdict $1 German deu
+		#createdict $1 Spanish spa
+		#createdict $1 Dutch nld
+		#createdict $1 Norwegian nob
+		#createdict $1 French fra
 	
 		echo "Dictionaries created, replace the current ones in the packaging directory? (y/n)"
 		read
         	YESORNO=$REPLY
         	if [ "$YESORNO" = "y" ]; then
+			echo "Extracting the packaging directory from the most recent bundle (e.g. wiktionarytodict_20130420.tar.gz)"
+			cd "$SCRIPTDIR"/packaging/ && tar -xzf wiktionarytodict_*.tar.gz
 			echo "Copying dictionaries to $SCRIPTDIR/packaging/"
 			cp "$1"/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
 		fi
@@ -74,7 +76,6 @@ else
 		NEWVER=$REPLY
 		dch --newversion "$NEWVER"
 		dpkg-buildpackage -rfakeroot
-		echo -e "\n\nPackage creation complete. You should now move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository."
-		echo -e "(see notes.txt for how to clean up unnecessary build files from packaging/)"
+		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)"
 	fi
 fi

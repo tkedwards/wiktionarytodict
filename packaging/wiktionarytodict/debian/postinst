@@ -1,3 +1,0 @@
-#!/bin/bash
-/usr/sbin/dictdconfig --write
-/etc/init.d/dictd restart

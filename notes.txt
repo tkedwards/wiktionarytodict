@@ -12,11 +12,6 @@ To create Debian packages for a newly added language, e.g. French (ISO code fra)
 - Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
 - Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
 
-Leftover files after packaging that can be deleted:
-- packaging/wiktionarytodict/wikt-*. These are the actual files that went into the package(s), they have been bundled up in packaging/wiktionarytodict_VERSION.tar.gz
-- packaging/wiktionarytodict/debian/wikt-*/. The folders named after the packages ('wikt-deu-eng/' etc.) can be deleted as they are just build directories
-- packaging/wiktionarytodict_OLDVERSION.tar.gz, .changes, .dsc. The files from the old package version can be deleted. 
-
 **Editing wiktionary**
 Example translations section:
 ====Translations====
