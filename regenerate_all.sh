@@ -42,11 +42,16 @@ else
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
 		# Create dictionaries
-		#createdict $1 German deu
-		#createdict $1 Spanish spa
-		#createdict $1 Dutch nld
-		#createdict $1 Norwegian nob
-		#createdict $1 French fra
+		NUMCPUS=`grep -c ^processor /proc/cpuinfo`
+		for ARGUMENT in "German deu" "Spanish spa" "Dutch nld" "Norwegian nob" "French fra"  "Italian ita" "Portuguese por" "Swedish swe" "Finnish fin" "Danish dan" "Polish pol" "Russian rus"; do
+		    createdict $1 $ARGUMENT &
+		    NUMPROCS=$(($NUMPROCS+1))
+		    # run as many createdict processes simultaenously as there are CPUs in the machine
+		    if [ "$NUMPROCS" -ge $NUMCPUS ]; then
+			wait
+		    NUMPROCS=0
+		    fi
+		done
 	
 		echo "Dictionaries created, replace the current ones in the packaging directory? (y/n)"
 		read
@@ -76,6 +81,6 @@ else
 		NEWVER=$REPLY
 		dch --newversion "$NEWVER"
 		dpkg-buildpackage -rfakeroot
-		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)"
+		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
 	fi
 fi

@@ -1,6 +1,5 @@
 **Useful Links**
 http://www.loc.gov/standards/iso639-2/ascii_8bits.html
-
 http://tkedwards.github.com/wiktionarytodict/
 
 **Dependencies**
@@ -11,6 +10,20 @@ To create Debian packages for a newly added language, e.g. French (ISO code fra)
 - Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
 - Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
 - Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
+
+**Creating a new Release on Github**
+- Create an archive of the Debian packages (replace VERSION first):
+mkdir /tmp/wiktionarytodict-VERSION_debianpkgs; cp /srv/packages/local/wikt-*.deb /tmp/wiktionarytodict-VERSION_debianpkgs
+cd /tmp; tar -czf wiktionarytodict-VERSION_debianpkgs.tar.gz wiktionarytodict-VERSION_debianpkgs/
+
+- Create an archive of the dictd format files (replace VERSION first):
+cd ~/devel/wiktionarytodict/packaging; tar -xf wiktionarytodict_VERSION.tar.gz
+mv wiktionarytodict /tmp/wiktionarytodict-VERSION-dictfiles; rm -rf /tmp/wiktionarytodict-VERSION-dictfiles/debian
+cd /tmp; zip -r wiktionarytodict-VERSION-dictfiles wiktionarytodict-VERSION-dictfiles
+
+- Create the release using the Github web interface. Drap-and-drop the two files created above onto the 'Attach binaries for this release by dropping them here'
+
+- Github web UI->Settings->Automatic Page Generator. Update the download links. Check http://tkedwards.github.io/wiktionarytodict/
 
 **Editing wiktionary**
 Example translations section:
