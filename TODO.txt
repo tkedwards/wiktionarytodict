@@ -1,12 +1,16 @@
 **Possible improvements**
-- upload packages to Debian project and to website
-
-- look at using the python processing module to take advantage of machines with multiple cores
+- upload packages to Debian project and to website. Sign packages with timedwards@fastmail.com.au gpg key (gpg currently defaults to old tkedwards key)
 
 - deal with {{qualifier|someword}} properly
 
-- deal with sub-languages properly, e.g. by going of the ISO 3-letter language code (e.g nob is Bokmål Norwegian) or have the user input it, eg. Norwegian-Bokmål.
-sub-languages lines begin with '*: ' (no quotes). Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing systems of Norwegian, Egyptian Arabic as a sub-lang of Arabic, Old Armenian as a sub-language of Armenian, Chinese sub-languages such as Dungan, Mandarin and Wu, Cyrillic and Roman spelling systems in Serbian.
+- instead of just using wiktionary data bring in data from other dictionaries, e.g Freedict, or even other language Wiktionaries (e.g. fuse data from Spanish and English wiktionaries to make Eng<->Spa dictionary). See Quickdic Android app for an example
+
+- deal with sub-languages properly, e.g. by going off the ISO 3-letter language code (e.g nob is Bokmål Norwegian) or have the user input it, eg. Norwegian-Bokmål.
+sub-languages lines begin with '*: ' (no quotes):
+* Norwegian:
+*: Bokmål: {{t|nb|skjerm|m}}, {{t|nb|lerret|n}}
+*: Nynorsk: {{t|nn|skjerm|m}}, {{t|nn|lerret|n}}, {{t|nn|lereft|n}}
+Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing systems of Norwegian, Egyptian Arabic as a sub-lang of Arabic, Old Armenian as a sub-language of Armenian, Chinese sub-languages such as Dungan, Mandarin and Wu, Cyrillic and Roman spelling systems in Serbian.
 
 - have wiktionarytodict create StartDict format files http://www.stardict.org/HowToCreateDictionary
 
@@ -23,44 +27,3 @@ sub-languages lines begin with '*: ' (no quotes). Examples of sub-languages are 
 		(a place for recreation)
 		parque (m)
 
-**Bugs to Fix**
-- Fix:
-	From Wiktionary English to Spanish [wikt-eng-spa]:
-
- 	 south
-  	(of or pertaining to the south) f}}, sureño]] {{m}}, f}}, f}}
-
-
-- Fix:
-	From Wiktionary English to Dutch [wikt-eng-nld]:
-
-  	welcome
-  	(greeting given upon someone's arrival) welkom]]!
-
-- Fix:
-	From Wiktionary English to German [wikt-eng-deu]:
-
-  array
-  (large collection) Fülle]] {{f}}; [[Reihe]] {{f}}; [[Feld]] {{n}};
-  [[Zahl]] {{f}}; [[Anzahl]] {{f}}
-
-
-- Fix not handling where wiktionary has both Bokmål and Nynorsk spellings for Norwegian. This could apply to other languages which have this weird split of multiple spelling systems. Example:
-{{trans-top|the viewing area of a movie}}
-* Arabic: {{t|ar|شاشة|f|tr=shaasha}}
-* Armenian: [[էկրան]] (ēkran)
-* Chinese: [[屏]] (píng), [[屏幕]] (píngmù), [[銀幕]], [[银幕]] (yínmù)
-* French: {{t+|fr|écran|m}}
-* German: {{t+|de|Leinwand|f}}
-* Italian: {{t-|it|schermo|m}}
-{{trans-mid}}
-* Japanese: {{t|ja|スクリーン|tr=sukurīn}}, {{t|ja|銀幕|tr=ginmaku}}
-* Norwegian:
-*: Bokmål: {{t|nb|skjerm|m}}, {{t|nb|lerret|n}}
-*: Nynorsk: {{t|nn|skjerm|m}}, {{t|nn|lerret|n}}, {{t|nn|lereft|n}}
-* Portuguese: {{t+|pt|tela|f}}, {{qualifier|Portugal}} {{t+|pt|ecrã|f}}
-* Russian: {{t+|ru|экран|m|tr=ekrán}}
-* [[Scottish Gaelic]]: {{t-|gd|sgàilean|m|xs=Scottish Gaelic}}
-* Spanish: {{t+|es|pantalla|f}}
-* Turkish: {{t|tr|ekran}}
-{{trans-bottom}}
