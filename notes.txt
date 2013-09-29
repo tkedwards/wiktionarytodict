@@ -1,6 +1,6 @@
 **Useful Links**
 http://www.loc.gov/standards/iso639-2/ascii_8bits.html
-http://tkedwards.github.com/wiktionarytodict/
+http://tkedwards.github.io/wiktionarytodict/
 
 **Dependencies**
 dictd dictfmt python-pycountry
