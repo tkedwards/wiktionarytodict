@@ -1,0 +1,45 @@
+**Useful Links**
+http://www.loc.gov/standards/iso639-2/ascii_8bits.html
+http://tkedwards.github.io/wiktionarytodict/
+Repo: https://github.com/tkedwards/wiktionarytodict
+
+**Dependencies**
+dictd dictfmt python-pycountry
+
+**Packaging**
+To create Debian packages for a newly added language, e.g. French (ISO code fra):
+- Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
+- Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
+- Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
+
+**Creating a new Release on Github**
+- Create an archive of the Debian packages (replace VERSION first):
+mkdir /tmp/wiktionarytodict-VERSION_debianpkgs; cp /srv/packages/local/wikt-*.deb /tmp/wiktionarytodict-VERSION_debianpkgs
+cd /tmp; tar -czf wiktionarytodict-VERSION_debianpkgs.tar.gz wiktionarytodict-VERSION_debianpkgs/
+
+- Create an archive of the dictd format files (replace VERSION first):
+cd ~/devel/wiktionarytodict/packaging; tar -xf wiktionarytodict_VERSION.tar.gz
+mv wiktionarytodict /tmp/wiktionarytodict-VERSION-dictfiles; rm -rf /tmp/wiktionarytodict-VERSION-dictfiles/debian
+cd /tmp; zip -r wiktionarytodict-VERSION-dictfiles wiktionarytodict-VERSION-dictfiles
+
+- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name '2014-04-02' (current date). Drap-and-drop the two files created above onto the 'Attach binaries for this release by dropping them here'
+
+- Github web UI->Settings->Automatic Page Generator. Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
+
+**Editing wiktionary**
+Example translations section:
+====Translations====
+{{trans-top|An entrance}}
+* German: {{t|de|Tor|n}}, {{t|de|Zugang|m}}, {{t|de|Einfahrt|f}}
+{{trans-bottom}}
+
+{{trans-top|A computer network access point}}
+* German: {{t|de|Gateway|n}}, {{t|de|Protokollumsetzer|m}},
+{{trans-bottom}}
+
+**Linux dictionary data sources**
+freedict.org - dictionaries written in a standardised XML format. Looks like they've imported data from various sources but it's probably quite a manual process. Some dictionaries are good (German-English) but some are lacking (Spanish-English)
+
+wiktionary (to download use: http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2) - for most words in the English Wiktionary there are translations into various languages on the page. Quickdic for Android parses the dumps from Wiktionary to create their own dictionaries.
+
+TU Chemnitz - An excellent English<->German dictionary, serves as the base of ding and the default Eng<->Ger dictionary in Quickdic. Also seems to be available for dictd and may at some point have been imported into freedict.org.

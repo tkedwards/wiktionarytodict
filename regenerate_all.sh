@@ -58,7 +58,8 @@ else
         	YESORNO=$REPLY
         	if [ "$YESORNO" = "y" ]; then
 			echo "Extracting the packaging directory from the most recent bundle (e.g. wiktionarytodict_20130420.tar.gz)"
-			cd "$SCRIPTDIR"/packaging/ && tar -xzf wiktionarytodict_*.tar.gz
+			# extract the most recent wiktionarytodict_*.tar.gz file
+			cd "$SCRIPTDIR"/packaging/ && tar -xzf `ls -1 wiktionarytodict_*.tar.gz | sort | tail -1`
 			echo "Copying dictionaries to $SCRIPTDIR/packaging/"
 			cp "$1"/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
 		fi
@@ -81,6 +82,6 @@ else
 		NEWVER=$REPLY
 		dch --newversion "$NEWVER"
 		dpkg-buildpackage -rfakeroot
-		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
+		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)\n- Check changes into git and create a release on Github (see 'Creating a new Release on Github' in NOTES)\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
 	fi
 fi
