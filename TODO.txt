@@ -1,4 +1,16 @@
 **Possible improvements**
+- Catch exceptions and print the data that was being processed at the time, e.g this happened while processing for Norwegian:
+  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 46, in process
+TextElement
+    self.parseTranslations(content)
+  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 67, in parseTr
+anslations
+    self.parseTranslationline(aline, currentMeaning)
+  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 75, in parseTr
+anslationline
+    rawtranslation = aline.split(':')[2].lstrip()
+IndexError: list index out of range
+
 - upload packages to Debian project and to website. Sign packages with timedwards@fastmail.com.au gpg key (gpg currently defaults to old tkedwards key)
 
 - deal with {{qualifier|someword}} properly
