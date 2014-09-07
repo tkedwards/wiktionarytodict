@@ -71,10 +71,10 @@ class WiktionaryDumpHandler(ContentHandler):
 			wordwithmeaning = self.word + ' (%s)' % (currentMeaning) # word with meaning, e.g. "trade (practice)": Handwerk
 			# TODO: deal with these qualifiers properly
 			aline = re.sub('\{\{qualifier\|[\w ]*\}\}', '', aline) # remove qualifier crap (eg. {{qualifier|man}}) from strings like this: * German: {{qualifier|man}} [[Scheißkerl]] {{m}}, [[Drecksack]] {{m}}
-			if aline.startswith('*:'): # sub-language lines like '*: Bokmål:'
-				rawtranslation = aline.split(':')[2].lstrip()
-			else: # normal language lines like '* Norwegian:'
-				rawtranslation = aline.split(':')[1].lstrip()
+			# Extract the actual translation (the bit we're interested in e.g. '{{t+|de|Stuhl|m}}') from the line e.g. '* German: {{t+|de|Stuhl|m}}', also works for sub-languages e.g. '*: Bokmål: {{t+|nb|stol|m}}'
+			regex = re.compile("^.*\:(.*)$")
+			rawtranslation = regex.findall(aline)[0].lstrip()
+			# Process the actual translation:
 			if rawtranslation.startswith('{{'): # lines formatted like this: {{t+|de|frei}}
 				translationslist = rawtranslation.split('{{')
 				for atranslation in translationslist:

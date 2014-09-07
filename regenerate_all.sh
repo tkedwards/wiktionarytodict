@@ -82,6 +82,6 @@ else
 		NEWVER=$REPLY
 		dch --newversion "$NEWVER"
 		dpkg-buildpackage -rfakeroot
-		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz)\n- Check changes into git and create a release on Github (see 'Creating a new Release on Github' in NOTES)\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
+		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Move the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz) and $SCRIPTDIR/packaging/*.deb\n- Check changes into git and create a release on Github (see 'Creating a new Release on Github' in NOTES)\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
 	fi
 fi
