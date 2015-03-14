@@ -13,18 +13,20 @@ To create Debian packages for a newly added language, e.g. French (ISO code fra)
 - Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
 
 **Creating a new Release on Github**
-- Create an archive of the Debian packages (replace VERSION first):
-mkdir /tmp/wiktionarytodict-VERSION_debianpkgs; cp /srv/packages/local/wikt-*.deb /tmp/wiktionarytodict-VERSION_debianpkgs
-cd /tmp; tar -czf wiktionarytodict-VERSION_debianpkgs.tar.gz wiktionarytodict-VERSION_debianpkgs/
+- Create an archive of the Debian packages (set $VERSION first):
+export VERSION=20140905
+mkdir /tmp/wiktionarytodict-"$VERSION"_debianpkgs; cp /srv/packages/local/pool/main/w/wiktionarytodict/wikt-*.deb /tmp/wiktionarytodict-"$VERSION"_debianpkgs
+cd /tmp; tar -czf wiktionarytodict-"$VERSION"_debianpkgs.tar.gz wiktionarytodict-"$VERSION"_debianpkgs/
 
-- Create an archive of the dictd format files (replace VERSION first):
-cd ~/devel/wiktionarytodict/packaging; tar -xf wiktionarytodict_VERSION.tar.gz
-mv wiktionarytodict /tmp/wiktionarytodict-VERSION-dictfiles; rm -rf /tmp/wiktionarytodict-VERSION-dictfiles/debian
-cd /tmp; zip -r wiktionarytodict-VERSION-dictfiles wiktionarytodict-VERSION-dictfiles
+- Create an archive of the dictd format files (set VERSION first):
+export VERSION=20140905
+cd ~/devel/wiktionarytodict/packaging; tar -xf wiktionarytodict_"$VERSION".tar.gz
+mv wiktionarytodict /tmp/wiktionarytodict-"$VERSION"-dictfiles; rm -rf /tmp/wiktionarytodict-"$VERSION"-dictfiles/debian
+cd /tmp; zip -r wiktionarytodict-"$VERSION"-dictfiles wiktionarytodict-"$VERSION"-dictfiles
 
-- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name '2014-04-02' (current date). Drap-and-drop the two files created above onto the 'Attach binaries for this release by dropping them here'
+- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Drap-and-drop the two files created above onto the 'Attach binaries for this release by dropping them here'
 
-- Github web UI->Settings->Automatic Page Generator. Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
+- Github web UI->Settings->Automatic Page Generator (see https://help.github.com/articles/creating-pages-with-the-automatic-generator/). Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
 
 **Editing wiktionary**
 Example translations section:
