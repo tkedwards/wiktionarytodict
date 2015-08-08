@@ -15,7 +15,7 @@ To create Debian packages for a newly added language, e.g. French (ISO code fra)
 **Creating a new Release on Github**
 - Create an archive of the Debian packages (set $VERSION first):
 export VERSION=20140905
-mkdir /tmp/wiktionarytodict-"$VERSION"_debianpkgs; cp /srv/packages/local/pool/main/w/wiktionarytodict/wikt-*.deb /tmp/wiktionarytodict-"$VERSION"_debianpkgs
+mkdir /tmp/wiktionarytodict-"$VERSION"_debianpkgs; cp /srv/packages/local-trusty/pool/main/w/wiktionarytodict/wikt-*.deb /tmp/wiktionarytodict-"$VERSION"_debianpkgs
 cd /tmp; tar -czf wiktionarytodict-"$VERSION"_debianpkgs.tar.gz wiktionarytodict-"$VERSION"_debianpkgs/
 
 - Create an archive of the dictd format files (set VERSION first):
