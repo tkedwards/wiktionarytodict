@@ -1,0 +1,19 @@
+**Package creation complete. Manual steps remaining:**
+
+*Create a release on Github*
+- Check changes into git and Github
+
+- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Drap-and-drop the .orig.tar.gz file onto the 'Attach binaries for this release by dropping them here'
+
+- Github web UI->Settings->Automatic Page Generator (see https://help.github.com/articles/creating-pages-with-the-automatic-generator/). Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
+
+
+*Upload the Package to the PPA*
+- Uploaded the new source package to the PPA with:
+dput ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
+
+- Ensure that the upload was successful and then select View Package Details->'Copy Packages' for each supported distro version (e.g. trusty, wily, xenial). Make sure to only copy binaries: https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa
+
+
+*Clean-up*
+- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict-VERSION/ (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.orig.tar.gz and ...diff.gz) and move $SCRIPTDIR/packaging/*.deb away or delete them (if copied to github release or local apt repo

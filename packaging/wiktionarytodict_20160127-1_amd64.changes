@@ -1,0 +1,144 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 27 Jan 2016 03:05:25 +0100
+Source: wiktionarytodict
+Binary: wikt-eng-nob wikt-nob-eng wikt-spa-eng wikt-eng-spa wikt-nld-eng wikt-eng-nld wikt-deu-eng wikt-eng-deu wikt-fra-eng wikt-eng-fra wikt-ita-eng wikt-eng-ita wikt-por-eng wikt-eng-por wikt-swe-eng wikt-eng-swe wikt-fin-eng wikt-eng-fin wikt-dan-eng wikt-eng-dan wikt-pol-eng wikt-eng-pol wikt-rus-eng wikt-eng-rus
+Architecture: source all
+Version: 20160127-1
+Distribution: wily
+Urgency: medium
+Maintainer: Tim Edwards <timedwards@fastmail.com.au>
+Changed-By: Tim Edwards <timedwards@fastmail.com.au>
+Description: 
+ wikt-dan-eng - Danish-English translation dictionary
+ wikt-deu-eng - German-English translation dictionary
+ wikt-eng-dan - English-Danish translation dictionary
+ wikt-eng-deu - English-German translation dictionary
+ wikt-eng-fin - English-Finnish translation dictionary
+ wikt-eng-fra - English-French translation dictionary
+ wikt-eng-ita - English-Italian translation dictionary
+ wikt-eng-nld - English-Dutch translation dictionary
+ wikt-eng-nob - English-Norwegian translation dictionary
+ wikt-eng-pol - English-Polish translation dictionary
+ wikt-eng-por - English-Portuguese translation dictionary
+ wikt-eng-rus - English-Russian translation dictionary
+ wikt-eng-spa - English-Spanish translation dictionary
+ wikt-eng-swe - English-Swedish translation dictionary
+ wikt-fin-eng - Finnish-English translation dictionary
+ wikt-fra-eng - French-English translation dictionary
+ wikt-ita-eng - Italian-English translation dictionary
+ wikt-nld-eng - Dutch-English translation dictionary
+ wikt-nob-eng - Norwegian-English translation dictionary
+ wikt-pol-eng - Polish-English translation dictionary
+ wikt-por-eng - Portuguese-English translation dictionary
+ wikt-rus-eng - Russian-English translation dictionary
+ wikt-spa-eng - Spanish-English translation dictionary
+ wikt-swe-eng - Swedish-English translation dictionary
+Changes: 
+ wiktionarytodict (20160127-1) wily; urgency=medium
+ .
+   * Rebuilt with data from 27 January 2016 Wiktionary dump file
+Checksums-Sha1: 
+ f337752cc4576255b314998fc392fc43f7699182 2839 wiktionarytodict_20160127-1.dsc
+ 0121f689e5666c82772b82f67466d6cdf854f0ca 40814408 wiktionarytodict_20160127.orig.tar.gz
+ 5cb6876ce0723cd2b87bdde148c39e16f0b5c708 2668 wiktionarytodict_20160127-1.diff.gz
+ fdeeaaf1868af8d70442c1d2ea3c0267aca7357b 602242 wikt-eng-nob_20160127-1_all.deb
+ fecaa08f602141507ceb9998a94e8ebc8813dbb3 770772 wikt-nob-eng_20160127-1_all.deb
+ 67c81a3d01f3a075bada422768c621f4159fc66b 1889474 wikt-spa-eng_20160127-1_all.deb
+ f57779df85b6ac3acb835c3cbd500747ee26f2d0 1684438 wikt-eng-spa_20160127-1_all.deb
+ 89039bbb82ad1b603dce148dcb61461b8bf879b9 1460442 wikt-nld-eng_20160127-1_all.deb
+ d936e5fea7adc78c8cea0dec5b83c50dbdb3d6f5 1252996 wikt-eng-nld_20160127-1_all.deb
+ 871bf9d28830146506b67adc3ab77b594dd61b6e 2452730 wikt-deu-eng_20160127-1_all.deb
+ 2bd165edc7cdf80f05653582f656bb38c17ab744 2025800 wikt-eng-deu_20160127-1_all.deb
+ 493039cf5aa3de960ee079242c2f22e2aca0b0ce 2158302 wikt-fra-eng_20160127-1_all.deb
+ 44af84dc2d99bdbf57bb0aec07c1df94983ccc26 1972860 wikt-eng-fra_20160127-1_all.deb
+ d8a99c3e54722b6900b62b4b4f93a8d2f49b7ae8 1495096 wikt-ita-eng_20160127-1_all.deb
+ e4c4c8902473c1823676f75acbf1e452c044d740 1356896 wikt-eng-ita_20160127-1_all.deb
+ d8c4e03aada61d38fe7802dac423a51435355c20 1936028 wikt-por-eng_20160127-1_all.deb
+ a1961926dcbf22b12bb28e91f699cf5d15cff5c9 1828886 wikt-eng-por_20160127-1_all.deb
+ d11a8d77cccf9bdf1d8652357921eb5556843e64 1339760 wikt-swe-eng_20160127-1_all.deb
+ fb6c096854434444e74291c7577dae45c9e9b362 1182476 wikt-eng-swe_20160127-1_all.deb
+ 2d16b1017fccf58078f33a2000b14b4c76b22169 2734508 wikt-fin-eng_20160127-1_all.deb
+ 0713cdf62566c6d2886acd4a9e0bd41cabfa4112 2485100 wikt-eng-fin_20160127-1_all.deb
+ d9abe8c2325ba5a23d4fa2e794ae40359bf8a3e6 556330 wikt-dan-eng_20160127-1_all.deb
+ 02d0bb4274d20bdb2a580a3872bc8fd0c8f3f688 516612 wikt-eng-dan_20160127-1_all.deb
+ 1b8e42f8007592244716c1db3a3cc23668f1cfd8 1039614 wikt-pol-eng_20160127-1_all.deb
+ 5cf9fa4e9e8db237cd766f50a4823197b33fafa3 939766 wikt-eng-pol_20160127-1_all.deb
+ 48885efb7481ae9d41de950847cbe3c34479746c 3272474 wikt-rus-eng_20160127-1_all.deb
+ a14ca475f97b055de19d2b3112cd826c384fecd7 2678586 wikt-eng-rus_20160127-1_all.deb
+Checksums-Sha256: 
+ 3e576fb94817c3032b09d1d4d7eb622efa94ce7e3ccf1d2c4c21dfa4d000762d 2839 wiktionarytodict_20160127-1.dsc
+ bcddc6086ccaa4c63dbf8e7f73a6fad7efdc32d138130c815069262ccd345758 40814408 wiktionarytodict_20160127.orig.tar.gz
+ f1d0c68dbf6828b634169aa5783faf7334f4124c83d28b618b5edb1990da51c1 2668 wiktionarytodict_20160127-1.diff.gz
+ a54ef0e0e421cfe9c6e2498e61aa8780484f6cd3229c376491826d16e174151a 602242 wikt-eng-nob_20160127-1_all.deb
+ d0c5faf831d8ef79032fd519606c3e9d108ef03d2477ba61a71cfbf627fc93fd 770772 wikt-nob-eng_20160127-1_all.deb
+ d1974119843f5094adb58064beef7fa13f199d1903660ab38dd14851c9baba02 1889474 wikt-spa-eng_20160127-1_all.deb
+ a17820072ac8d9b2f1cfcb97f747974faf9431dff4d6ca1e19b5494f4baa41d4 1684438 wikt-eng-spa_20160127-1_all.deb
+ 6b2970bba47e57a48f1519a9b3ab3d47fa23c767db09855603e1c292b3705e1b 1460442 wikt-nld-eng_20160127-1_all.deb
+ 5d7d50a6dbeff4e50a130661ef322ee203377f34b10365ae207cb86f4f807988 1252996 wikt-eng-nld_20160127-1_all.deb
+ 912eabd883c4c8422daebf8debc1b020f666205218515bc644b790aca3f99424 2452730 wikt-deu-eng_20160127-1_all.deb
+ 03a1d06b628b6af60ec681f658bc76cd08f015fef104e7ba5aa4d977559ff0ce 2025800 wikt-eng-deu_20160127-1_all.deb
+ 6113cebe3842fca3be47e0ba8edda6980f8521eaae1c5520b42e43bc32cac465 2158302 wikt-fra-eng_20160127-1_all.deb
+ d43b377434e88e1afe0781b6106d61b6e1f5a1ec33951e63785f0cb539a4bd25 1972860 wikt-eng-fra_20160127-1_all.deb
+ 22361a7f49c7553bcbf40f7e1eb2bcf5734c9ec99f63c9e79df5f42de7630830 1495096 wikt-ita-eng_20160127-1_all.deb
+ 911ca804813bd429e2ef57badfd52f55f3b0065a47798ff94607a29628464c24 1356896 wikt-eng-ita_20160127-1_all.deb
+ 62774ee6113eff44e126fe552af9ea20f472d882cbe9d2e092ee692e45eec64f 1936028 wikt-por-eng_20160127-1_all.deb
+ 681c905b20518b3673aa58430866bce1d5fbf9010c9a2fb6b2ce570ea8658279 1828886 wikt-eng-por_20160127-1_all.deb
+ 354210ca8b7f81327fff1dc0b87502a23a86d859cfac2af156f9467e4565a688 1339760 wikt-swe-eng_20160127-1_all.deb
+ d906d79abc47e1bb1d54867b95f53d4e55a373b55aba42a9ac0c6ef86b6320d1 1182476 wikt-eng-swe_20160127-1_all.deb
+ ad114f7854ce75cab3f3285a19b60a1c72187d40bbc2a2d88147c7e86702ce8e 2734508 wikt-fin-eng_20160127-1_all.deb
+ ec35ceedc17590d193d1f96a8c596f73b8405b0ed9bb2d40d7dcd9d463b34be0 2485100 wikt-eng-fin_20160127-1_all.deb
+ 0071ed290809ef3ec9817ba877684a14c884242e08b9ea8b803295108b2b7233 556330 wikt-dan-eng_20160127-1_all.deb
+ b52a16545e4b2534d208e6d23567eeed1065b8e23330074f4b67812f53742e26 516612 wikt-eng-dan_20160127-1_all.deb
+ 275089e42b02a369d225025362bfdedf7378a02f29ff5e60872b3549dbd10949 1039614 wikt-pol-eng_20160127-1_all.deb
+ 943cbb01bfeb503c673b782ab75734559a0fc975bbd63bd36589720cab0813d3 939766 wikt-eng-pol_20160127-1_all.deb
+ 087d15d43c32ad382d1f4c116979cc51a8a2ac6375ffe4c0be2baf53c11a86ea 3272474 wikt-rus-eng_20160127-1_all.deb
+ c49df31823a56c86ef1fccc400a37a8106bd08647c60463714d2369ab85648ef 2678586 wikt-eng-rus_20160127-1_all.deb
+Files: 
+ 6d0d756528fe37257abb6a03f4110aad 2839 text optional wiktionarytodict_20160127-1.dsc
+ 7cd4221653b9150cce713abb7958d2d1 40814408 text optional wiktionarytodict_20160127.orig.tar.gz
+ d2afec770afa5cd076bf22bbd5a73e42 2668 text optional wiktionarytodict_20160127-1.diff.gz
+ a344b50b37e81b343de554642c492235 602242 text optional wikt-eng-nob_20160127-1_all.deb
+ 8a5b8aad8a108fd22c98ab592ad88093 770772 text optional wikt-nob-eng_20160127-1_all.deb
+ 27f950cf82fd4a14c7c6d613d7bb6a33 1889474 text optional wikt-spa-eng_20160127-1_all.deb
+ b251845cd33d575881b0669ce759d690 1684438 text optional wikt-eng-spa_20160127-1_all.deb
+ fc15952173979207d44df48d06a41311 1460442 text optional wikt-nld-eng_20160127-1_all.deb
+ 7e44c9a87cfcbe81a3a2ae67053a6306 1252996 text optional wikt-eng-nld_20160127-1_all.deb
+ 8b4ab210c4eaf51240f61385739fd694 2452730 text optional wikt-deu-eng_20160127-1_all.deb
+ 6ce85395b44551da6881b77719b850ce 2025800 text optional wikt-eng-deu_20160127-1_all.deb
+ 90b7e596380310dff4963a39cbf6f1c7 2158302 text optional wikt-fra-eng_20160127-1_all.deb
+ c9bbaa0ac436d3f80896ad730462adee 1972860 text optional wikt-eng-fra_20160127-1_all.deb
+ a300fa455983e1a3c863bfe33dd15c0f 1495096 text optional wikt-ita-eng_20160127-1_all.deb
+ 1818d2304903d59e33484ab6de68de57 1356896 text optional wikt-eng-ita_20160127-1_all.deb
+ efd3f8e85b6e888e1648cd6f13fc11fb 1936028 text optional wikt-por-eng_20160127-1_all.deb
+ 8f55ef4cd8d466c1885182717e357a95 1828886 text optional wikt-eng-por_20160127-1_all.deb
+ d6192c30966710eb45aa0cdf88430f59 1339760 text optional wikt-swe-eng_20160127-1_all.deb
+ 41d620834bec47face6f64166c39ab40 1182476 text optional wikt-eng-swe_20160127-1_all.deb
+ e8f20eed56716538501261875e78682c 2734508 text optional wikt-fin-eng_20160127-1_all.deb
+ 063d04a13c094195258c4f4480b589eb 2485100 text optional wikt-eng-fin_20160127-1_all.deb
+ 1ebfb59e1ea89b2b9e9333d4cd6403f8 556330 text optional wikt-dan-eng_20160127-1_all.deb
+ d4a3cbe2402b252ab5a0ea0f9dfdbb7f 516612 text optional wikt-eng-dan_20160127-1_all.deb
+ 91936e05b2ed4669d09c86a44b22ca94 1039614 text optional wikt-pol-eng_20160127-1_all.deb
+ a012c3341e20d83d1050f311d9ce4b4f 939766 text optional wikt-eng-pol_20160127-1_all.deb
+ 5454152ac1ff0119c4d039a14c7bca6d 3272474 text optional wikt-rus-eng_20160127-1_all.deb
+ ff429200fcc7f0d4ee5836c05c2ee4b2 2678586 text optional wikt-eng-rus_20160127-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJWqCasAAoJEHNE8dgjkXu/bZEP/ReikxkwGRgTQX4KzyMntiwT
+tjAsHZXv+6sfKipbHaymecSTzkVdaI5h4T7fxeg+Yg27EFn9+0iKZcCQz8ozSgep
+D8qMzmwGCA6SF4JdCQYsfJjF0LE15703PGYWjR0k0pkyBPp5X9hpHqyNy8vlD1Ap
+Yjf4dM0w3+AqC9I2ub5B0vg64wnmx5TwEdfhPdNIqQanwMu9T6kzcbfcHBUIZePm
+sNn5BIEVbCV/WVZ5jhZ3hEz/6lA8fST0KoWIHhNGDyUkYV+Ak8qUCPT3me2dKFKy
+1UYGZjNMsTlFCM3jBuKw20LXQjMl3UM4/AcZX7bVtVl12wOcZOha4nUgOYUZQS22
+vamoCjo2G+hIewz4uat2kFow5/ZFVoL1n0a6V1zbBDteu1jEMW7dH+kgd8Z8OzvO
+SjABHltEIdQLCJ1tNaPfgFZYCnhiVSBVDdVDmkdY0gHf+RD7SB+7uac12qPMkd9T
+mx0gcVrjdGG+8IQb0sQaaquIBuNfQDWOIbCoWGKrzIFn7OjPTbK9uEzWbDXi1x9r
+zwl5tQ8YXJNpJioBtLW/UEGJx2Ox+VxLSh/F1h45bI/3nGAGqal0nA987qXhNQ7M
+MjEjXuTUmEttcgPTkR+7PU8sjD7nIwYNcmsAMjp7KRbUkBJxVMQIIJgtZhZlNWzY
+lzWgvM2RqtUi6hJ7fbb4
+=IMzW
+-----END PGP SIGNATURE-----
