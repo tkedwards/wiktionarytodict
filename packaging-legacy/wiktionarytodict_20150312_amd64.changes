@@ -1,0 +1,120 @@
+Format: 1.8
+Date: Fri, 13 Mar 2015 08:01:10 +1100
+Source: wiktionarytodict
+Binary: wikt-eng-nob wikt-nob-eng wikt-spa-eng wikt-eng-spa wikt-nld-eng wikt-eng-nld wikt-deu-eng wikt-eng-deu wikt-fra-eng wikt-eng-fra wikt-ita-eng wikt-eng-ita wikt-por-eng wikt-eng-por wikt-swe-eng wikt-eng-swe wikt-fin-eng wikt-eng-fin wikt-dan-eng wikt-eng-dan wikt-pol-eng wikt-eng-pol wikt-rus-eng wikt-eng-rus
+Architecture: source all
+Version: 20150312
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Tim Edwards <timedwards@fastmail.com.au>
+Changed-By: Tim Edwards <timedwards@fastmail.com.au>
+Description: 
+ wikt-dan-eng - Danish-English translation dictionary
+ wikt-deu-eng - German-English translation dictionary
+ wikt-eng-dan - English-Danish translation dictionary
+ wikt-eng-deu - English-German translation dictionary
+ wikt-eng-fin - English-Finnish translation dictionary
+ wikt-eng-fra - English-French translation dictionary
+ wikt-eng-ita - English-Italian translation dictionary
+ wikt-eng-nld - English-Dutch translation dictionary
+ wikt-eng-nob - English-Norwegian translation dictionary
+ wikt-eng-pol - English-Polish translation dictionary
+ wikt-eng-por - English-Portuguese translation dictionary
+ wikt-eng-rus - English-Russian translation dictionary
+ wikt-eng-spa - English-Spanish translation dictionary
+ wikt-eng-swe - English-Swedish translation dictionary
+ wikt-fin-eng - Finnish-English translation dictionary
+ wikt-fra-eng - French-English translation dictionary
+ wikt-ita-eng - Italian-English translation dictionary
+ wikt-nld-eng - Dutch-English translation dictionary
+ wikt-nob-eng - Norwegian-English translation dictionary
+ wikt-pol-eng - Polish-English translation dictionary
+ wikt-por-eng - Portuguese-English translation dictionary
+ wikt-rus-eng - Russian-English translation dictionary
+ wikt-spa-eng - Spanish-English translation dictionary
+ wikt-swe-eng - Swedish-English translation dictionary
+Changes: 
+ wiktionarytodict (20150312) UNRELEASED; urgency=medium
+ .
+   * Rebuild with data from 12 March 2015 Wiktionary Dump file
+Checksums-Sha1: 
+ e61976d308c723844ae25ab9be173d643d4c383c 1690 wiktionarytodict_20150312.dsc
+ 6deff4e25d2b3af56e4eb846da29c89a63f14069 38440636 wiktionarytodict_20150312.tar.gz
+ 2416445ad072b03cb7686d48d449860ca5896809 554098 wikt-eng-nob_20150312_all.deb
+ bf5afa650b208ccbcd9990ce17c0c2ab259f8024 695490 wikt-nob-eng_20150312_all.deb
+ 7da7448eb244741dea28e369528bf7d8da3af234 1778606 wikt-spa-eng_20150312_all.deb
+ 75e10109f2f291632d62207a2dc174dfc901afaa 1587578 wikt-eng-spa_20150312_all.deb
+ 19e6c884f02b0647f95fe25b503f0f5a2cb160ff 1408966 wikt-nld-eng_20150312_all.deb
+ 4ac15e2b10bcccd6589642050631379a3194a606 1212738 wikt-eng-nld_20150312_all.deb
+ 03bb120cff7defd86f8ec3ac83c7fdcf636b7011 2326182 wikt-deu-eng_20150312_all.deb
+ 87c9115ff7fd0e76ec92e352a2a0df1ac8f6ad75 1936140 wikt-eng-deu_20150312_all.deb
+ e82d23ab479304b5141c311666d3d05c8d7bc811 2040624 wikt-fra-eng_20150312_all.deb
+ 1c32926bc3e2e71b1a9bcda44b1484e0ad3dedb1 1868330 wikt-eng-fra_20150312_all.deb
+ e17100271e8026da0117b6a1c09d6edd9e914e60 1403264 wikt-ita-eng_20150312_all.deb
+ bb9f4a4510c73fcd74825f9cecaa4f47941e557b 1275502 wikt-eng-ita_20150312_all.deb
+ 903804b4d2d7a2fbfe1e099188305e87e1c2ea6b 1521850 wikt-por-eng_20150312_all.deb
+ 21eb514818d3b5c483e9979c896d937dee6c28dc 1440252 wikt-eng-por_20150312_all.deb
+ a78fcebe5aaed0734293e7c3adbc21fe5f44ae62 1244238 wikt-swe-eng_20150312_all.deb
+ 25a99535f404d01c698211255f7b262a12e04511 1099748 wikt-eng-swe_20150312_all.deb
+ e5b969ff8eea639c93156cd18806a8524d55d7d7 2583634 wikt-fin-eng_20150312_all.deb
+ cd3300e88aa3b8a88c12b872345053f67bc8766c 2351128 wikt-eng-fin_20150312_all.deb
+ 0bd166f50d7cd35e20eee8f0afd87c6f08b4efd5 532042 wikt-dan-eng_20150312_all.deb
+ bba7da9a7fbceed1f23c50be74de30a680c8d406 494340 wikt-eng-dan_20150312_all.deb
+ 297d83ceadf4c9728a23a9bb173ceb724abc2b46 972102 wikt-pol-eng_20150312_all.deb
+ fe98f828402b5f4597f8586fc8b07f88ad2339ae 884234 wikt-eng-pol_20150312_all.deb
+ f719e56975d77abe487ba943e286c016edb76ad2 3378680 wikt-rus-eng_20150312_all.deb
+ f759239336cd0eb1bf0f95ca5d8efcc03e3361ad 2705616 wikt-eng-rus_20150312_all.deb
+Checksums-Sha256: 
+ 6b87acac27a085f57eb649ec0af3a45adaa81aa216b57d0a6aeed794dab90f50 1690 wiktionarytodict_20150312.dsc
+ 678d3f5f53a0d5e8dd9d29ffb70053cf0ea9831d51f97896e51688c55ee33c0e 38440636 wiktionarytodict_20150312.tar.gz
+ 269a47045a4c52564bd4e07d37b8951bc37a8c139e3623f3ec3e5c959f790e9d 554098 wikt-eng-nob_20150312_all.deb
+ bcbbd61302f2b6dfe2b5ed69213b1f03f6c1ee519461c3d04eb07c2e8f13d859 695490 wikt-nob-eng_20150312_all.deb
+ d662b493a69c953dee704151f8ca317994a2f1fadc2ea646c602b2b98bd50526 1778606 wikt-spa-eng_20150312_all.deb
+ 652039a25f7b1666884f3907f58a39bb3cb7700145a1de0fa1adccdf895682ed 1587578 wikt-eng-spa_20150312_all.deb
+ 9ad0f587f5129e012229590871192fbd8ae186c86252eeaed11635f68ecca48c 1408966 wikt-nld-eng_20150312_all.deb
+ bc2468d9cf167e5d77de79d99f99cd3ddd93d17d605018de95b9a6eaba871154 1212738 wikt-eng-nld_20150312_all.deb
+ d6d42d1d68461d914d9f9eaccfcd26eb23a4b8cb83d58cbc1c273ada82185d8e 2326182 wikt-deu-eng_20150312_all.deb
+ d4ee65d85a1a4c1979c7566ee2b9e6623a06341b261b5c8c4875f422787e37a6 1936140 wikt-eng-deu_20150312_all.deb
+ 83b9413fca2db49fad0f666f89a97da7931c6575263daaace53bb8a039fbd31e 2040624 wikt-fra-eng_20150312_all.deb
+ 4d9b48b46584c73886ceddf73592d7498097a08a3c2ec886c6ae3f177aa93012 1868330 wikt-eng-fra_20150312_all.deb
+ cfb98d28716fc176822cd4c5b2737ad08bb55554467c5c4807e1def36fc78ba2 1403264 wikt-ita-eng_20150312_all.deb
+ 75dd8b5ec2a5c254ad93f68180c4c7cf4721d0d73240cc5647e4bf67a5e375ee 1275502 wikt-eng-ita_20150312_all.deb
+ 4bb1d4f5ab2e7f475ea9c73976d2aeef03c6b368bb1e56d3ef09a02a4545eb66 1521850 wikt-por-eng_20150312_all.deb
+ ff142acb0bd6464e126f8fdc722f0c3b03119b65573633af5de5956d2b7f6a67 1440252 wikt-eng-por_20150312_all.deb
+ 9a8f38d2c189757e499f4705afd4a94580147cd0874b6eb2c1fd874628cb8001 1244238 wikt-swe-eng_20150312_all.deb
+ a02a03538b745465ced766d666b68655ebe74df5a8cd566904f7d4c61eafa515 1099748 wikt-eng-swe_20150312_all.deb
+ c3fd1b59f20085376b81bf7b2cdf956d2ed8237b20215882b2e82e18d2043e08 2583634 wikt-fin-eng_20150312_all.deb
+ 7be18c8a73e162b8b031a44f9b9721daf43eed9e4a49936779f6c037fcb750c9 2351128 wikt-eng-fin_20150312_all.deb
+ 82ec81ac2e0c3d39af9d6ec7b8dfa85f03646872428bd7d8b8680b32d2e34e81 532042 wikt-dan-eng_20150312_all.deb
+ b3f05d95453b4a56b5b35f2d689c069b9c9ebda2f93cc5a5aca31afdc58746ef 494340 wikt-eng-dan_20150312_all.deb
+ 1677909afb1beaa8c09f8fcf0f68e66d3f7cc34284615196be20fea960a5a92a 972102 wikt-pol-eng_20150312_all.deb
+ 990133729f954ec788d3983ab1bc62b204fabdfa48cbaaa305aa076dd59079b8 884234 wikt-eng-pol_20150312_all.deb
+ 834cf2fa68617c902021575e1bedb02ed4ebfd57842fbc4e60eac5a89f050ab4 3378680 wikt-rus-eng_20150312_all.deb
+ 1ffb337506aa406a04a4875bdee2824a30cdbeeec622ca9fe1c6865a2011f836 2705616 wikt-eng-rus_20150312_all.deb
+Files: 
+ 9a3aee2c1fe83fca4a1992759c8e6e66 1690 text optional wiktionarytodict_20150312.dsc
+ 56dae4ccf91eee408f02b93ba8c948ce 38440636 text optional wiktionarytodict_20150312.tar.gz
+ 8c7c0df3cf6a839d8a3efa98cc12f994 554098 text optional wikt-eng-nob_20150312_all.deb
+ f27788fb4d5e777f0376c6110063dfdf 695490 text optional wikt-nob-eng_20150312_all.deb
+ 37c7a6b709f4fb6f985d13f6353babb4 1778606 text optional wikt-spa-eng_20150312_all.deb
+ 30fb9bba302de11f8b5daf6ad4f55cbe 1587578 text optional wikt-eng-spa_20150312_all.deb
+ a61bbc1747e215620f6498f52727c90f 1408966 text optional wikt-nld-eng_20150312_all.deb
+ 27840238d65ba1a0a3da9155dcc5b086 1212738 text optional wikt-eng-nld_20150312_all.deb
+ fbabb31da9c148d6658a2420943fbde4 2326182 text optional wikt-deu-eng_20150312_all.deb
+ dc0cef0ffe090db52d5bd91fb92a4e62 1936140 text optional wikt-eng-deu_20150312_all.deb
+ 7e58b5a335f01be351ec215c6eca5e0d 2040624 text optional wikt-fra-eng_20150312_all.deb
+ 009c17225750fa1939d1af8c39adfdda 1868330 text optional wikt-eng-fra_20150312_all.deb
+ 345721e69658f267274b7c13a7dafb52 1403264 text optional wikt-ita-eng_20150312_all.deb
+ d4bb544ee4541e1ad8f300220a630d7a 1275502 text optional wikt-eng-ita_20150312_all.deb
+ d18950894f3877c34041f10d57c7ea64 1521850 text optional wikt-por-eng_20150312_all.deb
+ a17b74dc808824118a531d76814e6447 1440252 text optional wikt-eng-por_20150312_all.deb
+ f7b09d48c6042bc73f2eb0cc0f8bfcb6 1244238 text optional wikt-swe-eng_20150312_all.deb
+ 1575cf2073e8519eb3bc6007bee80677 1099748 text optional wikt-eng-swe_20150312_all.deb
+ 991006434381f7c07a1fc89ad8965a62 2583634 text optional wikt-fin-eng_20150312_all.deb
+ dae9c42f2be0e22b36e87c0ab43e20e0 2351128 text optional wikt-eng-fin_20150312_all.deb
+ 04f7581e446147e6b15a4e939e46410f 532042 text optional wikt-dan-eng_20150312_all.deb
+ 6cb5faeb2f9c121ba971317344ae2bbe 494340 text optional wikt-eng-dan_20150312_all.deb
+ 67e7053f647679f3082b84872e163efb 972102 text optional wikt-pol-eng_20150312_all.deb
+ dbe938616e0c5cda166886b1846b3089 884234 text optional wikt-eng-pol_20150312_all.deb
+ 3d0c136e0d7f772328b0ccf7aa45b7fd 3378680 text optional wikt-rus-eng_20150312_all.deb
+ 30582e7855afa4130395fcc0a5b6b6d6 2705616 text optional wikt-eng-rus_20150312_all.deb

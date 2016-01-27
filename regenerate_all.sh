@@ -30,21 +30,22 @@ if [ -z "$1" ]; then
        echo -e "usage: `basename $0` TEMPLOCATION
 where TEMPLOCATION is the path to a directory with a few gigbytes free space"
 else
+	WORKINGDIR="`mktemp -d --tmpdir="$1" wiktionarytodict_build.XXX`"
 	echo "Download the latest Wiktionary dump file and extract it? (y/n)"
         read
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
-		cd "$1" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 -f enwiktionary-latest-pages-articles.xml.bz2
+		cd "$WORKINGDIR" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 -f enwiktionary-latest-pages-articles.xml.bz2
 	fi
 	
-	echo "Regenerate dictionary files using wiktionary dump file in $1? (This can take a long time) DO NOT PRESS ENTER DURING DICTIONARY CREATION (y/n)"
+	echo "Regenerate dictionary files using wiktionary dump file in $WORKINGDIR? (This can take a long time) DO NOT PRESS ENTER DURING DICTIONARY CREATION (y/n)"
 	read
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
 		# Create dictionaries
 		NUMCPUS=`grep -c ^processor /proc/cpuinfo`
 		for ARGUMENT in "German deu" "Spanish spa" "Dutch nld" "Norwegian nob" "French fra"  "Italian ita" "Portuguese por" "Swedish swe" "Finnish fin" "Danish dan" "Polish pol" "Russian rus"; do
-		    createdict $1 $ARGUMENT &
+		    createdict $WORKINGDIR $ARGUMENT &
 		    NUMPROCS=$(($NUMPROCS+1))
 		    # run as many createdict processes simultaenously as there are CPUs in the machine
 		    if [ "$NUMPROCS" -ge $NUMCPUS ]; then
@@ -52,36 +53,45 @@ else
 		    NUMPROCS=0
 		    fi
 		done
-	
-		echo "Dictionaries created, replace the current ones in the packaging directory? (y/n)"
+		# Bundle up the dictionaries in a .tar.gz file (effectively a new 'release' that's ready to be packaged for Debian or other distros)
+		echo "Dictionaries created. Enter the new release version for wiktionarytodict (e.g. 20120630, NOT 20120630-1): "
 		read
-        	YESORNO=$REPLY
-        	if [ "$YESORNO" = "y" ]; then
-			echo "Extracting the packaging directory from the most recent bundle (e.g. wiktionarytodict_20130420.tar.gz)"
-			# extract the most recent wiktionarytodict_*.tar.gz file
-			cd "$SCRIPTDIR"/packaging/ && tar -xzf `ls -1 wiktionarytodict_*.tar.gz | sort | tail -1`
-			echo "Copying dictionaries to $SCRIPTDIR/packaging/"
-			cp "$1"/wikt* "$SCRIPTDIR"/packaging/wiktionarytodict
-		fi
+		NEWVER=$REPLY
+		NEW_RELEASE_TAR="wiktionarytodict_$NEWVER.orig.tar.gz" # e.g. wiktionarytodict_20160710.tar.gz
+		NEW_RELEASE_DIR="wiktionarytodict-$NEWVER" # e.g. wiktionarytodict-20160710
+		cd "$WORKINGDIR" && mkdir -p "$NEW_RELEASE_DIR"
+                cp wikt* "$NEW_RELEASE_DIR"
+                tar -czf "$NEW_RELEASE_TAR" "$NEW_RELEASE_DIR"/
 	fi
 
-	echo "Do you want to delete the downloaded wiktionary dump files from $1? (y/n)"
+	echo "Do you want to delete the downloaded wiktionary dump files from $WORKINGDIR? (y/n)"
         read
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
-                rm -f "$1"/enwiktionary-latest-pages-articles.xml
+                rm -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml
         fi
 
 	echo "Regenerate the Debian Package? (y/n)"
-	read
+        read
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
-		cd "$SCRIPTDIR"/packaging/wiktionarytodict
-		echo "Enter the new version of the package (e.g. 20120630): "
+                ## Prepare the packaging directories
+                echo "Extracting the packaging directory from the most recent Debian source package (e.g. wiktionarytodict_20160110.dsc)"
+                cd "$SCRIPTDIR"/packaging/
+                CURRENT_DSC_FILE="`ls -1 wiktionarytodict_*.dsc | sort | tail -1`"
+                CURRENT_RELEASE_DIR=`echo "${CURRENT_DSC_FILE%-*}" | tr _ -` #e.g. wiktionarytodict-20160110 
+                cd "$SCRIPTDIR"/packaging/ && dpkg-source -x $CURRENT_DSC_FILE # extract the most recent existing source package, e.g. wiktionarytodict_20160110-1.dsc
+                cp "$WORKINGDIR"/"$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/ && tar -xf "$NEW_RELEASE_TAR" # extract out original source
+                cp -r "$CURRENT_RELEASE_DIR"/debian "$NEW_RELEASE_DIR" # copy over the debian/ directory to the new release's directory
+    
+                ## Create the new package
+		cd "$SCRIPTDIR"/packaging/"$NEW_RELEASE_DIR"
+		echo "Enter the new release version for package (suggested: $NEWVER-1): "
 		read
-		NEWVER=$REPLY
-		dch --newversion "$NEWVER"
-		dpkg-buildpackage -rfakeroot
-		echo -e "\n\nPackage creation complete. Manual steps remaining:\n- Copy the .deb package files from $SCRIPTDIR/packaging/ into your apt repository\n- Create a release on Github (see 'Creating a new Release on Github' in NOTES)\n- To save space, delete $SCRIPTDIR/packaging/wiktionarytodict (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz) and move $SCRIPTDIR/packaging/*.deb away or delete them (if copied to github release and local apt repo\n- Check changes into git and Github\n- (Optional)The $SCRIPTDIR/packaging/wiktionarytodict_VERSION.tar.gz, $SCRIPTDIR/packaging/wiktionarytodict_VERSION.dsc and $SCRIPTDIR/packaging/wiktionarytodict_VERSION_ARCH.changes files can also be deleted if they're already saved in git"
+		NEWPKGVER=$REPLY
+		dch --newversion "$NEWPKGVER"
+                debuild -S # Source only build, needed for source.changes file to use for Launchpad upload. Run just 'debuild' to build binary packages
+		debuild clean
+		cat "$SCRIPTDIR"/../regenerate_all_manualsteps.txt
 	fi
 fi
