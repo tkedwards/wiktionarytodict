@@ -62,6 +62,7 @@ else
 		cd "$WORKINGDIR" && mkdir -p "$NEW_RELEASE_DIR"
                 cp wikt* "$NEW_RELEASE_DIR"
                 tar -czf "$NEW_RELEASE_TAR" "$NEW_RELEASE_DIR"/
+                cp "$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/
 	fi
 
 	echo "Do you want to delete the downloaded wiktionary dump files from $WORKINGDIR? (y/n)"
@@ -81,7 +82,9 @@ else
                 CURRENT_DSC_FILE="`ls -1 wiktionarytodict_*.dsc | sort | tail -1`"
                 CURRENT_RELEASE_DIR=`echo "${CURRENT_DSC_FILE%-*}" | tr _ -` #e.g. wiktionarytodict-20160110 
                 cd "$SCRIPTDIR"/packaging/ && dpkg-source -x $CURRENT_DSC_FILE # extract the most recent existing source package, e.g. wiktionarytodict_20160110-1.dsc
-                cp "$WORKINGDIR"/"$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/ && tar -xf "$NEW_RELEASE_TAR" # extract out original source
+                NEW_RELEASE_TAR="`ls -1 wiktionarytodict_*.orig.tar.gz | sort | tail -1`" # get the name of the most recent wiktionarytodict_*.orig.tar.gz file in packaging/, this should've been copied in at the end of the regenerate dictionaries procedure above
+                tar -xf "$NEW_RELEASE_TAR" # extract out original source
+                NEW_RELEASE_DIR="`find . -maxdepth 1 -type d | sort | tail -1`" # find the directory created by the above 'tar -xf' command
                 cp -r "$CURRENT_RELEASE_DIR"/debian "$NEW_RELEASE_DIR" # copy over the debian/ directory to the new release's directory
     
                 ## Create the new package
@@ -92,6 +95,6 @@ else
 		dch --newversion "$NEWPKGVER"
                 debuild -S # Source only build, needed for source.changes file to use for Launchpad upload. Run just 'debuild' to build binary packages
 		debuild clean
-		cat "$SCRIPTDIR"/../regenerate_all_manualsteps.txt
+		cat "$SCRIPTDIR"/regenerate_all_manualsteps.txt
 	fi
 fi

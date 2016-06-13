@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 27 Jan 2016 03:05:25 +0100
+Source: wiktionarytodict
+Binary: wikt-eng-nob wikt-nob-eng wikt-spa-eng wikt-eng-spa wikt-nld-eng wikt-eng-nld wikt-deu-eng wikt-eng-deu wikt-fra-eng wikt-eng-fra wikt-ita-eng wikt-eng-ita wikt-por-eng wikt-eng-por wikt-swe-eng wikt-eng-swe wikt-fin-eng wikt-eng-fin wikt-dan-eng wikt-eng-dan wikt-pol-eng wikt-eng-pol wikt-rus-eng wikt-eng-rus
+Architecture: source
+Version: 20160127-1
+Distribution: wily
+Urgency: medium
+Maintainer: Tim Edwards <timedwards@fastmail.com.au>
+Changed-By: Tim Edwards <timedwards@fastmail.com.au>
+Description: 
+ wikt-dan-eng - Danish-English translation dictionary
+ wikt-deu-eng - German-English translation dictionary
+ wikt-eng-dan - English-Danish translation dictionary
+ wikt-eng-deu - English-German translation dictionary
+ wikt-eng-fin - English-Finnish translation dictionary
+ wikt-eng-fra - English-French translation dictionary
+ wikt-eng-ita - English-Italian translation dictionary
+ wikt-eng-nld - English-Dutch translation dictionary
+ wikt-eng-nob - English-Norwegian translation dictionary
+ wikt-eng-pol - English-Polish translation dictionary
+ wikt-eng-por - English-Portuguese translation dictionary
+ wikt-eng-rus - English-Russian translation dictionary
+ wikt-eng-spa - English-Spanish translation dictionary
+ wikt-eng-swe - English-Swedish translation dictionary
+ wikt-fin-eng - Finnish-English translation dictionary
+ wikt-fra-eng - French-English translation dictionary
+ wikt-ita-eng - Italian-English translation dictionary
+ wikt-nld-eng - Dutch-English translation dictionary
+ wikt-nob-eng - Norwegian-English translation dictionary
+ wikt-pol-eng - Polish-English translation dictionary
+ wikt-por-eng - Portuguese-English translation dictionary
+ wikt-rus-eng - Russian-English translation dictionary
+ wikt-spa-eng - Spanish-English translation dictionary
+ wikt-swe-eng - Swedish-English translation dictionary
+Changes: 
+ wiktionarytodict (20160127-1) wily; urgency=medium
+ .
+   * Rebuilt with data from 27 January 2016 Wiktionary dump file
+Checksums-Sha1: 
+ 968c3002372420a2ff6ae57e079e767aeff7cb9f 2839 wiktionarytodict_20160127-1.dsc
+ 0121f689e5666c82772b82f67466d6cdf854f0ca 40814408 wiktionarytodict_20160127.orig.tar.gz
+ 5cb6876ce0723cd2b87bdde148c39e16f0b5c708 2668 wiktionarytodict_20160127-1.diff.gz
+Checksums-Sha256: 
+ e5b5f63cfed9cc199830485241d6748ca4af1e0a687ad714228adb2b1dd40386 2839 wiktionarytodict_20160127-1.dsc
+ bcddc6086ccaa4c63dbf8e7f73a6fad7efdc32d138130c815069262ccd345758 40814408 wiktionarytodict_20160127.orig.tar.gz
+ f1d0c68dbf6828b634169aa5783faf7334f4124c83d28b618b5edb1990da51c1 2668 wiktionarytodict_20160127-1.diff.gz
+Files: 
+ 40be7e298610998b24fd4d524dd6a8ed 2839 text optional wiktionarytodict_20160127-1.dsc
+ 7cd4221653b9150cce713abb7958d2d1 40814408 text optional wiktionarytodict_20160127.orig.tar.gz
+ d2afec770afa5cd076bf22bbd5a73e42 2668 text optional wiktionarytodict_20160127-1.diff.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJWqHQ/AAoJEHNE8dgjkXu/6SgP/1x3ueCvFf8PFnoMKKiGB0ru
+KjgXMk0xqirnoEw8JZ7Kssr59D9nGGHsbUVRJfMZ6U8KBGeohqE1HN9agRXxoTeL
+Fc9n5UICuNezGNAfD27QxP22twyfrmiYai0sJ2PV5fGrOUEtipHjghDauR3intGa
+o3YG6kQFlIo9pHrm4eDbcC8fl8iRTozZzHXwS0ts4f3ka122+eGeQrvJoxpS1MGo
+faLMoiHtWjx0AbVfz7nsJnbQsPcKw7R+waT6/4GRyUh64jhh2rL8LUeco87SpbDf
+I2V5UtQJEp0oZecpHc1zwdZ3ZneMp4sYclAZekFPqVOvQjFu4XZksM1yDVNUJLA8
+1ZcZu9ypXMX7uArv2PpcmT6rY3U5sz2XjqfQR+OSbTN4SjEYy56S9xkMxpSnagg8
+1sXE9ScCJcJEFUvUq0EssIOoF7nvM/U6VJMzncNdp2p2JfMDsDzuuDex+Flip7qn
+8IqYXtNLYC3hfN+Hho3fyLrPtuYvuW0h4/uvz3oDy96gZQvKwgTQjynONAdl2ZRB
+LEyjvMrTM/xSrEQQV07LITBFkkprdzAW+iM9np4FZgR79zD5pO8zsAQ6aRDnxa9q
+1aFxj6uJdK2dXRKdMWMG0olCns7BEwc8PAkDNCUGmDKQc5VXt9DpRagf8BWigZoh
+KMq1PPwJSEN41tBmMHC5
+=irXN
+-----END PGP SIGNATURE-----
