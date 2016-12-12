@@ -4,9 +4,9 @@
 - Uploaded the new source package to the PPA with:
 dput ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
 
-- test the packages
+- Wait for the packages to build and then publish (should be all automatic, takes up to 10 mins) and then test the packages
 
-- Ensure that the upload was successful and then select View Package Details->'Copy Packages' for each supported distro version (e.g. trusty, wily, xenial). Make sure to only copy binaries: https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa
+- If the test was successful select View Package Details->'Copy Packages' for each supported distro version (e.g. trusty, wily, xenial). Make sure to only copy binaries: https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa
 
 *Clean-up*
 - To save space, delete $SCRIPTDIR/packaging/wiktionarytodict-VERSION/ (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.orig.tar.gz and ...diff.gz) and, if not using Launchpad and instead using binary packages, move $SCRIPTDIR/packaging/*.deb to the local repo

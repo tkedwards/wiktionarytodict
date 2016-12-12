@@ -77,10 +77,10 @@ else
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
                 ## Prepare the packaging directories
-                echo "Extracting the packaging directory from the most recent Debian source package (e.g. wiktionarytodict_20160110.dsc)"
                 cd "$SCRIPTDIR"/packaging/
-                CURRENT_DSC_FILE="`ls -1 wiktionarytodict_*.dsc | sort | tail -1`"
-                CURRENT_RELEASE_DIR=`echo "${CURRENT_DSC_FILE%-*}" | tr _ -` #e.g. wiktionarytodict-20160110 
+                CURRENT_DSC_FILE="`ls -1 wiktionarytodict_*.dsc | sort | tail -1`" #e.g. wiktionarytodict_20160110.dsc
+                CURRENT_RELEASE_DIR=`echo ${CURRENT_DSC_FILE%.*} | tr _ -` # remove the extension and replace _ with - e.g. wiktionarytodict-20160110
+                echo "Extracting the packaging directory from the most recent Debian source package ($CURRENT_RELEASE_DIR)"
                 cd "$SCRIPTDIR"/packaging/ && dpkg-source -x $CURRENT_DSC_FILE # extract the most recent existing source package, e.g. wiktionarytodict_20160110-1.dsc
                 NEW_RELEASE_TAR="`ls -1 wiktionarytodict_*.orig.tar.gz | sort | tail -1`" # get the name of the most recent wiktionarytodict_*.orig.tar.gz file in packaging/, this should've been copied in at the end of the regenerate dictionaries procedure above
                 tar -xf "$NEW_RELEASE_TAR" # extract out original source
