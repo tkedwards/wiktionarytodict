@@ -60,7 +60,7 @@ else
 		NEW_RELEASE_TAR="wiktionarytodict_$NEWVER.orig.tar.gz" # e.g. wiktionarytodict_20160710.tar.gz
 		NEW_RELEASE_DIR="wiktionarytodict-$NEWVER" # e.g. wiktionarytodict-20160710
 		cd "$WORKINGDIR" && mkdir -p "$NEW_RELEASE_DIR"
-                cp wikt* "$NEW_RELEASE_DIR"
+                cp wikt*dict.dz wikt*.index "$NEW_RELEASE_DIR"
                 tar -czf "$NEW_RELEASE_TAR" "$NEW_RELEASE_DIR"/
                 cp "$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/
 	fi
@@ -79,7 +79,7 @@ else
                 ## Prepare the packaging directories
                 cd "$SCRIPTDIR"/packaging/
                 CURRENT_DSC_FILE="`ls -1 wiktionarytodict_*.dsc | sort | tail -1`" #e.g. wiktionarytodict_20160110.dsc
-                CURRENT_RELEASE_DIR=`echo ${CURRENT_DSC_FILE%.*} | tr _ -` # remove the extension and replace _ with - e.g. wiktionarytodict-20160110
+                CURRENT_RELEASE_DIR=`echo ${CURRENT_DSC_FILE%.*} | tr _ - | sed -e "s/-1$//"` # remove the extension, replace _ with -, remove '-1' from the end e.g. wiktionarytodict-20160110
                 echo "Extracting the packaging directory from the most recent Debian source package ($CURRENT_RELEASE_DIR)"
                 cd "$SCRIPTDIR"/packaging/ && dpkg-source -x $CURRENT_DSC_FILE # extract the most recent existing source package, e.g. wiktionarytodict_20160110-1.dsc
                 NEW_RELEASE_TAR="`ls -1 wiktionarytodict_*.orig.tar.gz | sort | tail -1`" # get the name of the most recent wiktionarytodict_*.orig.tar.gz file in packaging/, this should've been copied in at the end of the regenerate dictionaries procedure above
