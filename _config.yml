@@ -1,0 +1,8 @@
+title: Wiktionarytodict
+description: Creates dictd-server compatible dictionary files using data from the English Wiktionary
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
