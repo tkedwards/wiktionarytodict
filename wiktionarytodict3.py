@@ -19,7 +19,7 @@
 
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
-import sys, codecs, re, pycountry
+import sys, codecs, re, pycountry, time, progressbar
 
 class WiktionaryDumpHandler(ContentHandler):
     def __init__ (self, language, langcode, outputdir):
@@ -105,6 +105,7 @@ class WiktionaryDumpHandler(ContentHandler):
                     else:
                         translation += bits[0]
                 self.addtoTranslationsMap(wordwithmeaning, translation)
+
     def addtoTranslationsMap(self, wordwithmeaning, translation):
         if wordwithmeaning in self.translationsfromeng:
             # add multiple translations together, eg: free (make free) : freisetzen, befreien
@@ -208,7 +209,6 @@ def usage():
     print("{0} --showlangcodes".format(sys.argv[0]))
     print("example: {0} enwiktionary-test-data-spanish.xml Spanish spa ~/Downloads/tempdir".format(sys.argv[0]))
 
-print(sys.argv)
 if (len(sys.argv) > 4):
     parser = make_parser()
     curHandler = WiktionaryDumpHandler(sys.argv[2], sys.argv[3], sys.argv[4])
