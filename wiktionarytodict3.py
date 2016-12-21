@@ -135,7 +135,8 @@ class WiktionaryDumpHandler(ContentHandler):
         
     def outputJargonFormat(self):
         # output to Jargon File format (see the -j option in man dictfmt)
-        fromeng = open(('{0}/eng-{1}.txt'.format(self.outputdir, self.langcode)).encode('utf-8'), 'w')
+        # even in Python 3 we need to .encode('utf-8') strings before writing to a file as file.write accepts only byte data (see http://pythoncentral.io/encoding-and-decoding-strings-in-python-3-x/)
+        fromeng = open(('{0}/eng-{1}.txt'.format(self.outputdir, self.langcode)), 'wb')
         fromengheader = "This dictionary tranlsates English to {0}. It was created by the script {1} and is based on data from the Wiktionary dumps available from http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2\nAll content in this dictionary is under the same license as Wiktionary content.\n\n".format(self.language, sys.argv[0])
         fromeng.write(fromengheader.encode('utf-8'))
         for akey in list(self.translationsfromeng.keys()):
@@ -153,7 +154,7 @@ class WiktionaryDumpHandler(ContentHandler):
             fromeng.write((':{0}:{1}{2}\n'.format(headword, explanation, self.translationsfromeng[akey])).encode('utf-8'))
         fromeng.close()
 
-        toeng = open(('{0}/{1}-eng.txt'.format(self.outputdir, self.langcode)).encode('utf-8'), 'w')
+        toeng = open(('{0}/{1}-eng.txt'.format(self.outputdir, self.langcode)).encode('utf-8'), 'wb')
         toengheader = "This dictionary tranlsates {0} to English. It was created by the script {1} and is based on data from the Wiktionary dumps available from http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2\nAll content in this dictionary is under the same license as Wiktionary content.\n\n".format(self.language, sys.argv[0])
         toeng.write(toengheader.encode('utf-8'))
         for akey in list(self.translationstoeng.keys()):
