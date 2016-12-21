@@ -40,7 +40,7 @@ else
 	fi
 	ATEMPDIR=`mktemp -d`
 	SCRIPTDIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-	"$SCRIPTDIR"/wiktionarytodict.py $1 $2 $3 "$ATEMPDIR"
+	"$SCRIPTDIR"/wiktionarytodict3.py $1 $2 $3 "$ATEMPDIR"
 	echo "Creating dictd format dictionaries in $ATEMPDIR"
 	dictfmt --utf8 --allchars -s "Wiktionary English to $2" -j "$ATEMPDIR"/wikt-eng-$3 < "$ATEMPDIR"/eng-$3.txt
 	dictfmt --utf8 --allchars -s "Wiktionary $2 to English" -j "$ATEMPDIR"/wikt-$3-eng < "$ATEMPDIR"/$3-eng.txt
