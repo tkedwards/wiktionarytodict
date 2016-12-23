@@ -12,8 +12,8 @@ dput ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
 - To save space, delete $SCRIPTDIR/packaging/wiktionarytodict-VERSION/ (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.orig.tar.gz and ...diff.gz) and, if not using Launchpad and instead using binary packages, move $SCRIPTDIR/packaging/*.deb to the local repo
 
 *Create a release on Github*
-- Check changes into git and Github
+- Check changes into git and Github (https://github.com/tkedwards/wiktionarytodict)
 
-- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Drap-and-drop the .orig.tar.gz file onto the 'Attach binaries for this release by dropping them here'
+- Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Drap-and-drop the .zip file (look in /tmp) onto the 'Attach binaries for this release by dropping them here'
 
-- Github web UI->Settings->Automatic Page Generator (see https://help.github.com/articles/creating-pages-with-the-automatic-generator/). Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
+- Github web UI->(repository)Settings->Automatic Page Generator (see https://help.github.com/articles/what-is-github-pages/). Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
