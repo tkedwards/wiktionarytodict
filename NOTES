@@ -7,6 +7,14 @@ PPA: https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa
 **Dependencies**
 dictd dictfmt python-pycountry
 
+**Github Pages**
+The Project Homepage for this site is a "Project Pages site owned by a user account", see https://help.github.com/articles/user-organization-and-project-pages/
+
+I've configured the Project Homepage to be from the /docs folder in the master branch:
+https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
+
+Note that the old 'Automatic Page Generator' has been deprecated: Github web UI->(repository)Settings->Automatic Page Generator (see https://help.github.com/articles/what-is-github-pages/)
+
 **Packaging**
 To create Debian packages for a newly added language, e.g. French (ISO code fra):
 - Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
