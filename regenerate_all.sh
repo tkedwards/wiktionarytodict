@@ -61,8 +61,12 @@ else
 		NEW_RELEASE_DIR="wiktionarytodict-$NEWVER" # e.g. wiktionarytodict-20160710
 		cd "$WORKINGDIR" && mkdir -p "$NEW_RELEASE_DIR"
                 cp wikt*dict.dz wikt*.index "$NEW_RELEASE_DIR"
+                # create orig.tar.gz file for Debian packaging
                 tar -czf "$NEW_RELEASE_TAR" "$NEW_RELEASE_DIR"/
                 cp "$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/
+                # create .zip file for Github release (since many Windows and OS X users don't have programs to deal with .tar.gz out of the box)
+                zip -r "$NEW_RELEASE_DIR" "$NEW_RELEASE_DIR"/
+                cp "$NEW_RELEASE_DIR".zip /tmp/
 	fi
 
 	echo "Do you want to delete the downloaded wiktionary dump files from $WORKINGDIR? (y/n)"
