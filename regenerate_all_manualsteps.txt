@@ -16,4 +16,4 @@ dput ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
 
 - Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Drap-and-drop the .zip file (look in /tmp) onto the 'Attach binaries for this release by dropping them here'
 
-- Github web UI->(repository)Settings->Automatic Page Generator (see https://help.github.com/articles/what-is-github-pages/). Update the download links and publish using the 'Modernist' theme. Check http://tkedwards.github.io/wiktionarytodict/
+- Update the download links in docs/index.md commit the changes and push to origin. Check http://tkedwards.github.io/wiktionarytodict/ (it should update automatically)
