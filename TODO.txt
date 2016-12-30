@@ -1,21 +1,7 @@
 **Non-Program Improvements**
-- Create an Ubuntu PPA for the .deb files
+- upload packages to Debian project and to website. Sign packages with timedwards@fastmail.com.au gpg key
 
-- upload packages to Debian project and to website. Sign packages with timedwards@fastmail.com.au gpg key (gpg currently defaults to old tkedwards key)
-
-**Bug Fix improvements**
-- Catch exceptions and print the data that was being processed at the time, e.g this happened while processing for Norwegian:
-  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 46, in process
-TextElement
-    self.parseTranslations(content)
-  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 67, in parseTr
-anslations
-    self.parseTranslationline(aline, currentMeaning)
-  File "/home/tim/devel/wiktionarytodict/wiktionarytodict.py", line 75, in parseTr
-anslationline
-    rawtranslation = aline.split(':')[2].lstrip()
-IndexError: list index out of range
-
+**Improvements**
 - better formatting:
         * when going from a language that has noun genders such as Spanish back to English it should show the noun gender on its own line. Look at the dictionary format from trans-de-en e.g:
         Haus
@@ -28,8 +14,6 @@ IndexError: list index out of range
                 park
                 (a place for recreation)
                 parque (m)
-
-**New Features requiring Significant Change or Work**
 
 - deal with {{qualifier|someword}} properly
 
@@ -44,5 +28,6 @@ Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing s
 
 - have wiktionarytodict create StartDict format files http://www.stardict.org/HowToCreateDictionary
 
+- implement a progress bar/display during creation, see python3-progressbar and https://stackoverflow.com/questions/1001871/showing-progress-of-pythons-xml-parser-when-loading-a-huge-file
 
 
