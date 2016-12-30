@@ -20,32 +20,53 @@
 # Creates dictd format dictionaries from dump files from the English Wiktionary (http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2)
 
 function usage {
-	echo -e "usage: `basename $0` WIKTDUMPFILE LANGNAME LANGCODE install/dontinstall [DICTFILESLOCATION]
+	echo -e "usage: `basename $0` -f WIKTDUMPFILE -l \"LANGNAME1:LANGCODE1 LANGNAME2:LANGCODE2..\" [-i] [-d DICTFILESLOCATION]
 LANGNAME is the language name as appears in the Wiktionary dumps eg. 'German'.
 LANGCODE is the 3-letter ISO-639-3 code for the language. The output files will be named after this 3-letter codes. Run wiktionarytodict.py --showlangcodes to get a list of languages and the ISO-639-3 codes
-install/dontinstall controls whether to install the dictionaries to the local dictd server or just create them in the path specified by DICTFILESLOCATION
+If -i is specified the dictionaries will be installed to the local dictd server, if not they'll just be created in the path specified by DICTFILESLOCATION
 
 Example: ./wiktionarytodict.sh ~/Downloads/enwiktionary-latest-pages-articles.xml Dutch nld install"
 }
 
-if [ -z "$1" -o -z "$2" -o -z "$3" -o -z "$4" ]; then
+WIKTDUMPFILE=''
+LANGUAGES=''
+INSTALLTODICTD=0
+DICTFILESLOCATION=''
+while getopts "h?f:l:id:" opt; do
+    case "$opt" in
+    h|\?)
+        usage
+        exit 0
+        ;;
+    f)  WIKTDUMPFILE="$OPTARG"
+        ;;
+    l)  LANGUAGES="$OPTARG"
+        ;;
+    i)  INSTALLTODICTD=1
+        ;;
+    d)  DICTFILESLOCATION="$OPTARG"
+        ;;
+    :)
+        usage
+        exit 1
+    esac
+done
+
+if [ -z "$WIKTDUMPFILE" -o -z "$LANGUAGES" ]; then # check all compulsory arguments are there
 	usage
 else
-	if [ "$4" == "dontinstall" -a -d "$5" ]; then
-		# DICTFILESLOCATION is a valid directory
-		DICTFILESLOCATION="$5"
-	elif [ "$4" == "dontinstall" -a ! -d "$5" ]; then
-		echo "ERROR: $5 is not a valid directory"
+	if [ $INSTALLTODICTD == 1 -a ! -d "$DICTFILESLOCATION" ]; then # if the user wants the resulting files installed in the dictd location make sure it's a valid directory
+		echo "ERROR: $DICTFILESLOCATION is not a valid directory"
 		exit 2
 	fi
+	
+	# generate the dictionary data and the dict format files in $ATEMPDIR
 	ATEMPDIR=`mktemp -d`
 	SCRIPTDIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-	"$SCRIPTDIR"/wiktionarytodict3.py $1 $2 $3 "$ATEMPDIR"
-	echo "Creating dictd format dictionaries in $ATEMPDIR"
-	dictfmt --utf8 --allchars -s "Wiktionary English to $2" -j "$ATEMPDIR"/wikt-eng-$3 < "$ATEMPDIR"/eng-$3.txt
-	dictfmt --utf8 --allchars -s "Wiktionary $2 to English" -j "$ATEMPDIR"/wikt-$3-eng < "$ATEMPDIR"/$3-eng.txt
-	dictzip "$ATEMPDIR"/*.dict # compress the plain-text dictionaries into 'dictzip' format
-	if [ "$4" == "install" ]; then
+	"$SCRIPTDIR"/wiktionarytodict3.py "$WIKTDUMPFILE" $LANGUAGES "$ATEMPDIR"
+	
+	# either install the dictd format files directly or copy them to the specfied $DICTFILESLOCATION
+	if [ $INSTALLTODICTD == 1 ]; then
 		sudo cp "$ATEMPDIR"/wikt-* /usr/share/dictd/
 		sudo /usr/sbin/dictdconfig --write
 		sudo service dictd restart

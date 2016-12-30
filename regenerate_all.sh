@@ -20,12 +20,6 @@
 # Get the directory this script is being called from
 SCRIPTDIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Regenerates all dictionaries for specified languages
-function createdict {
-	echo "Creating dictionaries for $2"
-	"$SCRIPTDIR"/wiktionarytodict.sh "$1"/enwiktionary-latest-pages-articles.xml $2 $3 dontinstall "$1"
-}
-
 if [ -z "$1" ]; then
        echo -e "usage: `basename $0` TEMPLOCATION
 where TEMPLOCATION is the path to a directory with a few gigbytes free space"
@@ -42,34 +36,30 @@ else
 	read
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
-		# Create dictionaries
-		NUMCPUS=`grep -c ^processor /proc/cpuinfo`
-		for ARGUMENT in "German deu" "Spanish spa" "Dutch nld" "Norwegian nob" "French fra"  "Italian ita" "Portuguese por" "Swedish swe" "Finnish fin" "Danish dan" "Polish pol" "Russian rus"; do
-		    createdict $WORKINGDIR $ARGUMENT &
-		    NUMPROCS=$(($NUMPROCS+1))
-		    # run as many createdict processes simultaenously as there are CPUs in the machine
-		    if [ "$NUMPROCS" -ge $NUMCPUS ]; then
-			wait
-		    NUMPROCS=0
-		    fi
-		done
-		# Bundle up the dictionaries in a .tar.gz file (effectively a new 'release' that's ready to be packaged for Debian or other distros)
+		# Create the dictionaries
+		LANGUAGES="German:deu Spanish:spa Dutch:nld Norwegian:nob French:fra  Italian:ita Portuguese:por Swedish:swe Finnish:fin Danish:dan Polish:pol Russian:rus"
+		echo "Creating Dictionaries for $LANGUAGES"
+		"$SCRIPTDIR"/wiktionarytodict.sh -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml -l "$LANGUAGES" -d "$WORKINGDIR"
+		
+		echo "Bundle up the dictionaries in a .tar.gz file (effectively a new 'release' that's ready to be packaged for Debian or other distros)"
 		echo "Dictionaries created. Enter the new release version for wiktionarytodict (e.g. 20120630, NOT 20120630-1): "
 		read
 		NEWVER=$REPLY
 		NEW_RELEASE_TAR="wiktionarytodict_$NEWVER.orig.tar.gz" # e.g. wiktionarytodict_20160710.tar.gz
 		NEW_RELEASE_DIR="wiktionarytodict-$NEWVER" # e.g. wiktionarytodict-20160710
+		
+		echo "copying the created files to the new release directory"
 		cd "$WORKINGDIR" && mkdir -p "$NEW_RELEASE_DIR"
                 cp wikt*dict.dz wikt*.index "$NEW_RELEASE_DIR"
-                # create orig.tar.gz file for Debian packaging
+                echo "creating orig.tar.gz file for Debian packaging"
                 tar -czf "$NEW_RELEASE_TAR" "$NEW_RELEASE_DIR"/
                 cp "$NEW_RELEASE_TAR" "$SCRIPTDIR"/packaging/
-                # create .zip file for Github release (since many Windows and OS X users don't have programs to deal with .tar.gz out of the box)
+                echo "creating .zip file for Github release (since many Windows and OS X users don't have programs to deal with .tar.gz out of the box)"
                 zip -r "$NEW_RELEASE_DIR" "$NEW_RELEASE_DIR"/
                 cp "$NEW_RELEASE_DIR".zip /tmp/
 	fi
 
-	echo "Do you want to delete the downloaded wiktionary dump files from $WORKINGDIR? (y/n)"
+	echo "Do you want to delete the downloaded wiktionary dump file $WORKINGDIR/enwiktionary-latest-pages-articles.xml? (y/n)"
         read
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
