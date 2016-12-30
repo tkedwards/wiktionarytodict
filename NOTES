@@ -15,6 +15,13 @@ https://help.github.com/articles/configuring-a-publishing-source-for-github-page
 
 Note that the old 'Automatic Page Generator' has been deprecated: Github web UI->(repository)Settings->Automatic Page Generator (see https://help.github.com/articles/what-is-github-pages/)
 
+**Dictionaries and Formats**
+To see how many 'headwords' are in a dictionary count the number of lines in its .index file, e.g:
+wc -l wikt-deu-eng.index
+62824 wikt-deu-eng.index
+
+Dictionaries are stored under /usr/share/dictd
+
 **Packaging**
 To create Debian packages for a newly added language, e.g. French (ISO code fra):
 - Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
