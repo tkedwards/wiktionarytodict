@@ -68,10 +68,11 @@ else
 	# either install the dictd format files directly or copy them to the specfied $DICTFILESLOCATION
 	if [ $INSTALLTODICTD == 1 ]; then
 		sudo cp "$ATEMPDIR"/wikt-* /usr/share/dictd/
+		sudo chmod 644 /usr/share/dictd/wikt-*
 		sudo /usr/sbin/dictdconfig --write
-		sudo service dictd restart
+		sudo systemctl restart dictd
 	else
-		sudo cp -f "$ATEMPDIR"/wikt-* "$DICTFILESLOCATION"
+		cp -f "$ATEMPDIR"/wikt-* "$DICTFILESLOCATION"
 	fi
 	rm -rf "$ATEMPDIR"
 fi
