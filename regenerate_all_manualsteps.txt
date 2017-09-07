@@ -2,7 +2,7 @@
 
 *Upload the Package to the PPA*
 - Uploaded the new source package to the PPA with:
-dput ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
+dput -f ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
 
 - Wait for the packages to build and then publish (should be all automatic, takes up to 10 mins) and then test the packages
 
