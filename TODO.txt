@@ -1,3 +1,6 @@
+**Build Script Improvements**
+- change regenerate_all.sh to build the package in a temp directory (after copying over the debian/ directory from the most recent version). This avoids lots of problems where pre-existing files mess things up if the build fails the first time
+
 **Non-Program Improvements**
 - upload packages to Debian project and to website. Sign packages with timedwards@fastmail.com.au gpg key
 
