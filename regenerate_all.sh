@@ -39,7 +39,7 @@ else
 		# Create the dictionaries
 		LANGUAGES="German:deu Spanish:spa Dutch:nld Norwegian:nob French:fra  Italian:ita Portuguese:por Swedish:swe Finnish:fin Danish:dan Polish:pol Russian:rus"
 		echo "Creating Dictionaries for $LANGUAGES"
-		#"$SCRIPTDIR"/wiktionarytodict.sh -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml -l "$LANGUAGES" -d "$WORKINGDIR"
+		"$SCRIPTDIR"/wiktionarytodict.sh -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml -l "$LANGUAGES" -d "$WORKINGDIR"
 		
 		echo "Bundle up the dictionaries in a .tar.gz file (effectively a new 'release' that's ready to be packaged for Debian or other distros)"
 		echo "Dictionaries created. Enter the new release version for wiktionarytodict (e.g. 20120630, NOT 20120630-1): "
