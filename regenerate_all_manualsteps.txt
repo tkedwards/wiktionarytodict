@@ -4,7 +4,7 @@
 - Uploaded the new source package to the PPA with:
 dput -f ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
 
-- Wait for the packages to build and then publish (should be all automatic, takes up to 10 mins) and then test the packages (see 05Testing/)
+- Wait for the packages to build (https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa then 'View Package Details') and then publish (should be all automatic, takes up to 10 mins) and then test the packages (see 05Testing/)
 
 - If the test was successful then go to https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa, login to Launchpad and select View Package Details->'Copy Packages' for each supported distro version (e.g. trusty, wily, xenial). (make sure to only copy binaries)
 
