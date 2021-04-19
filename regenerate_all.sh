@@ -37,7 +37,7 @@ else
 	YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
 		# Create the dictionaries
-		LANGUAGES="German:deu Spanish:spa Dutch:nld Norwegian:nob French:fra  Italian:ita Portuguese:por Swedish:swe Finnish:fin Danish:dan Polish:pol Russian:rus"
+		LANGUAGES="German:deu Spanish:spa Dutch:nld Norwegian:nob French:fra  Italian:ita Portuguese:por Swedish:swe Finnish:fin Danish:dan Polish:pol Russian:rus Greek:ell"
 		echo "Creating Dictionaries for $LANGUAGES"
 		"$SCRIPTDIR"/wiktionarytodict.sh -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml -l "$LANGUAGES" -d "$WORKINGDIR"
 		

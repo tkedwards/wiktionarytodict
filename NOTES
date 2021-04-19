@@ -22,10 +22,10 @@ wc -l wikt-deu-eng.index
 
 Dictionaries are stored under /usr/share/dictd
 
-**Packaging**
+**Packaging - Adding a New Language**
 To create Debian packages for a newly added language, e.g. French (ISO code fra):
 - Copy one of the existing stanzas in debian/control for both wikt-eng-fra and wikt-fra-eng
-- Symlink the postinst to wikt-eng-fra.postinst and wikt-fra-eng.postinst
+- Copy one of the existing postinsts to wikt-eng-fra.postinst and wikt-fra-eng.postinst
 - Create wikt-eng-fra.install and wikt-fra-eng.install (see the other .install files for what to put in them)
 
 **Editing wiktionary**
