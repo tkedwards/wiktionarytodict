@@ -29,7 +29,7 @@ else
         read
         YESORNO=$REPLY
         if [ "$YESORNO" = "y" ]; then
-		cd "$WORKINGDIR" && wget http://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 -f enwiktionary-latest-pages-articles.xml.bz2
+		cd "$WORKINGDIR" && wget https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-pages-articles.xml.bz2 && bunzip2 -f enwiktionary-latest-pages-articles.xml.bz2
 	fi
 	
 	echo "Regenerate dictionary files using wiktionary dump file in $WORKINGDIR? (This can take a long time) (y/n)"
