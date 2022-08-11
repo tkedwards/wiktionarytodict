@@ -13,7 +13,7 @@ dput -f ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.chang
 
 - Create the release using the Github web interface with Tag '20140402' (replace with current date) and name/title '2014-04-02' (current date). Create a ZIP file witkionarytodict-20140402 (replace with current date) made up of all files in $SCRIPTDIR/packaging/wiktionarytodict-VERSION/ *except* the debian directory. Drap-and-drop the .zip file onto the 'Attach binaries for this release by dropping them here'
 
-- Update the download links in docs/index.md, commit the changes and push to origin. Check http://tkedwards.github.io/wiktionarytodict/ (it should update automatically)
+- Update the download links in docs/index.md, commit the changes and push to origin. Check https://tkedwards.github.io/wiktionarytodict/ (it should update automatically)
 
 *Clean-up*
 - To save space, delete $SCRIPTDIR/packaging/wiktionarytodict-VERSION/ (the contents of it are preserved in $SCRIPTDIR/packaging/wiktionarytodict_VERSION.orig.tar.gz and ...diff.gz) and, if not using Launchpad and instead using binary packages, move $SCRIPTDIR/packaging/*.deb to the local repo
