@@ -96,6 +96,8 @@ else
                 #done
 		dch --newversion "$NEWPKGVER"
                 debuild -S # Source only build, needed for source.changes file to use for Launchpad upload. Run just 'debuild' to build binary packages
+                echo "Upload the new source package to the Launchpad PPA"
+                dput -f ppa:tkedwards/wiktionarytodict-ppa "$SCRIPTDIR"/packaging/wiktionarytodict_${NEWPKGVER}_source.changes
 		cat "$SCRIPTDIR"/regenerate_all_manualsteps.txt
 	fi
 fi

@@ -1,12 +1,10 @@
 **Package creation complete. Manual steps remaining:**
 
 *Upload the Package to the PPA*
-- Uploaded the new source package to the PPA with:
-dput -f ppa:tkedwards/wiktionarytodict-ppa wiktionarytodict_VERSION_source.changes
-
 - Wait for the packages to build (https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa then 'View Package Details') and then publish (should be all automatic, takes up to 10 mins) and then test the packages (see 05Testing/)
 
-- If the test was successful then go to https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa, login to Launchpad and select View Package Details->'Copy Packages' for each supported distro version (e.g. trusty, wily, xenial). (make sure to only copy binaries, also you might need to click 'Login' at top-right of page first, it doesn't automatically log you in)
+- If the test was successful then go to https://launchpad.net/~tkedwards/+archive/ubuntu/wiktionarytodict-ppa, login to Launchpad and select View Package Details->'Copy Packages' for each supported distro version (see https://en.wikipedia.org/wiki/Ubuntu#Releases). 
+Make sure to only copy binaries, also you might need to click 'Login' at top-right of page first, it doesn't automatically log you in.
 
 *Create a release on Github*
 - Check any changes into git and Github (https://github.com/tkedwards/wiktionarytodict)
