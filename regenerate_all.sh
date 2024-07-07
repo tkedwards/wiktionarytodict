@@ -96,7 +96,6 @@ else
                 #done
 		dch --newversion "$NEWPKGVER"
                 debuild -S # Source only build, needed for source.changes file to use for Launchpad upload. Run just 'debuild' to build binary packages
-		debuild clean
 		cat "$SCRIPTDIR"/regenerate_all_manualsteps.txt
 	fi
 fi
