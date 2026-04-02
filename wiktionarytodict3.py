@@ -50,8 +50,8 @@ class WiktionaryDumpHandler(ContentHandler):
         inTransSection = 0
         currentMeaning = ''
         for aline in content.splitlines():
-            transbegin = re.compile("\{\{trans-top")
-            transend = re.compile("\{\{trans-bottom")
+            transbegin = re.compile(r"\{\{trans-top")
+            transend = re.compile(r"\{\{trans-bottom")
             if transbegin.match(aline) != None:
                 inTransSection = 1
                 splitresult = aline.split('|')
@@ -59,7 +59,9 @@ class WiktionaryDumpHandler(ContentHandler):
                     # handle the case where there's no refinement on the meaning (just a '{{trans-top}}')
                     currentMeaning = ''
                 else:
-                    currentMeaning = splitresult[1].strip('{}')
+                    # skip 'id=...' parameters (e.g. {{trans-top|id=Q8171|unit of language}})
+                    parts = [p.strip('{}') for p in splitresult[1:] if not p.strip('{}').startswith('id=')]
+                    currentMeaning = parts[0] if parts else ''
             elif transend.match(aline) != None:
                 inTransSection = 0
                 currentMeaning = ''
@@ -72,9 +74,9 @@ class WiktionaryDumpHandler(ContentHandler):
         if bLanguageMatched == 1:
             wordwithmeaning = self.word + ' ({0})'.format(currentMeaning) # word with meaning, e.g. "trade (practice)": Handwerk
             # TODO: deal with these qualifiers properly
-            currentLine = re.sub('\{\{qualifier\|[\w ]*\}\}', '', currentLine) # remove qualifier crap (eg. {{qualifier|man}}) from strings like this: * German: {{qualifier|man}} [[Scheißkerl]] {{m}}, [[Drecksack]] {{m}}
+            currentLine = re.sub(r'\{\{qualifier\|[\w ]*\}\}', '', currentLine) # remove qualifier crap (eg. {{qualifier|man}}) from strings like this: * German: {{qualifier|man}} [[Scheißkerl]] {{m}}, [[Drecksack]] {{m}}
             # Extract the actual translation (the bit we're interested in e.g. '{{t+|de|Stuhl|m}}') from the line e.g. '* German: {{t+|de|Stuhl|m}}', also works for sub-languages e.g. '*: Bokmål: {{t+|nb|stol|m}}'
-            regex = re.compile("^.*\:(.*)$")
+            regex = re.compile(r"^.*:(.*)$")
             rawtranslation = regex.findall(currentLine)[0].lstrip()
             # Process the actual translation:
             if rawtranslation.startswith('{{'): # lines formatted like this: {{t+|de|frei}}
@@ -119,7 +121,7 @@ class WiktionaryDumpHandler(ContentHandler):
             # it's a word we haven't translated yet for this language
             self.translationsfromeng[currentLanguage][wordwithmeaning] = translation
         
-        if translation in self.translationstoeng:
+        if translation in self.translationstoeng[currentLanguage]:
               # if the word's already in there make sure we add multiple translations together
               newtrans = self.translationstoeng[currentLanguage][translation] + ', {0}'.format(wordwithmeaning)
               self.translationstoeng[currentLanguage][translation] = newtrans
@@ -131,9 +133,9 @@ class WiktionaryDumpHandler(ContentHandler):
         languageOfCurrentLine = ''
         if('{{trreq' in currentLine):
             return (languageOfCurrentLine, 0) # filter out translation requests (http://en.wiktionary.org/wiki/Template:trreq/doc)
-        matchesFormat1 = re.findall('^\*\s(\w+):', currentLine) # test if the line begins with a language name of this form: * Lithuanian:
-        matchesFormat2 = re.findall('^\*\s\[\[(\w+)\]\]:', currentLine) # test if the line begins with a language name of this form: * [[Luxembourgish]]:
-        matchesFormat3 = re.findall('^\*:\s(\w+):', currentLine) # test if the line beings with a sub-language/dialect name of the form: *: Bokmål:
+        matchesFormat1 = re.findall(r'^\*\s(\w+):', currentLine) # test if the line begins with a language name of this form: * Lithuanian:
+        matchesFormat2 = re.findall(r'^\*\s\[\[(\w+)\]\]:', currentLine) # test if the line begins with a language name of this form: * [[Luxembourgish]]:
+        matchesFormat3 = re.findall(r'^\*:\s(\w+):', currentLine) # test if the line beings with a sub-language/dialect name of the form: *: Bokmål:
         if matchesFormat1:
             languageOfCurrentLine = matchesFormat1[0]
         elif matchesFormat2:
