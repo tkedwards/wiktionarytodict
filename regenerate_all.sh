@@ -42,12 +42,13 @@ else
 		"$SCRIPTDIR"/wiktionarytodict.sh -f "$WORKINGDIR"/enwiktionary-latest-pages-articles.xml -l "$LANGUAGES" -d "$WORKINGDIR"
 		
 		echo "Bundle up the dictionaries in a .tar.gz file (effectively a new 'release' that's ready to be packaged for Debian or other distros)"
-		echo "Dictionaries created. Enter the new release version for wiktionarytodict (e.g. 20120630, NOT 20120630-1): "
-		read
 		NEWVER=''
 		while [[ ! $NEWVER =~ ^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$ ]]; do
-                    echo "The release version must be in the YYYYMMDD format, e.g. 20120630)"
-                    read NEWVER
+		    echo "Dictionaries created. Enter the new release version for wiktionarytodict (e.g. 20120630, NOT 20120630-1): "
+		    read NEWVER
+		    if [[ ! $NEWVER =~ ^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$ ]]; then
+		        echo "The release version must be in the YYYYMMDD format, e.g. 20120630)"
+		    fi
                 done
 		NEW_RELEASE_TAR="wiktionarytodict_$NEWVER.orig.tar.gz" # e.g. wiktionarytodict_20160710.tar.gz
 		NEW_RELEASE_DIR="wiktionarytodict-$NEWVER" # e.g. wiktionarytodict-20160710
