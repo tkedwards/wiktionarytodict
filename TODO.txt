@@ -33,4 +33,11 @@ Examples of sub-languages are Nynorsk and Bokmål as the two alternate writing s
 
 - implement a progress bar/display during creation, see python3-progressbar and https://stackoverflow.com/questions/1001871/showing-progress-of-pythons-xml-parser-when-loading-a-huge-file
 
+- Fix the problem with the Spanish-English translations not picking up all variations. E.g rich translates to 'rico' in Spanish, but 'rico' doesn't translate back to English: https://en.wiktionary.org/wiki/rich
+dict rico
+...
+From Wiktionary Spanish to English [wikt-spa-eng]:
 
+  rico
+  sweet/translations (having a pleasant taste)
+Same thing with ball/bolsa, regalo/present (only shows 'pressie')
