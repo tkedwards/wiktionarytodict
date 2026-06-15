@@ -261,8 +261,12 @@ if (len(sys.argv) > 4):
     curHandler.createDictdFormatFiles()
 elif (len(sys.argv) == 2):
     if sys.argv[1] == '--showlangcodes':
-       for lang in list(pycountry.languages):
-           print("{0}:{1}".format(lang.name, lang.terminology))
+        for lang in list(pycountry.languages):
+            try:
+                terminology = lang.alpha_3
+            except AttributeError:
+                terminology = lang.terminology
+            print("{0}:{1}".format(lang.name, terminology))
     else:
         usage()
 else:
