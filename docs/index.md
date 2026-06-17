@@ -21,6 +21,16 @@ You'll need at least a Linux installation and very basic familiarity with the ba
 
 Generating dictionaries is fairly processor intensive. On a desktop PC with a Quad-Core AMD Phenom II X4 (3GHz) CPU it takes over 2 hours to generate 12 dictionaries (running 4 dictionary creates in parallel, one on each core).
 
+#### Dependencies to Install
+When generating you're own dictionaries on Linux you'll need at least the following packages installed:
+
+```
+dict # included in dictd on Arch
+dictd
+dictfmt # included in dictd on Arch
+```
+
+
 ### I've found an error in one of the dictionaries/I want to add an entry
 Just head over to the [English Wiktionary](http://en.wiktionary.org), find the word in English and edit the translation for the relevant language. wiktionarytodict doesn't alter the data in any way - it just reflects what was on Wiktionary at the time the dictionaries were generated.
 
