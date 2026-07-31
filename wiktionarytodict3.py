@@ -246,6 +246,14 @@ def usage():
     print("{0} --showlangcodes".format(sys.argv[0]))
     print("example: {0} enwiktionary-test-data-spanish.xml Spanish:spa German:deu ~/Downloads/tempdir".format(sys.argv[0]))
 
+def getLanguageCode(lang):
+    for field in ('alpha_3', 'terminology', 'bibliographic'):
+        try:
+            return getattr(lang, field)
+        except AttributeError:
+            pass
+    return None
+
 if (len(sys.argv) > 4):
     # get the list of languages and language codes that the user specified
     languages = {}
@@ -262,11 +270,9 @@ if (len(sys.argv) > 4):
 elif (len(sys.argv) == 2):
     if sys.argv[1] == '--showlangcodes':
         for lang in list(pycountry.languages):
-            try:
-                terminology = lang.alpha_3
-            except AttributeError:
-                terminology = lang.terminology
-            print("{0}:{1}".format(lang.name, terminology))
+            terminology = getLanguageCode(lang)
+            if terminology is not None:
+                print("{0}:{1}".format(lang.name, terminology))
     else:
         usage()
 else:
